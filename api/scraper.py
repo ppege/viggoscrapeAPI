@@ -6,7 +6,7 @@ from requests import Session
 import json
 
 def get_links(subdomain, info):
-    """Gets all assignment links from viggo's assignments page."""
+    """Gets all assignment links from viggo's assignment page."""
     with Session() as s: # pylint: disable=invalid-name
         login_data = {"UserName": info["user_name"], "Password": info["password"]}
         try:
