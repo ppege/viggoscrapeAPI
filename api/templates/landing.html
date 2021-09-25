@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Viggoscrape API</title>
+        <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"> -->
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                color: #444;
+                font-size: 1.2em;
+            }
+            /*
+            * Formatting the header area
+            */
+            header {
+                background-color: #DFB887;
+                height: 35px;
+                width: 100%;
+                opacity: .9;
+                margin-bottom: 10px;
+            }
+            .container {
+                width: 1200px;
+                margin: 0 auto;
+            }
+            div.home {
+                padding: 10px 0 30px 0;
+                background-color: #E6E6FA;
+                -webkit-border-radius: 6px;
+                -moz-border-radius: 6px;
+                        border-radius: 6px;
+            }
+            div.about {
+                padding: 10px 0 30px 0;
+                background-color: #E6E6FA;
+                -webkit-border-radius: 6px;
+                -moz-border-radius: 6px;
+                        border-radius: 6px;
+            }
+            code {
+                background-color: rgb(37, 37, 37);
+                font-family: 'Courier New', Courier, monospace;
+                border-radius: 5px;
+            }
+            h2 {
+                font-size: 1.5em;
+                text-align: left;
+                margin-top: 40px;
+                letter-spacing: -2px;
+            }
+            h3 {
+                font-size: 1.7em;
+                font-weight: 100;
+                margin-top: 30px;
+                text-align: center;
+                letter-spacing: -1px;
+                color: #999;
+            }
+            .menu {
+                float: right;
+                margin-top: 8px;
+            }
+            .menu li {
+                display: inline;
+            }
+            .menu li + li {
+                margin-left: 35px;
+            }
+            .menu li a {
+                color: #444;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>
+                Viggoscrape API
+            </h1>
+            <p>
+                An API for reading Viggo assignments.
+            </p>
+            <h2>
+                Usage example
+            </h2>
+            <p>
+                <code>
+                    /api/v1/scrape?subdomain={subdomain}&username={username}&password={password}
+                </code>
+            </p>
+        </div>
+    </body>
+</html>
