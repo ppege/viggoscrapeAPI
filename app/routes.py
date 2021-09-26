@@ -28,5 +28,3 @@ def scrape():
             }
         )
     )
-
-app.run()
