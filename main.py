@@ -1,7 +1,8 @@
-from app import app
-from app.scraper import get_assignments
-from flask import render_template, request, jsonify, send_from_directory
+from scraper import get_assignments
+from flask import render_template, request, jsonify, send_from_directory, Flask
 import os
+
+app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def home():
@@ -35,3 +36,5 @@ def scrape():
             }
         )
     )
+
+app.run(debug=True)
