@@ -6,10 +6,11 @@
         <style>
             body {
                 margin: 0;
-                padding: 0;
+                padding:2em;
                 font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-                color: #444;
+                color: rgb(255, 255, 255);
                 font-size: 1.2em;
+                background-color: rgb(54, 57, 63);
             }
             /*
             * Formatting the header area
@@ -40,15 +41,27 @@
                         border-radius: 6px;
             }
             code {
-                background-color: rgb(195, 195, 195);
+                background-color: rgb(36, 36, 36);
                 font-family: 'Courier New', Courier, monospace;
                 border-radius: 5px;
+            }
+            iframe {
+                background-color: rgb(255, 255, 255);
+            }
+            input {
+                background-color: rgb(36, 36, 36);
+                color:rgb(255, 255, 255);
+                padding: 4px;
+                -webkit-appearance: none; 
+                -moz-appearance: none; 
+                border-radius: 5px;
+                border: 0px solid rgb(109, 109, 109);
             }
             h2 {
                 font-size: 1.5em;
                 text-align: left;
                 margin-top: 40px;
-                letter-spacing: -2px;
+                letter-spacing: -1px;
             }
             h3 {
                 font-size: 1.7em;
@@ -90,6 +103,33 @@
                     /api/v1/scrape?subdomain={subdomain}&username={username}&password={password}
                 </code>
             </p>
+            <h2>
+                Demo form
+            </h2>
+            <p>
+                Filling out this form will send you to the url with the info typed in for you.
+            </p>
+            <script>
+                function showIframe(url) {
+                    var iframe = document.createElement('iframe');
+                    iframe.style.display = "none";
+                    iframe.src = url;
+                    document.body.appendChild(iframe);
+                }
+            </script>
+            <div style="width: 180px; float:left; height:100px; margin:10px">
+                <form onsubmit="showIframe()">
+                    <label for="subdomain">Subdomain:</label><br>
+                    <input type="text" id="subdomain" name="subdomain"><br><br>
+                    <label for="username">Username:</label><br>
+                    <input type="text" id="username" name="username"><br><br>
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password" name="password"><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div id="iframediv" style="width: 120px; float:left; height:120px; margin:10px">
+            </div>
         </div>
     </body>
 </html>
