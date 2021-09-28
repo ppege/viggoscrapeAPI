@@ -1,6 +1,5 @@
 """Scans for assignments on viggo using requests and the POST method."""
 import re
-from flask.globals import request
 import requests
 from requests import Session
 import json
