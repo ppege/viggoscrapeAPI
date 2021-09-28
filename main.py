@@ -40,8 +40,10 @@ def scrape():
     if error_list != []:
         errors = "<br>".join(error_list)
         return f"Error(s) ocurred:<br>{errors}"
+    if request.args['subdomain'] == '':
+        return "Subdomain field is empty."
 
-    
+    print(request.args['subdomain'])
     return jsonify(
         get_assignments(
             request.args['subdomain'],
