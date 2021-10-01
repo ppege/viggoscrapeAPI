@@ -8,37 +8,13 @@
                 margin: 0;
                 padding:2em;
                 font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-                color: rgb(255, 255, 255);
+                color: rgb(180, 180, 180);
                 font-size: 1.2em;
                 background-color: rgb(54, 57, 63);
-            }
-            /*
-            * Formatting the header area
-            */
-            header {
-                background-color: #DFB887;
-                height: 35px;
-                width: 100%;
-                opacity: .9;
-                margin-bottom: 10px;
             }
             .container {
                 width: 1200px;
                 margin: 0 auto;
-            }
-            div.home {
-                padding: 10px 0 30px 0;
-                background-color: #E6E6FA;
-                -webkit-border-radius: 6px;
-                -moz-border-radius: 6px;
-                        border-radius: 6px;
-            }
-            div.about {
-                padding: 10px 0 30px 0;
-                background-color: #E6E6FA;
-                -webkit-border-radius: 6px;
-                -moz-border-radius: 6px;
-                        border-radius: 6px;
             }
             code {
                 background-color: rgb(36, 36, 36);
@@ -46,8 +22,16 @@
                 border-radius: 5px;
             }
             iframe {
-                background-color: rgb(255, 255, 255);
+                height:100%;
+                width:100%;
+                background-color: white;
+                padding:1px;
+                -webkit-appearance: none; 
+                -moz-appearance: none; 
+                border-radius: 5px;
+                border: 0px solid rgb(109, 109, 109);
             }
+
             input {
                 background-color: rgb(36, 36, 36);
                 color:rgb(255, 255, 255);
@@ -61,34 +45,29 @@
                 font-size: 1.5em;
                 text-align: left;
                 margin-top: 40px;
-                letter-spacing: -1px;
             }
-            h3 {
-                font-size: 1.7em;
-                font-weight: 100;
-                margin-top: 30px;
-                text-align: center;
-                letter-spacing: -1px;
-                color: #999;
+            button {
+                background-color: rgb(36, 36, 36);
+                color:rgb(255, 255, 255);
+                padding: 4px;
+                -webkit-appearance: none; 
+                -moz-appearance: none; 
+                border-radius: 5px;
+                border: 0px solid rgb(109, 109, 109);
             }
-            .menu {
-                float: right;
-                margin-top: 8px;
-            }
-            .menu li {
-                display: inline;
-            }
-            .menu li + li {
-                margin-left: 35px;
-            }
-            .menu li a {
-                color: #444;
-                text-decoration: none;
+            #Logo img {
+            width: 50px;
+            height: 50px;
+            float: left;
+            padding-right: 10px;
             }
         </style>
     </head>
     <body>
         <div class="container">
+            <div id="Logo">
+                <img src="/static/favicon.ico">
+            </div>
             <h1>
                 Viggoscrape API
             </h1>
@@ -107,28 +86,42 @@
                 Demo form
             </h2>
             <p>
-                Filling out this form will send you to the url with the info typed in for you.
+                Filling out this form will show you your current assignments in JSON format.
             </p>
             <script>
-                function showIframe(url) {
-                    var iframe = document.createElement('iframe');
-                    iframe.style.display = "none";
-                    iframe.src = url;
-                    document.body.appendChild(iframe);
+                function copyText() {
+                    /* Get the text field */
+                    var copyText = document.getElementById("myInput");
+
+                    /* Select the text field */
+                    copyText.select();
+                    copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+                    /* Copy the text inside the text field */
+                    navigator.clipboard.writeText(copyText.value);
+                }
+                function fillTextBox() {
+                    var subdomain = document.getElementById("subdomain").value
+                    var username = document.getElementById("username").value
+                    var password = document.getElementById("password").value
+                    var url = `https://viggoscrape.xyz/api/v1/scrape?subdomain=${subdomain}&username=${username}&password=${password}`
+                    document.getElementById("my_iframe").src = url;
+                    document.getElementById("myInput").value = url;
                 }
             </script>
-            <div style="width: 180px; float:left; height:100px; margin:10px">
-                <form onsubmit="showIframe()">
-                    <label for="subdomain">Subdomain:</label><br>
-                    <input type="text" id="subdomain" name="subdomain"><br><br>
-                    <label for="username">Username:</label><br>
-                    <input type="text" id="username" name="username"><br><br>
-                    <label for="password">Password:</label><br>
-                    <input type="password" id="password" name="password"><br><br>
-                    <input type="submit" value="Submit">
-                </form>
+            <div style="float:left;">
+                <label for="subdomain">Subdomain:</label><br>
+                <input type="text" id="subdomain" name="subdomain"><br><br>
+                <label for="username">Username:</label><br>
+                <input type="email" id="username" name="username"><br><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password"><br><br>
+                <button onclick="fillTextBox()">Submit</button>
             </div>
-            <div id="iframediv" style="width: 120px; float:left; height:120px; margin:10px">
+            <div class="holds-the-iframe" id="iframediv" style="width: 1000px; height:300px; float:left; padding-left:10px">
+                <iframe name="my_iframe" id="my_iframe" src="/placeholder"></iframe>
+                <input type="text" value="Your url will appear here" id="myInput" style="width: 800px;">
+                <button onclick="copyText()">Copy</button>
             </div>
         </div>
     </body>

@@ -28,6 +28,10 @@ def favicon():
     return send_from_directory(os.path.join(app.root_path, 'static'),
                                 'favicon.ico', mimetype='image/vnc.microsoft.icon')
 
+@app.route('/placeholder')
+def placeholder():
+    return render_template('placeholder.html')
+
 @app.route('/api/v1/scrape', methods=['GET'])
 def scrape():
     error_list = []
