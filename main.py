@@ -47,7 +47,7 @@ def scrape():
         }
         return jsonify(errors)
     if request.args['subdomain'] == '':
-        return jsonify("Subdomain field is empty.")
+        return jsonify({"errors": ["Subdomain field is empty."]})
 
     return jsonify(
         get_assignments(
