@@ -135,4 +135,4 @@ def get_assignments(info):
         description = format_links(link_in_post, description)
         assignment_data['description'].append(description)
 
-    return json.dumps(assignment_data, indent = 4)
+    return assignment_data
