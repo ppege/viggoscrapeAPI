@@ -18,6 +18,7 @@ from flask import render_template, request, jsonify, send_from_directory, Flask
 import os
 
 app = Flask(__name__)
+app.config['JSONIFY_PRETTYPRINT_REGULAR'] = True
 
 @app.route('/', methods=['GET'])
 def home():
