@@ -121,7 +121,7 @@ def get_assignments(info):
         "files": [],
         "file_names": [],
         "url": [],
-        "errors": []
+        "errors": None
     }
     links = get_links(info)
     if type(links) is not list:
