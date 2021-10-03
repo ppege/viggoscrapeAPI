@@ -4,10 +4,11 @@ import requests
 from requests import Session
 import json
 
-def get_links(subdomain, info):
+def get_links(info):
     """Gets all assignment links from viggo's assignment page."""
     with Session() as s: # pylint: disable=invalid-name
-        login_data = {"UserName": info["user_name"], "Password": info["password"]}
+        login_data = {"UserName": info["username"], "Password": info["password"]}
+        subdomain = info["subdomain"]
         try:
             s.post(f"https://{subdomain}.viggo.dk/Basic/Account/Login", login_data)
         except requests.exceptions.SSLError:
@@ -101,20 +102,17 @@ def format_links(link_in_post, description):
             if target[j] != href[j]:
                 description = description.replace(target[j], '').replace(href[j], f"[{target[j]}]({href[j]})")
     return description
-def scrape_page(subdomain, link, login_info):
+def scrape_page(link, info):
     """Scrapes the contents of a viggo assignment page."""
     with Session() as s: # pylint: disable=invalid-name
-        login_data = {"UserName": login_info["user_name"], "Password": login_info["password"]}
+        login_data = {"UserName": info["username"], "Password": info["password"]}
+        subdomain = info["subdomain"]
         s.post(f"https://{subdomain}.viggo.dk/Basic/Account/Login", login_data)
         home_page = s.get(f"https://{subdomain}.viggo.dk/Basic/HomeworkAndAssignment/Details/{link}/#modal")
     return home_page
 
-def get_assignments(subdomain, info):
+def get_assignments(info):
     """Function that scans assignments then returns each element in a dictionary."""
-    login_info = {
-        "user_name": info['USERNAME'],
-        "password": info['PASSWORD']
-    }
     assignment_data = {
         "subject": [],
         "time": [],
@@ -122,14 +120,15 @@ def get_assignments(subdomain, info):
         "author": [],
         "files": [],
         "file_names": [],
-        "url": []
+        "url": [],
+        "errors": []
     }
-    links = get_links(subdomain, login_info)
+    links = get_links(info)
     if type(links) is not list:
-        return links
+        return {"errors": [links]}
     for i in enumerate(links):
         i = i[0]
-        home_page = scrape_page(subdomain, links[i], login_info)
+        home_page = scrape_page(links[i], info)
         assignment_data, description = extract_data(links[i], home_page, assignment_data)
         link_in_post, double_link = get_links_in_post(description)
         description = remove_hex(description, double_link, link_in_post)

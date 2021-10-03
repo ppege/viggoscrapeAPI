@@ -42,19 +42,16 @@ def scrape():
     if 'password' not in request.args:
         error_list.append("No password provided")
     if error_list != []:
-        errors = "<br>".join(error_list)
-        return f"Error(s) ocurred:<br>{errors}"
+        errors = {
+            "errors": error_list
+        }
+        return jsonify(errors)
     if request.args['subdomain'] == '':
-        return "Subdomain field is empty."
+        return jsonify("Subdomain field is empty.")
 
-    print(request.args['subdomain'])
     return jsonify(
         get_assignments(
-            request.args['subdomain'],
-            {
-                "USERNAME": request.args['username'],
-                "PASSWORD": request.args['password']
-            }
+            request.args
         )
     )
 
