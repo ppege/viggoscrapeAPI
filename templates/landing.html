@@ -50,8 +50,20 @@
                     var password = document.getElementById("password").value
                     var url = `https://viggoscrape.xyz/api/v1/scrape?subdomain=${subdomain}&username=${username}&password=${password}`
                     triggerLoading(url);
+		    document.getElementById("myInput").type = "password";
                     document.getElementById("myInput").value = url;
                 }
+		function determineChecked() {
+		    var checkBox = document.getElementById("myCheck");
+		    if (checkBox.checked == true){
+			showUrl()
+		    } else {
+			hideUrl()
+		    }
+		function showUrl() {
+		    document.getElementById("myInput").type = "text";
+		function hideUrl() {
+		    document.getElementById("myInput").type = "password";
                 function triggerLoading(url) {
                     var placeholder = document.createElement("div");
                     placeholder.innerHTML = `
@@ -123,7 +135,8 @@
                 <label for="username">Username:</label><br>
                 <input type="email" id="username" name="username"><br><br>
                 <label for="password">Password:</label><br>
-                <input type="password" id="password" name="password"><br><br>
+                <input type="password" id="password" name="password"><br>
+		<label class="checkbox"><input type="checkbox" name="myCheck" id="myCheck" onclick="determineChecked()">Show URL?</label><br>
                 <button class="button" style="width:100%" onclick="fillTextBox()">Submit</button>
             </div>
             <div id="outputdiv" style="width: 1000px; height:300px; float:left; padding-left:10px">
@@ -134,7 +147,6 @@
                     <input type="text" value="Your URL will appear here." id="myInput" style="float:left; width:80%; height:100%">
                     <button class="button" style="float:right; width:19.2%; line-height:140%;" onclick="copyText()">Copy</button>
                 </div>
-                
             </div>
         </div>
     </body>
