@@ -24,6 +24,10 @@ app.config['JSONIFY_PRETTYPRINT_REGULAR'] = True
 def home():
     return render_template('landing.html')
 
+@app.route('/old', methods=['GET'])
+def homeold():
+    return render_template('landing-old.html')
+
 @app.route('/favicon.ico')
 def favicon():
     return send_from_directory(os.path.join(app.root_path, 'static'),
