@@ -6,6 +6,7 @@ body {
     font-size: 1.2em;
     background-color: rgb(54, 57, 63);
 }
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
 .container {
     /* width: 1200px; */
     margin: 0 auto;
@@ -83,6 +84,7 @@ label.checkbox {
     margin: 2px 0;
     display: block;
     height: 24px;
+}
 h2 {
     font-size: 1.5em;
     text-align: left;

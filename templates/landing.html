@@ -17,7 +17,7 @@
             <p>
                 An API for reading Viggo assignments.
             </p>
-            <img src="/static/hard.jpg">
+            <img src="/static/hard.jpg" width="500" height="90">
             <h2>
                 Usage example
             </h2>
@@ -50,7 +50,7 @@
                     var password = document.getElementById("password").value
                     var url = `https://viggoscrape.xyz/api/v1/scrape?subdomain=${subdomain}&username=${username}&password=${password}`
                     triggerLoading(url);
-		    document.getElementById("myInput").type = "password";
+                    determineChecked();
                     document.getElementById("myInput").value = url;
                 }
 		function determineChecked() {
@@ -60,14 +60,17 @@
 		    } else {
 			hideUrl()
 		    }
+        }
 		function showUrl() {
 		    document.getElementById("myInput").type = "text";
+        }
 		function hideUrl() {
 		    document.getElementById("myInput").type = "password";
-                function triggerLoading(url) {
-                    var placeholder = document.createElement("div");
-                    placeholder.innerHTML = `
-                    <div class="loadingio-spinner-rolling-n3l5jqwkb9o"><div class="ldio-4gvm8sn7gdt">
+        }
+        function triggerLoading(url) {
+            var placeholder = document.createElement("div");
+            placeholder.innerHTML = `
+<div class="loadingio-spinner-rolling-n3l5jqwkb9o"><div class="ldio-4gvm8sn7gdt">
 <div></div>
 </div></div>
 <style type="text/css">
