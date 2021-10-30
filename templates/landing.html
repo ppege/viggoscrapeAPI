@@ -5,15 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Viggoscrape API</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style3.css') }}">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-        <style>
-            canvas{
-                position: absolute;
-                top:0;
-                left:0;
-                z-index:-1;
-            }
-        </style>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     </head>
     <body>
         <section class="hero is-fullheight">
@@ -25,7 +19,7 @@
                     <a class="navbar-item">
                       <img src="/favicon.ico" alt="Logo">
                     </a>
-                    <span class="navbar-burger" data-target="navbarMenuHeroC">
+                    <span class="navbar-burger" id="navbarBurger" data-target="navbarMenuHeroC">
                       <span></span>
                       <span></span>
                       <span></span>
@@ -43,35 +37,54 @@
                         Documentation
                       </a>
                       <span class="navbar-item">
-                        <a class="button is-success is-inverted">
+                        <a class="button is-success is-inverted" id="openSource">
                           <span class="icon">
                             <i class="fab fa-github"></i>
                           </span>
-                          <span>Download</span>
+                          <span>Visit Source</span>
                         </a>
                       </span>
                     </div>
                   </div>
+                  <script src="/static/scripts/navbarButtons.js"></script>
+
                 </div>
               </header>
             </div>
           
             <!-- Hero content: will be in the middle -->
             <div class="hero-body">
+                <!-- <div class="bg"></div> -->
               <div class="container has-text-centered">
-                <p class="title">
-                  Viggoscrape API
-                </p>
-                <p class="subtitle">
-                  An API for reading Viggo assignments.
-                </p>
-                <button class="button" onclick="console.log('hello')">Try it out!</button>
-                <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r68/three.min.js"></script>
-                <script src="/static/scripts/particles.js"></script>
-                <div class="waves">
-                    <canvas width="320" height="486" style="width: 320px; height: 486px; color:white"></canvas>
+                <h1 class="title is-1">Viggoscrape API</h1>
+                <h2 class="subtitle">An API for reading Viggo assignments.</h2>
+                <div class="modal">
+                  <div class="modal-background"></div>
+                  <div class="modal-card">
+                    <header class="modal-card-head">
+                      <p class="modal-card-title">Viggoscrape Test</p>
+                      <button class="delete modal-close-right" aria-label="close"></button>
+                    </header>
+                    <section class="modal-card-body">
+                      <div class="box" id="outputContainer">
+                        <h1 class="title is-4">Output</h1>
+                        <textarea class="textarea" id="output" style="font-family: 'Courier New', Courier, monospace;">Your output will appear here.</textarea>
+                        <progress class="progress is-small is-primary is-hidden" max="100">Loading...</progress>
+                      </div>
+                      <input class="input" type="text" placeholder="Your URL will appear here." id="urlInput" readonly>
+                      <button class="button is-danger" id="hideShowURL">Show URL</button>
+                      <button class="button is-link" id="copyButton">Copy</button>
+                    </section>
+                    <footer class="modal-card-foot">
+                      <input class="input" id="subdomainInput" type="text" placeholder="Subdomain">
+                      <input class="input" id="usernameInput" type="text" placeholder="Username">
+                      <input class="input" id="passwordInput" type="password" placeholder="Password">
+                      <button class="button is-success" id="scrapeButton">Scrape!</button>
+                    </footer>
+                  </div>
                 </div>
+                <button class="button is-medium is-outlined" id="showModal">Try it out!</button>
+                <script src="/static/scripts/modalButtons.js"></script>
               </div>
             </div>
           </section>
