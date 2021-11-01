@@ -18,10 +18,10 @@ $("#scrapeButton").click(function() {
     let fetchUrl = "/api/v1/scrape?subdomain=" + subdomain + "&username=" + username + "&password=" + password;
     urlInput.value = fetchUrl;
     fetch(fetchUrl)
-        .then(response => response.json())
+        .then(response => response.text())
         .then(data => {
             $(".progress").addClass("is-hidden");
             let node = document.getElementById("output");
-            node.innerHTML = JSON.stringify(data);
+            node.innerHTML = data;
         });
 });
