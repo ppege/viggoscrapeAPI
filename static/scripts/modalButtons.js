@@ -1,6 +1,3 @@
-$("#showModal").click(function() {
-    $(".modal").addClass("is-active");  
-});
 $(".modal-close-right").click(function() {
     $(".modal").removeClass("is-active");
 });

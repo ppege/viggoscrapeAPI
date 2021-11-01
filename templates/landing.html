@@ -5,20 +5,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Viggoscrape API</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style3.css') }}">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+        <link rel="stylesheet" type="text/css" href="/static/styles/background.css">
+        <link rel="stylesheet" href="/static/styles/main.css">
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     </head>
     <body>
-        <section class="hero is-fullheight">
+        <section class="hero is-fullheight" id="hero">
             <!-- Hero head: will stick at the top -->
             <div class="hero-head">
               <header class="navbar">
                 <div class="container">
                   <div class="navbar-brand">
-                    <a class="navbar-item">
-                      <img src="/favicon.ico" alt="Logo">
-                    </a>
                     <span class="navbar-burger" id="navbarBurger" data-target="navbarMenuHeroC">
                       <span></span>
                       <span></span>
@@ -56,6 +53,7 @@
             <div class="hero-body">
                 <!-- <div class="bg"></div> -->
               <div class="container has-text-centered">
+                <img src="/favicon.ico" alt="Logo" height="100" width="100">
                 <h1 class="title is-1">Viggoscrape API</h1>
                 <h2 class="subtitle">An API for reading Viggo assignments.</h2>
                 <div class="modal">
@@ -87,6 +85,15 @@
                 <script src="/static/scripts/modalButtons.js"></script>
               </div>
             </div>
+            <div class="hero-foot">
+              <div class="columns is-mobile is-centered" style="position:relative; top:-15px">
+                <input type="checkbox" id="toggle" class="toggle--checkbox">
+                <label for="toggle" class="toggle--label">
+                  <span class="toggle--label-background"></span>
+                </label>
+              </div>
+            </div>
+            <script src="/static/scripts/main.js"></script>
           </section>
     </body>
 </html>
