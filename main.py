@@ -39,24 +39,33 @@ def placeholder():
 
 @app.route('/api/v1/scrape', methods=['GET'])
 def scrape():
+    args = dict(request.args)
     error_list = []
-    if 'subdomain' not in request.args:
+    if 'date' not in args:
+        args['date'] = None
+    else:
+        sa = args['date'].split('-')
+        if len(sa) != 3:
+            error_list.append("Invalid date format: please use DD-MM-YY")
+        else:
+            args['date'] = f"{sa[1]}-{sa[0]}-{sa[2]}"
+    if 'subdomain' not in args:
         error_list.append("No subdomain provided")
-    if 'username' not in request.args:
+    if 'username' not in args:
         error_list.append("No username provided")
-    if 'password' not in request.args:
+    if 'password' not in args:
         error_list.append("No password provided")
     if error_list != []:
         errors = {
             "errors": error_list
         }
         return jsonify(errors)
-    if request.args['subdomain'] == '':
+    if args['subdomain'] == '':
         return jsonify({"errors": ["Subdomain field is empty."]})
 
     return jsonify(
         get_assignments(
-            request.args
+            args
         )
     )
 
