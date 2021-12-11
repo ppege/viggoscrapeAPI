@@ -41,7 +41,11 @@ def extract_data(link, home_page, assignment_data):
         '\\xc3\\x98': 'Ø',
         '&nbsp;': '',
         '<em>': '',
-        '</em>': ''
+        '</em>': '',
+	'<ol>': '',
+	'</ol>': '',
+	'<li>': '• ',
+	'</li>': '\r'
     }
     for string, replacement in replacements.items():
         home_page = home_page.replace(string, replacement)
