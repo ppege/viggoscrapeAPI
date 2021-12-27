@@ -42,12 +42,6 @@ body {
     transition: all 0.8s
 }
 
-.button:active:after {
-    padding: 0;
-    margin: 0;
-    opacity: 1;
-    transition: 0s
-}
 code {
     background-color: rgb(36, 36, 36);
     font-family: 'Courier New', Courier, monospace;

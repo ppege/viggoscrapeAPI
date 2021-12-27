@@ -6,94 +6,46 @@
         <title>Viggoscrape API</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" type="text/css" href="/static/styles/background.css">
+        <link rel="stylesheet" type="text/css" id="dark-css" href="">
         <link rel="stylesheet" href="/static/styles/main.css">
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    </head>
-    <body>
+        <script src="/static/scripts/navbar.js"></script>
+        <script src="/static/scripts/navbarButtons.js"></script>
+        <script src="/static/scripts/home.js"></script>
+      </head>
+    <body class="has-navbar-fixed-top">
+      <div id="page">
         <section class="hero is-fullheight" id="hero">
-            <!-- Hero head: will stick at the top -->
-            <div class="hero-head">
-              <header class="navbar">
-                <div class="container">
-                  <div class="navbar-brand">
-                    <span class="navbar-burger" id="navbarBurger" data-target="navbarMenuHeroC">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                    </span>
-                  </div>
-                  <div id="navbarMenuHeroC" class="navbar-menu">
-                    <div class="navbar-end">
-                      <a class="navbar-item is-active">
-                        Home
-                      </a>
-                      <a class="navbar-item">
-                        Examples
-                      </a>
-                      <a class="navbar-item">
-                        Documentation
-                      </a>
-                      <span class="navbar-item">
-                        <a class="button is-success is-inverted" id="openSource">
-                          <span class="icon">
-                            <i class="fab fa-github"></i>
-                          </span>
-                          <span>Visit Source</span>
-                        </a>
-                      </span>
-                    </div>
-                  </div>
-                  <script src="/static/scripts/navbarButtons.js"></script>
-
-                </div>
-              </header>
+          <!-- Hero head: will stick at the top -->
+          <div class="hero-head is-danger">
+            <!--Navigation bar-->
+            <nav id="navbar-place" class="navbar is-fixed-top has-background-danger">
+              
+            </nav>
+            <script>
+            $(function(){
+              $("#navbar-place").load("_nav.html", function() {
+                $("#home").addClass("is-active");
+              });
+            });
+            </script>
+            <!--end of Navigation bar-->
+          </div>
+        
+          <!-- Hero content: will be in the middle -->
+          <div class="hero-body">
+            <div class="container has-text-centered">
+              <img src="/favicon.ico" alt="Logo" height="100" width="100">
+              <h1 class="title is-1">Viggoscrape API</h1>
+              <h2 class="subtitle">An API for reading Viggo assignments.</h2>
+              <button class="button is-large is-outlined" id="gotoDemo">Try it out!</button>
             </div>
-          
-            <!-- Hero content: will be in the middle -->
-            <div class="hero-body">
-                <!-- <div class="bg"></div> -->
-              <div class="container has-text-centered">
-                <img src="/favicon.ico" alt="Logo" height="100" width="100">
-                <h1 class="title is-1">Viggoscrape API</h1>
-                <h2 class="subtitle">An API for reading Viggo assignments.</h2>
-                <div class="modal">
-                  <div class="modal-background"></div>
-                  <div class="modal-card">
-                    <header class="modal-card-head">
-                      <p class="modal-card-title">Viggoscrape Test</p>
-                      <button class="delete modal-close-right" aria-label="close"></button>
-                    </header>
-                    <section class="modal-card-body">
-                      <div class="box" id="outputContainer">
-                        <h1 class="title is-4">Output</h1>
-                        <textarea class="textarea" id="output" style="font-family: 'Courier New', Courier, monospace;">Your output will appear here.</textarea>
-                        <progress class="progress is-small is-primary is-hidden" max="100">Loading...</progress>
-                      </div>
-                      <input class="input" type="text" placeholder="Your URL will appear here." id="urlInput" readonly>
-                      <button class="button is-danger" id="hideShowURL">Show URL</button>
-                      <button class="button is-link" id="copyButton">Copy</button>
-                    </section>
-                    <footer class="modal-card-foot">
-                      <input class="input" id="subdomainInput" type="text" placeholder="Subdomain">
-                      <input class="input" id="usernameInput" type="text" placeholder="Username">
-                      <input class="input" id="passwordInput" type="password" placeholder="Password">
-                      <button class="button is-success" id="scrapeButton">Scrape!</button>
-                    </footer>
-                  </div>
-                </div>
-                <button class="button is-medium is-outlined" id="showModal">Try it out!</button>
-                <script src="/static/scripts/modalButtons.js"></script>
-              </div>
-            </div>
-            <div class="hero-foot">
-              <div class="columns is-mobile is-centered" style="position:relative; top:-15px">
-                <input type="checkbox" id="toggle" class="toggle--checkbox">
-                <label for="toggle" class="toggle--label">
-                  <span class="toggle--label-background"></span>
-                </label>
-              </div>
-            </div>
-            <script src="/static/scripts/main.js"></script>
-          </section>
+          </div>
+          <script src="/static/scripts/home.js"></script>
+        </section>
+        <section id="demoHero">
+        </section>
+        <script src="/static/scripts/modalButtons.js"></script>
+      </div>
     </body>
 </html>
