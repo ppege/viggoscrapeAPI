@@ -1,4 +1,5 @@
 $("#gotoDemo").click(function() {
+    console.log("blalba");
     $("#demoHero").load("_demo.html");
     $([document.documentElement, document.body]).animate({
         scrollTop: $("#demoHero").offset().top
@@ -31,7 +32,7 @@ function changeBackground(theme) {
         minWidth: 200.00,
         scale: 1.00,
         scaleMobile: 1.00,
-        points: 20.00,
+        points: 12.00,
         maxDistance: 28.00,
         spacing: 20.00,
         showDots: false,
@@ -47,7 +48,7 @@ function changeBackground(theme) {
   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
     const newColorScheme = event.matches ? "dark" : "light";
     if (newColorScheme === 'dark') {
-      changeBackground('dark')
+      changeBackground('dark');
     } else {
       changeBackground('light');
     }
