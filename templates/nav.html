@@ -1,7 +1,8 @@
+
     <div class="container">
       <div class="navbar-brand">
         <a class="navbar-item" href="/">
-            <img src="/static/favicon.ico" style="padding-right:5px" alt="Viggoscrape: Scrape viggo assignments" width="32" height="32" id="logobrand">
+            <img src="/static/favicon.ico" style="padding-right:5px" alt="logo" width="32" height="32" id="logobrand">
             <p class="is-1" style="padding: left 4px;">Viggoscrape</p>
         </a>
         <span class="navbar-burger" id="navbarBurger" data-target="navbarMenuHeroC">
@@ -18,15 +19,38 @@
           <a class="navbar-item" id="examples" href="/examples">
             Examples
           </a>
+          <a class="navbar-item" id="demo" href="/demo">
+            Demo
+          </a>
           <a class="navbar-item" id="documentation" href="/documentation">
             Documentation
           </a>
         </div>
         <div class="navbar-end">
+          <div class="navbar-item has-dropdown" id="dropdown">
+            <a class="navbar-link" >
+              More
+            </a>
+            <div class="navbar-dropdown">
+              <a class="navbar-item">
+                About
+              </a>
+              <a class="navbar-item">
+                Jobs
+              </a>
+              <a class="navbar-item">
+                Contact
+              </a>
+              <hr class="navbar-divider">
+              <a class="navbar-item">
+                Report an issue
+              </a>
+            </div>
+          </div>
           <span class="navbar-item">
             <div class="buttons">
               <!-- <button class="button is-dark" id="darkmode">Dark mode</button> -->
-              <a class="button is-dark"id="openSource">
+              <a class="button is-dark" id="openSource" onclick="window.open('https://github.com/nangurepo/viggoscrapeapi', '_blank').focus();">
                 <span class="icon">
                   <i class="fab fa-github"></i>
                 </span>
@@ -39,3 +63,4 @@
       <script src="/static/scripts/navbarButtons.js"></script>
     </div>
     <script src="/static/scripts/navbar.js"></script>
+    

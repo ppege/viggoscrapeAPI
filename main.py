@@ -40,7 +40,7 @@ def nav():
     """Return the nav page"""
     return render_template("nav.html")
 
-@app.route('/_demo.html')
+@app.route('/demo')
 def demo():
     """Return the demo hero"""
     return render_template("demo.html")
