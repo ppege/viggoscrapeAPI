@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding:2em;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    background-color: rgb(54, 57, 63);
+}
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
+.container {
+    /* width: 1200px; */
+    margin: 0 auto;
+}
+.button {
+    position: relative;
+    background-color: #4CAF50;
+    border: none;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 175px;
+    opacity: 0.8;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.button:hover {opacity: 1}
+
+.button:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+code {
+    background-color: rgb(36, 36, 36);
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+}
+iframe {
+    height:100%;
+    width:100%;
+    background-color: rgba(255, 255, 255, 0);
+    padding:1px;
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    border-radius: 5px;
+    border: 0px solid rgb(109, 109, 109);
+}
+input:not([type="checkbox"]) {
+    background-color: rgb(36, 36, 36);
+    color:rgb(255, 255, 255);
+    padding: 4px;
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    border-radius: 1px;
+    border: 0px solid rgb(109, 109, 109);
+    height: 2em;
+}
+input[type='checkbox'] {
+    width: 24px;
+    height: 24px;
+    vertical-align: bottom;
+}
+label.checkbox {
+    vertical-align: top;
+    line-height: 24px;
+    margin: 2px 0;
+    display: block;
+    height: 24px;
+}
+h2 {
+    font-size: 1.5em;
+    text-align: left;
+    margin-top: 40px;
+}
+#Logo img {
+width: 50px;
+height: 50px;
+float: left;
+padding-right: 10px;
+}

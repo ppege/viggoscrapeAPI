@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Viggoscrape API</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" type="text/css" href="/static/styles/background.css">
+        <link rel="stylesheet" type="text/css" id="dark-css" href="">
+        <link rel="stylesheet" href="/static/styles/main.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="/static/scripts/navbar.js"></script>
+        <script src="/static/scripts/navbarButtons.js"></script>
+        <script src="/static/scripts/home.js"></script>
+      </head>
+    <body class="has-navbar-fixed-top">
+      <div id="page">
+        <section class="hero is-fullheight" id="hero">
+          <!-- Hero head: will stick at the top -->
+          <div class="hero-head is-danger">
+            <!--Navigation bar-->
+            <nav id="navbar-place" class="navbar is-fixed-top has-background-danger">
+              
+            </nav>
+            <script>
+            $(function(){
+              $("#navbar-place").load("_nav.html", function() {
+                $("#home").addClass("is-active");
+              });
+            });
+            </script>
+            <!--end of Navigation bar-->
+          </div>
+        
+          <!-- Hero content: will be in the middle -->
+          <div class="hero-body">
+            <div class="container has-text-centered">
+              <img src="/favicon.ico" alt="Logo" height="100" width="100">
+              <h1 class="title is-1">Viggoscrape API</h1>
+              <h2 class="subtitle">An API for reading Viggo assignments.</h2>
+              <button class="button is-large is-outlined" id="gotoDemo">Try it out!</button>
+            </div>
+          </div>
+          <script src="/static/scripts/home.js"></script>
+        </section>
+        <section id="demoHero">
+        </section>
+        <script src="/static/scripts/modalButtons.js"></script>
+      </div>
+    </body>
+</html>
