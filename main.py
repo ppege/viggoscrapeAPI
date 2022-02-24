@@ -15,7 +15,10 @@
 
 # [START gae_flex_quickstart]
 import os
+<<<<<<< HEAD
 import json
+=======
+>>>>>>> origin/server
 from flask import render_template, request, jsonify, send_from_directory, Flask
 from scraper import get_assignments
 import scraper_v2
@@ -48,7 +51,11 @@ def placeholder():
 def examples():
     """Return the examples page"""
     # return render_template("examples.html")
+<<<<<<< HEAD
     return "UNDER CONSTRUCTION!"
+=======
+    return "UNDER CONSTRUCTION!!!"
+>>>>>>> origin/server
 
 @app.route('/_nav.html')
 def nav():
@@ -60,6 +67,7 @@ def demo():
     """Return the demo hero"""
     return render_template("demo.html")
 
+<<<<<<< HEAD
 @app.route('/api/v2/assassin', methods=['GET'])
 def assassin():
     with open("values.json", "r") as file:
@@ -76,6 +84,8 @@ def assassin():
             'ORIGIN': None
         })
 
+=======
+>>>>>>> origin/server
 @app.route('/api/v1/scrape', methods=['GET'])
 def scrape():
     """Route to access scraper v1. Outdated!!"""
@@ -145,5 +155,9 @@ def format_args(args):  # sourcery skip: remove-redundant-if
 if __name__ == '__main__':
     # This is used when running locally only. When deploying to Google App
     # Engine, a webserver process such as Gunicorn will serve the app.
+<<<<<<< HEAD
     app.run(host='127.0.0.1', port=8080, debug=True)
+=======
+    app.run(host='0.0.0.0')
+>>>>>>> origin/server
 # [END gae_flex_quickstart]
