@@ -1,0 +1,4772 @@
+{
+    "LEGEND HAMMER": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 5,
+        "OBTAIN": "Trading / Timed Shop",
+        "ORIGIN": "Timed Shop / In Heroic Case since 2018"
+    },
+    "OKAMI STRIKER": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 7,
+        "OBTAIN": "Trading / Unboxing",
+        "ORIGIN": "Introduced to the Heroic Case in 2020"
+    },
+    "ELEGANT SABER": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 7,
+        "OBTAIN": "Trading / Crafting",
+        "ORIGIN": "Introduced in 2019 as a craftable knife"
+    },
+    "DARKHEART": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 10,
+        "OBTAIN": "Trading / Timed Shop",
+        "ORIGIN": "Introduced to the Timed Shop in 2020"
+    },
+    "DEMON HEART": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 11,
+        "OBTAIN": "Trading / Crafting",
+        "ORIGIN": "Introduced in 2018 as a craftable knife"
+    },
+    "RAINBOW SABER": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 11,
+        "OBTAIN": "Trading / Crafting",
+        "ORIGIN": "Introduced in 2019 as a craftable knife"
+    },
+    "RUNIC BLADE": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 13,
+        "OBTAIN": "Trading / Crafting",
+        "ORIGIN": "Introduced in 2019 as a craftable knife"
+    },
+    "DARK COMMANDER": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 15,
+        "OBTAIN": "Trading / Crafting",
+        "ORIGIN": "Introduced in 2019 as a craftable knife"
+    },
+    "VINE": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 15,
+        "OBTAIN": "Trading / Crafting",
+        "ORIGIN": "Introduced in 2020 as a craftable knife"
+    },
+    "WENDIGO": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 15,
+        "OBTAIN": "Trading / Crafting",
+        "ORIGIN": "Introduced in 2021 as a craftable knife"
+    },
+    "QUEEN OF HEARTS": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": 20,
+        "OBTAIN": "Trading / Crafting",
+        "ORIGIN": "Valentine Event 2022 Craftable Knife"
+    },
+    "WATER DEMON": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 20,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Summer Event 2021 Craftable Knife"
+    },
+    "ILLUMINA": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": 30,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Bought for 1,500 Robux in Shop (2020)"
+    },
+    "TWISTED": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 30,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Halloween 2020 Event Craftable Knife"
+    },
+    "MAGMA": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 32,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Dream Case (2017-2018)"
+    },
+    "FROSTBITE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 35,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Dream Case (2017-2018)"
+    },
+    "NEON ANCIENT": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 35,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Dream Case (2017-2018)"
+    },
+    "DREAMWALKER": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 40,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Craftable from 2017-2018"
+    },
+    "SPIRIT TRIDENT": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": 45,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2020 Event Craftable Knife"
+    },
+    "CRYOBEAST": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": 80,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Craftable during the 2019 Holiday Event"
+    },
+    "NORTHERN STAR": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": 90,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Craftable during the 2018 Holiday Event"
+    },
+    "INFERNAL GUARDIAN": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": "2,200",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Top 10 Competitive Prize (September 2020-February 2021)"
+    },
+    "BLACK HOLE": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": "2,500",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Top 10 Competitive Prize (May 2020-September 2020)"
+    },
+    "CHAMPION AXE II": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": "3,500",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Top 10 Competitive Prize (January 2019-August 2019)"
+    },
+    "CHAMPION AXE": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": "3,700",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Top 10 Competitive Prize (June 2018-January 2019)"
+    },
+    "VOID CHAMPION": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": "3,900",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Top 10 Competitive Prize (August 2019-May 2020)"
+    },
+    "CYBERTANK": {
+        "DEMAND": "NOT TRADABLE",
+        "VALUE": "NOT TRADABLE",
+        "OBTAIN": "Placing in the Top 10",
+        "ORIGIN": "Current Top 10 Competitive Prize"
+    },
+    "ONYX SCEPTER": {
+        "DEMAND": "NOT TRADABLE",
+        "VALUE": "NOT TRADABLE",
+        "OBTAIN": "Top 10 Clan Reward",
+        "ORIGIN": "Current Top 10 Clan Prize"
+    },
+    "NEBULA KNIGHT": {
+        "DEMAND": "NOT TRADABLE",
+        "VALUE": "NOT TRADABLE",
+        "OBTAIN": "UNOBTAINABLE",
+        "ORIGIN": "Top 10 Competitive Prize (February 2021-July 2021)"
+    },
+    "ARCALIBUR": {
+        "DEMAND": "NOT TRADABLE",
+        "VALUE": "NOT TRADABLE",
+        "OBTAIN": "UNOBTAINABLE",
+        "ORIGIN": "Top 10 Competitive Prize (July 2021-February 2021)"
+    },
+    "STARS": {
+        "DEMAND": "DEMAND",
+        "VALUE": "",
+        "OBTAIN": "COLOR DEFINITIONS",
+        "ORIGIN": ""
+    },
+    "\u2605\u2606\u2606\u2606\u2606": {
+        "DEMAND": "Very Low",
+        "VALUE": "",
+        "OBTAIN": "Black = Stable",
+        "ORIGIN": ""
+    },
+    "\u2605\u2605\u2606\u2606\u2606": {
+        "DEMAND": "Low",
+        "VALUE": "",
+        "OBTAIN": "Red = Lowering",
+        "ORIGIN": ""
+    },
+    "\u2605\u2605\u2605\u2606\u2606": {
+        "DEMAND": "Average",
+        "VALUE": "",
+        "OBTAIN": "Green = Raising",
+        "ORIGIN": ""
+    },
+    "\u2605\u2605\u2605\u2605\u2606": {
+        "DEMAND": "High",
+        "VALUE": "",
+        "OBTAIN": "Purple = Unstable",
+        "ORIGIN": ""
+    },
+    "\u2605\u2605\u2605\u2605\u2605": {
+        "DEMAND": "Very High",
+        "VALUE": "",
+        "OBTAIN": "Blue = Hyped",
+        "ORIGIN": ""
+    },
+    "ELEMENTAL SCIMITAR": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 3,
+        "OBTAIN": "Trading / Crafting",
+        "ORIGIN": "Introduced in 2020 as a craftable knife"
+    },
+    "PLASMA SLAYER": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 4,
+        "OBTAIN": "Trading / Timed Shop",
+        "ORIGIN": "Introduced to the Timed Shop in 2020"
+    },
+    "SAKURA": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 4,
+        "OBTAIN": "Trading / Timed Shop",
+        "ORIGIN": "Introduced to the Timed Shop in 2020"
+    },
+    "TECH SLICER": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 4,
+        "OBTAIN": "Trading/Timed Shop",
+        "ORIGIN": "Introduced to the Timed Shop in 2020"
+    },
+    "SPIDER": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 4,
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Elite Case since 2017"
+    },
+    "OBSIDIAN LORD": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 4,
+        "OBTAIN": "Trading / Unboxing",
+        "ORIGIN": "Elite Case since 2020"
+    },
+    "DARK AGE": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 5,
+        "OBTAIN": "Trading / Crafting",
+        "ORIGIN": "Introduced in 2018 as a craftable knife"
+    },
+    "SERAPH": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 5,
+        "OBTAIN": "Trading / Crafting",
+        "ORIGIN": "Introduced in 2018 as a craftable knife"
+    },
+    "DARK HORSE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 5,
+        "OBTAIN": "Trading / Crafting",
+        "ORIGIN": "Introduced in 2017 as a craftable knife"
+    },
+    "ENERGY SLICER": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 5,
+        "OBTAIN": "Trading / Crafting",
+        "ORIGIN": "Introduced in 2019 as a craftable knife"
+    },
+    "FANG": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 5,
+        "OBTAIN": "Trading / Crafting",
+        "ORIGIN": "Introduced in 2018 as a craftable knife"
+    },
+    "COSMIC EYE": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 5,
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Heroic Case since 2018"
+    },
+    "WRATH": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 5,
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Heroic Case since 2018"
+    },
+    "BEHEMOTH": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 5,
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Heroic Case since 2018"
+    },
+    "ONYX": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 5,
+        "OBTAIN": "Trading/Timed Shop",
+        "ORIGIN": "Heroic Case (2018-2021)"
+    },
+    "ENCHANTED JADE": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 5,
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Heroic Case since 2019"
+    },
+    "BEAM CORE": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 5,
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Elite Case since 2019"
+    },
+    "DUALITY": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 6,
+        "OBTAIN": "Trading / Crafting",
+        "ORIGIN": "Introduced in 2021 as a craftable knife"
+    },
+    "VORTEX": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 6,
+        "OBTAIN": "Trading / Unboxing",
+        "ORIGIN": "Heroic Case since 2021"
+    },
+    "VOID": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 7,
+        "OBTAIN": "Trading / Crafting",
+        "ORIGIN": "Introduced in 2019 as a craftable knife (formerly a Dream)"
+    },
+    "IMP": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 7,
+        "OBTAIN": "Trading / Crafting",
+        "ORIGIN": "Introduced in 2019 as a craftable knife"
+    },
+    "JADE MAIDEN": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 7,
+        "OBTAIN": "Trading / Crafting",
+        "ORIGIN": "Introduced in 2019 as a craftable knife"
+    },
+    "FLAMETHROWER": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 7,
+        "OBTAIN": "Trading / Crafting",
+        "ORIGIN": "Introduced in 2019 as a craftable knife"
+    },
+    "TOXIC BATTLEAXE": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 9,
+        "OBTAIN": "Trading / Crafting",
+        "ORIGIN": "Introduced in 2021 as a craftable knife"
+    },
+    "CUPID STAR": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": 5,
+        "OBTAIN": "Trading / Unboxing",
+        "ORIGIN": "Valentine 2022 Event (Valentine Case)"
+    },
+    "JADE CHAKRAM": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": "TO BE DETERMINED",
+        "OBTAIN": "Trading / Season Pass",
+        "ORIGIN": "Earned through the Season 12 pass"
+    },
+    "GEM PALADIN": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 3,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Season 11 pass"
+    },
+    "RGB KEYBOARD": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 3,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Holiday 2021 Season pass"
+    },
+    "PRESENT HAMMER": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 3,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2021 Event (Decorated Case)"
+    },
+    "SPIKE MACE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 3,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Halloween 2021 Season Pass"
+    },
+    "INFECTED SCYTHE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 3,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Halloween 2021 Event (Coffin Case)"
+    },
+    "OBLIVION": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 3,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Season 8 pass"
+    },
+    "LAVA LORD": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 3,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Season 7 pass"
+    },
+    "ROCKET POP": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 3,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Summer 2021 Event Craftable Knife"
+    },
+    "SPRING CHAKRAM": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 4,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Season 6 pass"
+    },
+    "FABERGE WAND": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 4,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Season 5 pass"
+    },
+    "STONE ANCIENT": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 4,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Spring Case (2021)"
+    },
+    "CLOVER CHAKRAM": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 4,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Season 4 pass"
+    },
+    "HEART SHREDDER": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 5,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Season 3 pass"
+    },
+    "FUSION WAND": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 6,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Buying the \"Dark Fusion Bundle\" Bundle"
+    },
+    "CHERRY KNIGHT": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 8,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Buying the Blossom Bundle (2021)"
+    },
+    "JOY": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 8,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2020 Event (Decorated Case)"
+    },
+    "ENDOFROST": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 8,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Season 2 pass"
+    },
+    "SEER WARRIOR": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 8,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Season 1 pass"
+    },
+    "ROCKET": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 8,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Bought for 20,000 tokens during June/July 2020"
+    },
+    "BLACK WIDOW": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 8,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Halloween 2020 Event (Coffin Case)"
+    },
+    "ICE ANCIENT": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 10,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Craftable knife from 2017 - 2019"
+    },
+    "RAINBOW GOOP": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 12,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Buying Rainbow Cloud Bundle (2021)"
+    },
+    "CRYOSHARD": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 12,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2019 Event (Jolly Case)"
+    },
+    "EARTH ELEMENTAL": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 15,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Craftable from 2017 - 2019"
+    },
+    "WIND ELEMENTAL": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 15,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Elite case (2017 - 2019)"
+    },
+    "FREEZENDO": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 15,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Craftable from 2017 - 2019"
+    },
+    "RAINBOWSEER": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 15,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Craftable from 2017 - 2019"
+    },
+    "FESTIVE SCYTHE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 20,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Bought with 20,000 tokens during Holiday 2019"
+    },
+    "WATER ELEMENTAL": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 25,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Craftable from 2017 - 2019"
+    },
+    "FIRE ELEMENTAL": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 30,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Craftable from 2017 - 2019"
+    },
+    "SHURIKEN": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": 35,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Bought with 1,400 Robux in Shop in 2020"
+    },
+    "GRIM SCYTHE": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": 50,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Craftable during the 2018 Halloween Event"
+    },
+    "INFERNO": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": 50,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Bought for 2,000 Robux in Shop in 2018"
+    },
+    "ROYAL DAGGER": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 110,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Top 100 Comp. Prize (July 2021-February 2022)"
+    },
+    "ASTRAL PRINCE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 160,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Top 100 Comp. Prize (February 2021-July 2021)"
+    },
+    "HEARTH": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": 180,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Craftable during the 2018 Holiday Event"
+    },
+    "HOLY GUARDIAN": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 215,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Top 100 Comp. Prize (September 2020-February 2021)"
+    },
+    "COMET": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 270,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Top 100 Comp. Prize (May 2020-September 2020)"
+    },
+    "GLORIOUS AXE": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": 350,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Top 100 Comp. Prize (June 2019-May 2020)"
+    },
+    "COMPETITOR BLADE II": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 380,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Top 100 Comp. Prize (January 2019-June 2019)"
+    },
+    "COMPETITOR BLADE": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": 470,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Top 100 Comp. Prize (June 2018-January 2019)"
+    },
+    "CHAMPION BLADE": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": "4,500",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Top 10 Comp. Prize (June 2017-June 2018)"
+    },
+    "CYBERSHOT": {
+        "DEMAND": "???",
+        "VALUE": "???",
+        "OBTAIN": "Placing in the Top 100",
+        "ORIGIN": "Current Top 100 Comp. Prize"
+    },
+    "ONYX TIER": {
+        "DEMAND": "NOT TRADABLE",
+        "VALUE": "NOT TRADABLE",
+        "OBTAIN": "UNOBTAINABLE",
+        "ORIGIN": "Top 25 Clan Prize (2019-2020)"
+    },
+    "ONYX CHAMPION": {
+        "DEMAND": "NOT TRADABLE",
+        "VALUE": "NOT TRADABLE",
+        "OBTAIN": "UNOBTAINABLE",
+        "ORIGIN": "Top 25 Clan Prize (2020-2021)"
+    },
+    "DIAMOND STAFF": {
+        "DEMAND": "NOT TRADABLE",
+        "VALUE": "NOT TRADABLE",
+        "OBTAIN": "Top 25 Clan Reward",
+        "ORIGIN": "Current Top 25 Clan Prize"
+    },
+    "BAN HAMMER": {
+        "DEMAND": "NOT TRADABLE",
+        "VALUE": "NOT TRADABLE",
+        "OBTAIN": "UNOBTAINABLE",
+        "ORIGIN": "Given out to Assassin! Team members"
+    },
+    "PROTON": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 1,
+        "OBTAIN": "Trading/Crafting/Shop/Unboxing",
+        "ORIGIN": "Elite Case"
+    },
+    "GILDED": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 1,
+        "OBTAIN": "Trading/Crafting/Shop/Unboxing",
+        "ORIGIN": "Case #1 (2016)"
+    },
+    "DOOMBRINGER": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 1,
+        "OBTAIN": "Trading/Crafting/Shop/Unboxing",
+        "ORIGIN": "Case #2 (2016)"
+    },
+    "CRESCENDO": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 1,
+        "OBTAIN": "Trading/Crafting/Shop/Unboxing",
+        "ORIGIN": "Elite Case / Sturdy Case"
+    },
+    "FROST DRAGON": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 1,
+        "OBTAIN": "Trading/Crafting/Shop/Unboxing",
+        "ORIGIN": "Elite Case"
+    },
+    "OVERSEER": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 1,
+        "OBTAIN": "Trading/Crafting/Shop/Unboxing",
+        "ORIGIN": "Elite Case/Sturdy Case/Polished Case"
+    },
+    "LAVA BLADE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 1,
+        "OBTAIN": "Trading/Crafting/Shop/Unboxing",
+        "ORIGIN": "Case #3 (2017)"
+    },
+    "DARK BLADE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 1,
+        "OBTAIN": "Trading/Crafting/Shop/Unboxing",
+        "ORIGIN": "Elite Case"
+    },
+    "ICE LORD": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 1,
+        "OBTAIN": "Trading/Crafting/Shop/Unboxing",
+        "ORIGIN": "Elite Case / Sturdy Case"
+    },
+    "FAERIE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 1,
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #4 (2017)"
+    },
+    "EMERALD KNIGHT": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 1,
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #5 (2017)"
+    },
+    "UNICORN": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 1,
+        "OBTAIN": "Trading / Crafting",
+        "ORIGIN": "Craftable since 2017"
+    },
+    "EARTHEN BLADE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 1,
+        "OBTAIN": "Trading / Crafting",
+        "ORIGIN": "Crafted up using legendaries since 2017"
+    },
+    "STRIKER": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 1,
+        "OBTAIN": "Trading / Crafting",
+        "ORIGIN": "Craftable since 2017"
+    },
+    "PHARAOH": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 1,
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #6 (2018)"
+    },
+    "ICE DAGGER": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 1,
+        "OBTAIN": "Trading / Crafting",
+        "ORIGIN": "Elite Case (2018-2020)"
+    },
+    "MISFORTUNE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 1,
+        "OBTAIN": "Trading / Crafting",
+        "ORIGIN": "Heroic Case since 2018"
+    },
+    "RUBY": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 1,
+        "OBTAIN": "Trading / Crafting",
+        "ORIGIN": "Elite Case (2018-2020)"
+    },
+    "ARCHANGEL": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 1,
+        "OBTAIN": "Trading / Crafting",
+        "ORIGIN": "Heroic Case since 2018"
+    },
+    "SHADOW": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 1,
+        "OBTAIN": "Trading / Timed Shop",
+        "ORIGIN": "Elite Case (2018-2020)"
+    },
+    "CHAOS AXE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 1,
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #7 (2019)"
+    },
+    "SYNERGY": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 1,
+        "OBTAIN": "Trading /Timed Shop/Unboxing",
+        "ORIGIN": "Elite Case"
+    },
+    "PALADIN": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 1,
+        "OBTAIN": "Trading / Timed Shop",
+        "ORIGIN": "Elite Case (2018-2020)"
+    },
+    "BANDIT": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 1,
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Elite Case"
+    },
+    "DARK CLAW": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 1,
+        "OBTAIN": "Trading / Timed Shop",
+        "ORIGIN": "Elite Case (2018-2020)"
+    },
+    "FLAMEBRAND": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 1,
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Heroic Case since 2018"
+    },
+    "HUNTER": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 1,
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Heroic Case since 2018"
+    },
+    "EPIC BLUE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 1,
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Heroic Case since 2018"
+    },
+    "EPIC RED": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 1,
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Heroic Case since 2018"
+    },
+    "FURY": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 1,
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Heroic Case since 2018"
+    },
+    "ANCIENT STEEL": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 1,
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Heroic Case since 2018"
+    },
+    "PHANTOM": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 1,
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Heroic Case since 2018"
+    },
+    "STEEL MAIDEN": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 1,
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Heroic Case since 2019"
+    },
+    "SLAB HAMMER": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 1,
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Heroic Case since 2020"
+    },
+    "FIRE SCIMITAR": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 1,
+        "OBTAIN": "Trading / Unboxing",
+        "ORIGIN": "Case #8 (2020)"
+    },
+    "WATER SCIMITAR": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 1,
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Timed Shop / Heroic Case since 2020"
+    },
+    "BLOSSOM SCIMITAR": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 1,
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Timed Shop / Heroic Case since 2020"
+    },
+    "HATCHET": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 1,
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Timed Shop / Heroic Case since 2021"
+    },
+    "NOBLE DAGGER": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 1,
+        "OBTAIN": "Trading / Timed Shop",
+        "ORIGIN": "Timed Shop"
+    },
+    "NEMESIS": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 1,
+        "OBTAIN": "Trading / Timed Shop",
+        "ORIGIN": "Timed Shop"
+    },
+    "VIOLET KARAMBIT": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": 4,
+        "OBTAIN": "Trading / Buying Bundle",
+        "ORIGIN": "Heart Bundle (2022)"
+    },
+    "TIME SLICER": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 3,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "2022 Time Bundle (2022)"
+    },
+    "JOLLY SLICER": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 3,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Xmas Bundle (2021)"
+    },
+    "VOID TOOTH": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 3,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Void Bundle (2021)"
+    },
+    "EDGY BLADE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 3,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Edgy Bundle (2021)"
+    },
+    "CRYOSLICE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 3,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Space Bundle (2021)"
+    },
+    "VAPORWAVE SCYTHE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 3,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Vaporwave Bundle (2021)"
+    },
+    "FLOOF KATANA": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 3,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Bunny Bundle (2021)"
+    },
+    "CUPCAKE TRIDENT": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 3,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Birthday Bundle (2021)"
+    },
+    "CHOCO BONK": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 3,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Crush Bundle (2021)"
+    },
+    "STAR AXE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 3,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "2021 Bundle (2021)"
+    },
+    "COOKIE KARAMBIT": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 3,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Peppermint Bundle (2020)"
+    },
+    "HEX SCYTHE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 3,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Halloween 2020 Bundle (2020)"
+    },
+    "RAINBOW NINJA": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 4,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Bought for 500 Robux in the Shop (2020)"
+    },
+    "RAINBOW LEGEND": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 4,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Bought for 500 Robux in the Shop (2020)"
+    },
+    "SHADOWBANE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 4,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Shadow Bundle (2020)"
+    },
+    "VENOMSHANK": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 4,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Bought for 550 Robux in the Shop (2020)"
+    },
+    "XMAS-INATOR": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 4,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holly Jolly Bundle (2019)"
+    },
+    "HARVEST BLADE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 4,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Harvest Bundle (2019)"
+    },
+    "STRANGE BLADE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 4,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Strange Bundle (2019)"
+    },
+    "TAILPIPE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 4,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Exhaust Bundle (2019)"
+    },
+    "OAKEN ENFORCER": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 4,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Oak Bundle (2019)"
+    },
+    "MYSTIC FALCHION": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 4,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Mystic Bundle (2019)"
+    },
+    "DESERT JEWEL": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 4,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Desert Bundle (2019)"
+    },
+    "ROYAL EGG": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 4,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Easter Bundle (2019)"
+    },
+    "MAGMA LORD": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 4,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Bought for 500 Robux in the Shop (2019)"
+    },
+    "LUCKY AXE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 5,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Luck Bundle (2019)"
+    },
+    "DEFENDER": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 5,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Bought for 600 Robux in the Shop (2019)"
+    },
+    "HEARTBREAKER": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 5,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Love Bundle (2019)"
+    },
+    "SPARK": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": 5,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Electricity Bundle (2019)"
+    },
+    "2019 BLADE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 5,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "2019 Bundle (2019)"
+    },
+    "DAWNSTAR": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 5,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Frigid Bundle (2018)"
+    },
+    "TECHNO": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 5,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Techno Bundle (2018)"
+    },
+    "REAPER AXE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 5,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Grim Bundle (2018)"
+    },
+    "LEAF DAGGER": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 5,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Nature Bundle (2018)"
+    },
+    "SKY LORD": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 5,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Sky Bundle (2018)"
+    },
+    "SLAYER": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 5,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Dragon Bundle (2018)"
+    },
+    "CUTLASS": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 5,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Pirate Bundle (2018)"
+    },
+    "GOLDEN EAGLE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 5,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Patriotic Bundle (2018)"
+    },
+    "OCEAN BLADE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 5,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Bought for 300 Robux in Shop (Summer 2018)"
+    },
+    "UNDEAD LORD": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 5,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Undead Bundle (2018)"
+    },
+    "GEM": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 5,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Crystal Bundle (2018)"
+    },
+    "EGGBEATER": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 5,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday Spring Bundle (2018)"
+    },
+    "BLOOM": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 5,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Spring Bundle (2018)"
+    },
+    "SHAMROCK": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 5,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Lucky Bundle (2018)"
+    },
+    "ABYSSAL SPINE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 5,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Abyssal Bundle (2018)"
+    },
+    "ABYSSAL MACE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 5,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Abyssal Bundle (2018)"
+    },
+    "CUPID": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 5,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Valentines Bundle (2018)"
+    },
+    "CANDY BLADE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 8,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday Bundle (2017)"
+    },
+    "BLIZZARD": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 5,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Frozen Bundle (2017)"
+    },
+    "PUMPKIN KING": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 5,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Halloween Bundle (2017)"
+    },
+    "CRYPTO": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 5,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Sci-Fi Bundle (2017)"
+    },
+    "AZURE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 5,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Fantasy Bundle (2017 & 2018)"
+    },
+    "CAKE POP": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": 15,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Redeemed through an old expired code (2022)"
+    },
+    "CUPID SWORD": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": 3,
+        "OBTAIN": "Trading / Unboxing",
+        "ORIGIN": "Valentine 2022 Event (Valentine Case)"
+    },
+    "LUNAR POLEARM": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": 4,
+        "OBTAIN": "Trading / Season Pass",
+        "ORIGIN": "Earned through the Season 12 pass"
+    },
+    "ROSE CALIBUR": {
+        "DEMAND": "???",
+        "VALUE": "???",
+        "OBTAIN": "COMING SOON",
+        "ORIGIN": "450 Point Prize for the upcoming Comp Season"
+    },
+    "GEM BERSERKER": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 2,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Season 11 pass"
+    },
+    "SNOW CRYSTAL": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 2,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2021 Event (Decorated Case)"
+    },
+    "JOLLY BELL": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 2,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2021 Event (Decorated Case)"
+    },
+    "SNOW SCEPTER": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 2,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Holiday 2021 Season Pass"
+    },
+    "OLD SHOVEL": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 2,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Halloween 2021 Event (Coffin Case)"
+    },
+    "INFERNAL CLEAVER": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 2,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Halloween 2021 Event (Coffin Case)"
+    },
+    "IMP TRIDENT": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 2,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Halloween 2021 Season Pass"
+    },
+    "GILDED HATCHET": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 3,
+        "OBTAIN": "Trading / Crafting",
+        "ORIGIN": "Craftable since 2020"
+    },
+    "KUNAI": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 3,
+        "OBTAIN": "Trading / Crafting",
+        "ORIGIN": "Craftable since 2019"
+    },
+    "STARLIGHT": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 3,
+        "OBTAIN": "Trading / Crafting",
+        "ORIGIN": "Craftable since 2019"
+    },
+    "COSMO KATANA": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 3,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Season 8 pass"
+    },
+    "AQUA WISP": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 3,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Summer 2021 Event (Summer Case)"
+    },
+    "WHITE POP": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 3,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Summer 2021 Event (Summer Case)"
+    },
+    "BLUE POP": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 3,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Summer 2021 Event (Summer Case)"
+    },
+    "RED POP": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 3,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Summer 2021 Event (Summer Case)"
+    },
+    "SHARK HOOK": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 3,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Season 7 pass"
+    },
+    "FUNGUS": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 3,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Season 6 pass"
+    },
+    "SWEETHORN": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 3,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Season 5 pass"
+    },
+    "WATER SPEAR": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 3,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Spring 2021 Event (Spring Case)"
+    },
+    "CUTE DAGGER": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 3,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Spring 2021 Event (Spring Case)"
+    },
+    "LUCKY DAGGER": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 3,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Season 4 pass"
+    },
+    "LION DANCE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 3,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Season 3 pass"
+    },
+    "STEAMPUNK": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 4,
+        "OBTAIN": "Trading / Crafting",
+        "ORIGIN": "Craftable since 2018"
+    },
+    "HEART POP": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 4,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Polished Case (February 2021)"
+    },
+    "SNOWMAN NOSE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 4,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Craftable during the Holiday 2020 Event"
+    },
+    "POLAR KUNAI": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 4,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2020 Event (Merry Case)"
+    },
+    "CANE DAGGER": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 4,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2020 Event (Decorated Case)"
+    },
+    "ARCTICALIBUR": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 4,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2020 Event (Decorated Case)"
+    },
+    "BUTCHER COOKIE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 4,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Season 2 pass"
+    },
+    "CRUSHER": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 4,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Season 1 pass"
+    },
+    "LARRY": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 4,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Winning a round in the arena during Halloween 2020"
+    },
+    "PUMPKIN DAGGER": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 4,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Halloween 2020 Event (Pumpkin Case)"
+    },
+    "CHAINSAW": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 4,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Halloween 2020 Event (Coffin Case)"
+    },
+    "BATWING": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 4,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Halloween 2020 Event (Coffin Case)"
+    },
+    "FIREBRAND": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 4,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Summer 2020 Event (Summer Case)"
+    },
+    "LINKED": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 5,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Season 1 pass"
+    },
+    "SNOWMAN CONE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 5,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Completing all priSnowman Missions during Holiday 2019"
+    },
+    "GIFTED BLADE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 5,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2019 Event (Festive Case)"
+    },
+    "PEPPERMINT ROYAL": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 5,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2019 Event (Jolly Case)"
+    },
+    "NAUGHTY BLADE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 5,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2019 Event (Jolly Case)"
+    },
+    "SUNBRINGER": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 5,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Summer 2019 Event (Summer Case)"
+    },
+    "BIRTHDAY BLADE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 5,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Bought for 3,333 tokens in Shop (March 2019)"
+    },
+    "JOLLY BLADE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 5,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Crafted using Jolly Blue, Jolly Red & Jolly Green during Holiday 2018"
+    },
+    "FAUN": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 5,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Easter 2019 Event (Easter Case)"
+    },
+    "CANDLE HALBERD": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 6,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "450 Comp. Point Prize (December 2021)"
+    },
+    "VAMPIRE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 6,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Halloween 2018 Event (Spooky & Haunted Cases)"
+    },
+    "MYSTIC SLUGGER": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 7,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Redeemed using a QR code in the Portals App (2020)"
+    },
+    "BURGER BLADE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 7,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Bought for 12,345 tokens in Shop (April Fools 2021)"
+    },
+    "PRISPOP": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 8,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "380 Point Comp. Prize (July 2021)"
+    },
+    "SUPERNOVA": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 8,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "400 point Comp. Prize (September 2021)"
+    },
+    "GRAVITY HAMMER": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 8,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "1K Comp. Point Prize (May 2020)"
+    },
+    "FAIRY AXE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 8,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Easter 2018 Event (Spring & Rare Spring Cases)"
+    },
+    "WIND SPEAR": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 8,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "450 Point Comp. Prize (June 2021)"
+    },
+    "THORN": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": 10,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "450 Point Comp. Prize (May 2021)"
+    },
+    "DARK ARTS": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 10,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "1K Comp. Point Prize (September 2020)"
+    },
+    "CHILL FAERIE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 10,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "1K Comp. Point Prize (June 2020)"
+    },
+    "RAINBOW GOD": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 10,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "1K Comp. Point Prize (July 2020)"
+    },
+    "ROLLING PIN": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": 10,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "1K Comp. Point Prize (August 2020)"
+    },
+    "FIRE FEATHER": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 10,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "1K Comp. Point Prize (August 2019)"
+    },
+    "SCORCHED BATTLEAXE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 10,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "1K Comp. Point Prize (June 2019)"
+    },
+    "MOLTEN CORE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 10,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "1K Comp. Point Prize (August 2018)"
+    },
+    "HALLOW AXE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 10,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "1K Comp. Point Prize (November 2018)"
+    },
+    "SOUL": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 11,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2018 Event (Festive & Jolly Cases)"
+    },
+    "COSMIC CAPTAIN": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": 12,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "1K Comp. Point Prize (November 2019)"
+    },
+    "ICE SLASHER": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 12,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "1K Comp. Point Prize (December 2018)"
+    },
+    "DARK CRYSTAL": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 15,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Redeemed through an old expired code (2018)"
+    },
+    "HAUNTED FLAIL": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": 15,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "450 Comp. Point Prize (October 2021)"
+    },
+    "NEUTRON": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 15,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "1K Comp. Point Prize (May 2018)"
+    },
+    "EGG CLAYMORE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 15,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Easter 2018 Event (Rare Spring Case)"
+    },
+    "BONE SCYTHE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 15,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Halloween 2018 Event (Haunted Case)"
+    },
+    "ORINTHIAN AXE": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": 20,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "1K Comp. Point Prize (January 2019)"
+    },
+    "ULTRAVIOLET": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": 20,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2018 Event (Festive Case)"
+    },
+    "POT O' GOLD": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": 20,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "1K Comp. Point Prize (March 2019)"
+    },
+    "MACHETE": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": 25,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "1K Comp. Point Prize (May 2019)"
+    },
+    "FLOWER KILLER": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": 25,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "1K Comp. Point Prize (April 2019)"
+    },
+    "ELECTRO SAW": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 20,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Elite Case (2016-2016)"
+    },
+    "DRAGON BREATH": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 20,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Elite Case (2016-2016)"
+    },
+    "ELECTRON": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 20,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Elite Case (2016-2016)"
+    },
+    "TOOTH": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 25,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "1K Comp. Point Prize (October 2020)"
+    },
+    "POSSESSED AXE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 25,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Mega & Elite Cases (2016)"
+    },
+    "CANDY SLAYER": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 25,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Bought for 10,000 tokens during Holiday 2018"
+    },
+    "SAPPHIRE": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": 30,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "1K Comp. Point Prize (February 2019)"
+    },
+    "SUN SLAYER": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": 30,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "1K Comp. Point Prize (June 2018)"
+    },
+    "BAT SCYTHE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 30,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Elite Case (2016-2016)"
+    },
+    "FLAME MACE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 30,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Elite Case (2016-2016)"
+    },
+    "GILDED LUCK": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": 35,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "St. Patricks Day 2019 (Elite Case)"
+    },
+    "BONE AXE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 35,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "1K Point Comp. Prize (January 2018)"
+    },
+    "SUPERFREEZE": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": 40,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2018 Event (Jolly Case)"
+    },
+    "ANGUISH": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": 40,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2018 Event (Jolly Case)"
+    },
+    "NIGHTMARE": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": 40,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Halloween 2018 Event (Heroic & Elite Cases)"
+    },
+    "CORRUPTED AXE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 40,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Replacement for the 2016 Elementals"
+    },
+    "HOLIDAY BLADE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 50,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday Event 2017 (Elite Case)"
+    },
+    "NEPTUNE": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 50,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "1K Point Comp. Prize (August 2017)"
+    },
+    "LORD SINISTER": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 50,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Halloween 2017 Event (Elite Case)"
+    },
+    "AUTUMN SABER": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 60,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Thanksgiving 2018 (Heroic & Elite Cases)"
+    },
+    "LUCKY BLADE": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": 70,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "St. Patricks Day 2018 (Elite Case)"
+    },
+    "KRAMPUS": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 75,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2016 Event (Craftable Knife)"
+    },
+    "SPRING SABER": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 80,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Spring 2017 Event (Elite & Sturdy Cases)"
+    },
+    "HOLIDAY SABER": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 85,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2016 Event (Elite Case/Crafted up from Legends)"
+    },
+    "SKELETON KING": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 90,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Halloween 2016 Event (Elite Case)"
+    },
+    "ELEGANT BLADE": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": 570,
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Top 100 Comp. Prize (June 2017-June 2018)"
+    },
+    "CRYSTAL BLADE": {
+        "DEMAND": "NOT TRADABLE",
+        "VALUE": "NOT TRADABLE",
+        "OBTAIN": "Unobtainable",
+        "ORIGIN": "VIP game pass knife from 2018-2021"
+    },
+    "DIAMOND TIER": {
+        "DEMAND": "NOT TRADABLE",
+        "VALUE": "NOT TRADABLE",
+        "OBTAIN": "Unobtainable",
+        "ORIGIN": "Top 10 Clan Prize (2019-2020)"
+    },
+    "DIAMOND CHALLENGER": {
+        "DEMAND": "NOT TRADABLE",
+        "VALUE": "NOT TRADABLE",
+        "OBTAIN": "Unobtainable",
+        "ORIGIN": "Top 10 Clan Prize (2020-2021)"
+    },
+    "ANCIENT SICKLE": {
+        "DEMAND": "NOT TRADABLE",
+        "VALUE": "NOT TRADABLE",
+        "OBTAIN": "Unobtainable",
+        "ORIGIN": "Solving Lobby Puzzle (2019)"
+    },
+    "EVIL CHICKEN": {
+        "DEMAND": "NOT TRADABLE",
+        "VALUE": "NOT TRADABLE",
+        "OBTAIN": "Placing in the Top 100 (Royale LB)",
+        "ORIGIN": "Current Royale Prize"
+    },
+    "GOLD CHICKEN": {
+        "DEMAND": "NOT TRADABLE",
+        "VALUE": "NOT TRADABLE",
+        "OBTAIN": "Win 100 rounds of solo Royale",
+        "ORIGIN": "Current Royale Prize"
+    },
+    "RUBBER CHICKEN": {
+        "DEMAND": "NOT TRADABLE",
+        "VALUE": "NOT TRADABLE",
+        "OBTAIN": "Winning a solo Royale round",
+        "ORIGIN": "Current Royale Solo Win Prize"
+    },
+    "SLUGGER": {
+        "DEMAND": "NOT TRADABLE",
+        "VALUE": "NOT TRADABLE",
+        "OBTAIN": "Unobtainable",
+        "ORIGIN": "Redeemed through Portals app (2020)"
+    },
+    "MERRY CHICKEN": {
+        "DEMAND": "NOT TRADABLE",
+        "VALUE": "NOT TRADABLE",
+        "OBTAIN": "Unobtainable",
+        "ORIGIN": "Holiday 2020 Royale Solo Win Prize"
+    },
+    "LUCKY CHICKEN": {
+        "DEMAND": "NOT TRADABLE",
+        "VALUE": "NOT TRADABLE",
+        "OBTAIN": "Unobtainable",
+        "ORIGIN": "St. Patricks Day 2021 Royale Solo Win Prize"
+    },
+    "SPARK BLADE": {
+        "DEMAND": "NOT TRADABLE",
+        "VALUE": "NOT TRADABLE",
+        "OBTAIN": "Purchasing VIP",
+        "ORIGIN": "Current knife that comes from buying the VIP game pass"
+    },
+    "SMOULDER": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading/Crafting/Timed Shop",
+        "ORIGIN": "Polished / Sturdy / Elite Cases"
+    },
+    "GRIME": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading/Crafting/Timed Shop",
+        "ORIGIN": "Case #1 (2016)"
+    },
+    "INFRARED": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading/Crafting/Timed Shop",
+        "ORIGIN": "Polished / Sturdy / Elite Cases"
+    },
+    "CHROMA WEBS": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading/Crafting/Timed Shop",
+        "ORIGIN": "Case #1 (2016)"
+    },
+    "LIGHTNING": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading/Crafting/Timed Shop",
+        "ORIGIN": "Polished / Sturdy / Elite Cases"
+    },
+    "VOLT": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading/Crafting/Timed Shop",
+        "ORIGIN": "Polished / Sturdy / Elite Cases"
+    },
+    "OMEGA": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading/Crafting/Timed Shop",
+        "ORIGIN": "Polished / Sturdy / Elite Cases"
+    },
+    "BOMBASTIC": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading/Crafting/Timed Shop",
+        "ORIGIN": "Standard / Polished / Sturdy / Elite Cases"
+    },
+    "STAINED": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading/Crafting/Timed Shop",
+        "ORIGIN": "Polished / Sturdy / Elite Cases"
+    },
+    "TOON": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading/Crafting/Timed Shop",
+        "ORIGIN": "Sturdy / Elite Cases"
+    },
+    "DIGITAL RED": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading/Crafting/Timed Shop",
+        "ORIGIN": "Elite Case"
+    },
+    "LAVA CORE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading/Crafting/Timed Shop",
+        "ORIGIN": "Elite Case"
+    },
+    "ALIEN": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading/Crafting/Timed Shop",
+        "ORIGIN": "Elite Case"
+    },
+    "KING OF HEARTS": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": "1 T1 Exotic",
+        "OBTAIN": "Trading/Crafting/Timed Shop",
+        "ORIGIN": "Standard / Polished / Sturdy / Elite Cases"
+    },
+    "FRIGID": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading/Crafting/Timed Shop",
+        "ORIGIN": "Polished / Sturdy / Elite Cases"
+    },
+    "GALAXY": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading/Crafting/Timed Shop",
+        "ORIGIN": "Elite Case"
+    },
+    "REFRACT": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #5 (2017)"
+    },
+    "RAINBOW PLASMA": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #5 (2017)"
+    },
+    "ECTO": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #4 (2017)"
+    },
+    "INFERNUS": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #4 (2017)"
+    },
+    "DARK MARBLE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Polished / Sturdy / Elite Cases"
+    },
+    "GRAFFITI": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #3 (2017)"
+    },
+    "CAMO": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Elite Case"
+    },
+    "CHAOS MARBLE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #2 (2016)"
+    },
+    "RAINBOW LEOPARD": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #2 (2016)"
+    },
+    "PURPLE MARBLE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #1 (2016)"
+    },
+    "ULTRA": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #3 (2017)"
+    },
+    "ROSE FOIL": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Polished / Sturdy / Elite Cases"
+    },
+    "OPAL": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading/Crafting/Timed Shop",
+        "ORIGIN": "Polished / Sturdy / Elite Cases"
+    },
+    "WATERMELON": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading/Crafting/Timed Shop",
+        "ORIGIN": "Case #6 (2018)"
+    },
+    "VIOLET VOLT": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading/Crafting/Timed Shop",
+        "ORIGIN": "Case #6 (2018)"
+    },
+    "SMUDGE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading/Crafting/Timed Shop",
+        "ORIGIN": "Case #7 (2019)"
+    },
+    "ROSE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading/Crafting/Timed Shop",
+        "ORIGIN": "Case #7 (2020)"
+    },
+    "JELLYFISH": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading / Unboxing",
+        "ORIGIN": "Case #8 (2020)"
+    },
+    "TREASURE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading / Unboxing",
+        "ORIGIN": "Case #8 (2020)"
+    },
+    "RAINBOW": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Legendaries",
+        "OBTAIN": "Trading / Crafting",
+        "ORIGIN": "Craftable since 2017"
+    },
+    "SWEETCAKE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Legendaries",
+        "OBTAIN": "Trading / Unboxing",
+        "ORIGIN": "Valentine 2022 Event (Valentine Case)"
+    },
+    "SUNDAE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Legendaries",
+        "OBTAIN": "Trading / Unboxing",
+        "ORIGIN": "Valentine 2022 Event (Valentine Case)"
+    },
+    "LANTERN WISPS": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Legendaries",
+        "OBTAIN": "Trading / Season Pass",
+        "ORIGIN": "Earned through the Season 12 pass"
+    },
+    "COMET SHOWER": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Season 11 pass"
+    },
+    "SANTA SUIT": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2021 Event (Decorated Case)"
+    },
+    "HAUNTED EYES": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "30 Point Comp. Prize (October 2021)"
+    },
+    "FRESH MEAT": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Halloween 2021 Event (Coffin Case)"
+    },
+    "HALLOWSHOCK": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Halloween 2021 Event (Coffin Case)"
+    },
+    "MONSTER MASH": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Halloween 2021 Event (Coffin Case)"
+    },
+    "SPOOKY CAMO": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Halloween 2021 Season Pass"
+    },
+    "LASER": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Season 8 pass"
+    },
+    "SEA CAMO": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "30 Point Comp. Prize (July 2021)"
+    },
+    "BERRIES": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "30 Point Comp. Prize (June 2021)"
+    },
+    "COASTER": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Summer 2021 Event (Summer Case)"
+    },
+    "NEON SKATES": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Summer 2021 Event (Summer Case)"
+    },
+    "SEASIDE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Season 7 pass"
+    },
+    "BEES": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Season 6 pass"
+    },
+    "RAINBOW DYE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Season 5 Pass"
+    },
+    "SPRING SUNRISE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Spring 2021 Event (Spring Case)"
+    },
+    "LADYBUGS": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Spring 2021 Event (Spring Case)"
+    },
+    "JELLYBEANS": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Spring 2021 Event (Spring Case)"
+    },
+    "RAINBOW LOOT": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Season 4 Pass"
+    },
+    "EVIL": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Season 3 Pass"
+    },
+    "LUMINOUS": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2020 Event (Merry & Decorated Cases)"
+    },
+    "BLOXMAS": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2020 Event (Decorated Case)"
+    },
+    "GINGERBREAD HOUSE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2020 Event (Merry & Decorated Cases)"
+    },
+    "CHEER": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Season 2 Pass"
+    },
+    "TURKEY TIME": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Season 1 Pass"
+    },
+    "HALLOW EVE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Halloween 2020 Event (Pumpkin & Coffin Cases)"
+    },
+    "CAULDRON": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Halloween 2020 Event (Coffin Case)"
+    },
+    "ARACHNID": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Halloween 2020 Event (Pumpkin & Coffin Cases)"
+    },
+    "ENERGY SPARK": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Summer 2020 Event (Summer Case)"
+    },
+    "RAINBOW SNO": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Summer 2020 Event (Summer Case)"
+    },
+    "GHOSTLY CHEER": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2019 Event (Festive & Jolly Cases)"
+    },
+    "PLASMA CANDY": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2019 Event (Festive & Jolly Cases)"
+    },
+    "WINTER SKY": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2019 Event (Jolly Case)"
+    },
+    "LOLLIPOP": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "4 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Summer 2019 Event (Summer Case)"
+    },
+    "CHERRIES": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "4 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Summer 2019 Event (Summer Case)"
+    },
+    "EPIC GLOW": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Exotic",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Easter 2019 Event (Easter Case)"
+    },
+    "LAPIS": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Exotic",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Easter 2019 Event (Easter Case)"
+    },
+    "CANDY SWIRL": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "50 Point Comp. Prize (December 2018)"
+    },
+    "GINGERBREAD": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2018 Event (Festive & Jolly Cases)"
+    },
+    "FESTIVE NINJA": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2018 Event (Festive & Jolly Cases)"
+    },
+    "SPOOKED": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Halloween 2018 Event (Spooky & Haunted Cases)"
+    },
+    "SKULLS": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Halloween 2018 Event (Spooky & Haunted Cases)"
+    },
+    "ROYAL FABERGE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Easter 2018 Event (Spring & Rare Spring Cases)"
+    },
+    "ZOMBIE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Completing the \"Zombie Blade\" mission (Halloween 2017)"
+    },
+    "VIOLET FABERGE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "5 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Easter 2018 Event (Rare Spring Case)"
+    },
+    "FABERGE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "5 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Finding all the hidden eggs during the 2017 Easter Event"
+    },
+    "MLG": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "15 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Previously craftable using Rainbow, Green Rush & Deep Orange (2017)"
+    },
+    "QUANTUM": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "25 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Elite Case (2016-2016)"
+    },
+    "TROPICAL": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "25 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Elite Case (2016-2016)"
+    },
+    "MOLTEN": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "25 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Elite Case (2016-2016)"
+    },
+    "PLANET": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "25 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Elite Case (2016-2016)"
+    },
+    "FOOL'S GOLD": {
+        "DEMAND": "NOT TRADABLE",
+        "VALUE": "NOT TRADABLE",
+        "OBTAIN": "Unobtainable",
+        "ORIGIN": "VIP game pass knife from 2016-2018"
+    },
+    "TIER VI": {
+        "DEMAND": "NOT TRADABLE",
+        "VALUE": "NOT TRADABLE",
+        "OBTAIN": "Reaching Prestige 6 in-game",
+        "ORIGIN": "Automatically given at the appropriate prestige since 2018"
+    },
+    "TIER VII": {
+        "DEMAND": "NOT TRADABLE",
+        "VALUE": "NOT TRADABLE",
+        "OBTAIN": "Reaching Prestige 7 in-game",
+        "ORIGIN": "Automatically given at the appropriate prestige since 2018"
+    },
+    "TIER VIII": {
+        "DEMAND": "NOT TRADABLE",
+        "VALUE": "NOT TRADABLE",
+        "OBTAIN": "Reaching Prestige 8 in-game",
+        "ORIGIN": "Automatically given at the appropriate prestige since 2018"
+    },
+    "TIER IX": {
+        "DEMAND": "NOT TRADABLE",
+        "VALUE": "NOT TRADABLE",
+        "OBTAIN": "Reaching Prestige 9 in-game",
+        "ORIGIN": "Automatically given at the appropriate prestige since 2018"
+    },
+    "TIER X": {
+        "DEMAND": "NOT TRADABLE",
+        "VALUE": "NOT TRADABLE",
+        "OBTAIN": "Reaching Prestige 10 in-game",
+        "ORIGIN": "Automatically given at the appropriate prestige since 2018"
+    },
+    "GOLD TIER": {
+        "DEMAND": "NOT TRADABLE",
+        "VALUE": "NOT TRADABLE",
+        "OBTAIN": "Earn at least 50pts in a clan with 5,000pts",
+        "ORIGIN": "5,000 Clan Point prize since 2019"
+    },
+    "ICING COOKIE": {
+        "DEMAND": "NOT TRADABLE",
+        "VALUE": "NOT TRADABLE",
+        "OBTAIN": "Unobtainable",
+        "ORIGIN": "Completing one of the priSnowman Missions (Holiday 2019)"
+    },
+    "CHILL": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Rare",
+        "OBTAIN": "Trading/Crafting/Timed Shop",
+        "ORIGIN": "Case #2 (2016)"
+    },
+    "ILLUSION": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Rare",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #2 (2016)"
+    },
+    "CHECKERS": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Rare",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #3 (2017)"
+    },
+    "FOCUS": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Rare",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #5 (2017)"
+    },
+    "EMERALD GLOW": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Rare",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #5 (2017)"
+    },
+    "AQUARIUS": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Rare",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #5 (2017)"
+    },
+    "SCRATCH": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Rare",
+        "OBTAIN": "Trading/Crafting/Timed Shop",
+        "ORIGIN": "Case #1 (2016-2016)"
+    },
+    "SOURPATCH": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Rare",
+        "OBTAIN": "Trading/Crafting/Timed Shop",
+        "ORIGIN": "Case #1 (2016-2016)"
+    },
+    "POP": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Rare",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #3 (2017)"
+    },
+    "BUBBLEGUM": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Rare",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #4 (2017)"
+    },
+    "REPTILE": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Rare",
+        "OBTAIN": "Trading/Crafting",
+        "ORIGIN": "Previously unboxable"
+    },
+    "TIGER": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Rare",
+        "OBTAIN": "Trading/Crafting/Timed Shop",
+        "ORIGIN": "Standard / Polished / Sturdy Cases"
+    },
+    "COLORS": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Rare",
+        "OBTAIN": "Trading/Crafting/Timed Shop",
+        "ORIGIN": "Standard Case"
+    },
+    "MONEY": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Rare",
+        "OBTAIN": "Trading/Crafting/Timed Shop",
+        "ORIGIN": "Polished / Sturdy Cases"
+    },
+    "FROST": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Rare",
+        "OBTAIN": "Trading/Crafting/Timed Shop",
+        "ORIGIN": "Polished / Sturdy Cases"
+    },
+    "HIPPIE": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Rare",
+        "OBTAIN": "Trading/Crafting/Timed Shop",
+        "ORIGIN": "Standard / Polished / Sturdy Cases"
+    },
+    "WAVES": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Rare",
+        "OBTAIN": "Trading/Crafting/Timed Shop",
+        "ORIGIN": "Standard Case"
+    },
+    "OCEAN": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Rare",
+        "OBTAIN": "Trading/Crafting/Timed Shop",
+        "ORIGIN": "Polished / Sturdy Cases"
+    },
+    "WISPS": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Rare",
+        "OBTAIN": "Trading/Crafting/Timed Shop",
+        "ORIGIN": "Standard / Polished / Sturdy Cases"
+    },
+    "SWIRLS": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Rare",
+        "OBTAIN": "Trading/Crafting",
+        "ORIGIN": "Previously unboxable"
+    },
+    "AURA": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Rare",
+        "OBTAIN": "Trading/Crafting/Timed Shop",
+        "ORIGIN": "Standard / Polished / Sturdy Cases"
+    },
+    "METAL TINT": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Rare",
+        "OBTAIN": "Trading/Crafting/Timed Shop",
+        "ORIGIN": "Standard / Polished / Sturdy Cases"
+    },
+    "IRIDESCENT": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Rare",
+        "OBTAIN": "Trading/Crafting/Timed Shop",
+        "ORIGIN": "Polished / Sturdy Cases"
+    },
+    "ULTRA DIGITAL": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Rare",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #2 (2016)"
+    },
+    "CORROSION": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Rare",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #1 (2016)"
+    },
+    "NEON": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Rare",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #3 (2017)"
+    },
+    "INDY": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Rare",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #4 (2017)"
+    },
+    "SOLAR": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Rare",
+        "OBTAIN": "Trading/Crafting/Timed Shop",
+        "ORIGIN": "Case #1 (2016)"
+    },
+    "JOKER": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Rare",
+        "OBTAIN": "Trading/Crafting/Timed Shop",
+        "ORIGIN": "Polished / Sturdy Cases"
+    },
+    "GREY FADE": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Rare",
+        "OBTAIN": "Trading/Crafting/Timed Shop",
+        "ORIGIN": "Case #1 (2016-2016)"
+    },
+    "HAZARD": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Rare",
+        "OBTAIN": "Trading/Crafting/Timed Shop",
+        "ORIGIN": "Polished / Sturdy Cases"
+    },
+    "AMETHYST": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Rare",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #3 (2017)"
+    },
+    "ADURITE": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Rare",
+        "OBTAIN": "Trading/Crafting/Timed Shop",
+        "ORIGIN": "Standard / Polished / Sturdy Cases"
+    },
+    "DARK MATTER": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Rare",
+        "OBTAIN": "Trading/Crafting/Timed Shop",
+        "ORIGIN": "Case #1 (2016)"
+    },
+    "FRUIT PUNCH": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Rare",
+        "OBTAIN": "Trading/Crafting/Timed Shop",
+        "ORIGIN": "Standard Case"
+    },
+    "ULTRA BLUE": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Rare",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #6 (2018)"
+    },
+    "RAINBOW STATIC": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Rare",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #6 (2018)"
+    },
+    "COSMIC RUST": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Rare",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #6 (2018)"
+    },
+    "BLUESTEEL": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Rare",
+        "OBTAIN": "Trading/Crafting/Timed Shop",
+        "ORIGIN": "Standard / Polished / Sturdy Cases"
+    },
+    "BLAZE": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Rare",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #7 (2019)"
+    },
+    "DRACONIC": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Rare",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #7 (2019)"
+    },
+    "NEON KOI": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Rare",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #7 (2019)"
+    },
+    "KEY": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2605",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading / Timed Shop",
+        "ORIGIN": "Timed Shop since 2020"
+    },
+    "BLASTOFF": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Rare",
+        "OBTAIN": "Trading / Unboxing",
+        "ORIGIN": "Case #8 (2020)"
+    },
+    "BREAKFAST": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Rare",
+        "OBTAIN": "Trading / Unboxing",
+        "ORIGIN": "Case #8 (2020)"
+    },
+    "CLOWN": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Rare",
+        "OBTAIN": "Trading / Unboxing",
+        "ORIGIN": "Case #8 (2020)"
+    },
+    "JADE TIGER": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Rares",
+        "OBTAIN": "Trading / Season Pass",
+        "ORIGIN": "Earned through the Season 12 pass"
+    },
+    "BONBON": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Rares",
+        "OBTAIN": "Trading / Unboxing",
+        "ORIGIN": "Valentine 2020 Event (Valentine Case)"
+    },
+    "CANDY HEARTS": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Rares",
+        "OBTAIN": "Trading / Unboxing",
+        "ORIGIN": "Valentine 2020 Event (Valentine Case)"
+    },
+    "SUGARBURST": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Rares",
+        "OBTAIN": "Trading / Unboxing",
+        "ORIGIN": "Valentine 2020 Event (Valentine Case)"
+    },
+    "LOVELY GIFT": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Rares",
+        "OBTAIN": "Trading / Unboxing",
+        "ORIGIN": "Valentine 2020 Event (Valentine Case)"
+    },
+    "LUXURY": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Rares",
+        "OBTAIN": "Trading / Unboxing",
+        "ORIGIN": "Valentine 2020 Event (Valentine Case)"
+    },
+    "GEM ACOLYTE": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "2 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Season 11 pass"
+    },
+    "FROST AURA": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "2 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2021 Event (Decorated Case)"
+    },
+    "COOKIE TREATS": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "2 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2021 Event (Decorated Case)"
+    },
+    "HOT COCOA": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "2 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2021 Event (Decorated Case)"
+    },
+    "GREEN SWEATER": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "2 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2021 Event (Decorated Case)"
+    },
+    "PURPLE SWEATER": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "2 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2021 Event (Decorated Case)"
+    },
+    "RED SWEATER": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "2 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2021 Event (Decorated Case)"
+    },
+    "PIXEL ZOMBIE": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "2 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Halloween 2021 Event (Coffin Case)"
+    },
+    "PUMPKIN ORNATE": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "2 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Halloween 2021 Event (Coffin Case)"
+    },
+    "SPECTER": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "2 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Halloween 2021 Event (Coffin Case)"
+    },
+    "SPOOKY NEON": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "2 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Halloween 2021 Event (Coffin Case)"
+    },
+    "SPACE BUDS": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "30 point Comp. prize (September 2021)"
+    },
+    "PLANETARY": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "3 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Season 8 pass"
+    },
+    "TROPICAL SCRIBBLE": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "3 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Summer 2021 Event (Summer Case)"
+    },
+    "LANTERN BUGS": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "3 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Summer 2021 Event (Summer Case)"
+    },
+    "GREEN ZEBRA": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "3 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Summer 2021 Event (Summer Case)"
+    },
+    "ARCADE": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "3 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Season 7 pass"
+    },
+    "STORM CLOUDS": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "30 Point Comp. Prize (May 2021)"
+    },
+    "EGGTASTIC": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Easter 2021 Event (Spring Case)"
+    },
+    "FLUTTER": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Easter 2021 Event (Spring Case)"
+    },
+    "CARROT": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Easter 2021 Event (Spring Case)"
+    },
+    "OPAL DYE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Easter 2021 Event (Spring Case)"
+    },
+    "SPRING SHOWERS": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Easter 2021 Event (Spring Case)"
+    },
+    "PEEPS": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Easter 2021 Event (Spring Case)"
+    },
+    "FLUFFLE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "30 Point Comp. Prize (April 2021)"
+    },
+    "GOLDEN HOOF": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "50 Point Comp. Prize (March 2021)"
+    },
+    "GOOD": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Season 3 pass"
+    },
+    "TOYS": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2020 Event (Merry & Decorated Cases)"
+    },
+    "STARRY": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2020 Event (Merry & Decorated Cases)"
+    },
+    "TREATS": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2020 Event (Merry & Decorated Cases)"
+    },
+    "LITTLE HELPERS": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2020 Event (Merry & Decorated Cases)"
+    },
+    "BLESSED": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Season 2 pass"
+    },
+    "FRUIT FIESTA": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Season 1 pass"
+    },
+    "AWAKENED": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Redeemed using code \"Spooky2020\" (2020)"
+    },
+    "BLACK CAT": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Halloween 2020 Event (Pumpkin & Coffin Cases)"
+    },
+    "WEREWOLF": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Halloween 2020 Event (Pumpkin & Coffin Cases)"
+    },
+    "BRAINZ": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Halloween 2020 Event (Pumpkin & Coffin Cases)"
+    },
+    "DRACULA": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Halloween 2020 Event (Pumpkin & Coffin Cases)"
+    },
+    "CHOCOLATE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Summer 2020 Event (Summer Case)"
+    },
+    "BUTTERFLIES": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Summer 2020 Event (Summer Case)"
+    },
+    "GOLAZO": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Summer 2020 Event (Summer Case)"
+    },
+    "GOOD GLOW": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2019 Event (Festive & Jolly Cases)"
+    },
+    "BLUE LIGHT": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2019 Event (Festive & Jolly Cases)"
+    },
+    "FROZEN SOLID": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2019 Event (Festive & Jolly Cases)"
+    },
+    "DARK EVE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2019 Event (Festive & Jolly Cases)"
+    },
+    "SUPER SUGAR": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "50 Point Comp. Prize (August 2019)"
+    },
+    "CHILLING ICE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Summer 2019 Event (Summer Case)"
+    },
+    "SOUR SUGAR": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Summer 2019 Event (Summer Case)"
+    },
+    "LIME": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Summer 2019 Event (Summer Case)"
+    },
+    "POPSICLE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Summer 2019 Event (Summer Case)"
+    },
+    "DEEP PASTEL": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Easter 2019 Event (Easter Case)"
+    },
+    "COOL SPRING": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Easter 2019 Event (Easter Case)"
+    },
+    "FANCY METALLIC": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Easter 2019 Event (Easter Case)"
+    },
+    "SHINY LUCK": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "50 Point Comp. Prize (March 2019)"
+    },
+    "GOLEM": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "50 Point Comp. Prize (February 2019)"
+    },
+    "SOUR CANE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2018 Event (Festive & Jolly Cases)"
+    },
+    "HOLIDAY FADE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2018 Event (Festive & Jolly Cases)"
+    },
+    "GREEN GLOW": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2018 Event (Festive & Jolly Cases)"
+    },
+    "NOXIOUS": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Exotic",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Halloween 2018 Event (Spooky & Haunted Cases)"
+    },
+    "SPIRIT": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Exotic",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Halloween 2018 Event (Spooky & Haunted Cases)"
+    },
+    "EYES": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Exotic",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Halloween 2018 Event (Spooky & Haunted Cases)"
+    },
+    "HAUNTED": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Exotic",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Winning a round on \"Asylum\" (Halloween 2018)"
+    },
+    "IRON REGAL": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Easter 2018 Event (Spring & Rare Spring Cases)"
+    },
+    "HONEYCOMB": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Easter 2018 Event (Spring & Rare Spring Cases)"
+    },
+    "SUN STAIN": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": "3 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "25 Point Comp. Prize (August 2018)"
+    },
+    "L0AD1NG": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": "3 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "50 Point Comp. Prize (May 2018)"
+    },
+    "RED SPARKLE TIME": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": "3 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "50 Point Comp. Prize (January 2018)"
+    },
+    "SPARKLE": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": "3 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "50 Point Comp. Prize (August 2017)"
+    },
+    "BLACK CHROMA": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": "3 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "50 Point Comp. Prize (July 2017)"
+    },
+    "RADIOACTIVE": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": "3 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "50 Point Comp. Prize (June 2017)"
+    },
+    "JOLLY GREEN": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Redeemed using code \"HappyHoliday\" (2018)"
+    },
+    "JOLLY BLUE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Redeemed using code \"Snowman\" (2018)"
+    },
+    "JOLLY RED": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Redeemed using code \"Jolly\" (2018)"
+    },
+    "DECADENT RED": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Redeemed using code \"Easter2019\" (2019)"
+    },
+    "FROSTING": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Redeemed using code \"Birthday\" (2019)"
+    },
+    "REAPER": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "7 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Winning a round on \"Haunted Manor\" (Halloween 2016)"
+    },
+    "ORNATE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "15 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Redeemed twice using old codes (2016 & 2017)"
+    },
+    "STATIC": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": "20 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Case #1 (2016-2016)"
+    },
+    "SPECTRUM": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": "20 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Basic Case (2016-2016)"
+    },
+    "FLAKES": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": "35 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Redeemed using code \"Happy_Holidays\" (2016)"
+    },
+    "TIER II": {
+        "DEMAND": "NOT TRADABLE",
+        "VALUE": "NOT TRADABLE",
+        "OBTAIN": "Reaching Prestige 2 in-game",
+        "ORIGIN": "Automatically given at the appropriate prestige since 2018"
+    },
+    "TIER III": {
+        "DEMAND": "NOT TRADABLE",
+        "VALUE": "NOT TRADABLE",
+        "OBTAIN": "Reaching Prestige 3 in-game",
+        "ORIGIN": "Automatically given at the appropriate prestige since 2018"
+    },
+    "TIER IV": {
+        "DEMAND": "NOT TRADABLE",
+        "VALUE": "NOT TRADABLE",
+        "OBTAIN": "Reaching Prestige 4 in-game",
+        "ORIGIN": "Automatically given at the appropriate prestige since 2018"
+    },
+    "TIER V": {
+        "DEMAND": "NOT TRADABLE",
+        "VALUE": "NOT TRADABLE",
+        "OBTAIN": "Reaching Prestige 5 in-game",
+        "ORIGIN": "Automatically given at the appropriate prestige since 2018"
+    },
+    "BRONZE TIER": {
+        "DEMAND": "NOT TRADABLE",
+        "VALUE": "NOT TRADABLE",
+        "OBTAIN": "Earn at least 50pts in a clan with 500pts",
+        "ORIGIN": "500 Clan Point prize since 2019"
+    },
+    "SILVER TIER": {
+        "DEMAND": "NOT TRADABLE",
+        "VALUE": "NOT TRADABLE",
+        "OBTAIN": "Earn at least 50pts in a clan with 2,500pts",
+        "ORIGIN": "2,500 Clan Point prize since 2019"
+    },
+    "NEON CANE": {
+        "DEMAND": "NOT TRADABLE",
+        "VALUE": "NOT TRADABLE",
+        "OBTAIN": "Unobtainable",
+        "ORIGIN": "Completing one of the priSnowman Missions (Holiday 2019)"
+    },
+    "NINJA": {
+        "DEMAND": "NOT TRADABLE",
+        "VALUE": "NOT TRADABLE",
+        "OBTAIN": "Completing Obby in Lobby",
+        "ORIGIN": "End of lobby prize since 2020"
+    },
+    "RED": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Common",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Standard Case"
+    },
+    "BLUE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Common",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Standard Case"
+    },
+    "YELLOW": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Common",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Standard Case"
+    },
+    "PURPLE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Common",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Standard Case"
+    },
+    "GREEN": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Common",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Standard Case"
+    },
+    "ORANGE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Common",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Standard Case"
+    },
+    "PINK": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Common",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Standard Case"
+    },
+    "MEDIC": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Common",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Standard Case"
+    },
+    "SUNRISE": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Common",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Standard & Sturdy Cases"
+    },
+    "TRUNK": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Common",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Standard & Sturdy Cases"
+    },
+    "COW": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Common",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Standard & Sturdy Cases"
+    },
+    "DIAMOND PLATE": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Common",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Standard Case"
+    },
+    "PEBBLE": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Common",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Standard Case"
+    },
+    "ZEBRA": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Common",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Standard & Sturdy Cases"
+    },
+    "BURN": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Common",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Standard & Sturdy Cases"
+    },
+    "PEARL": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Common",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #1 (2016)"
+    },
+    "METALLIC FADE": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Common",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Standard & Sturdy Cases"
+    },
+    "GREEN RUSH": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Common",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #2 (2016)"
+    },
+    "DEEP ORANGE": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Common",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #2 (2016)"
+    },
+    "PRISM": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Common",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #2 (2016)"
+    },
+    "ROUGHED": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Common",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #2 (2016)"
+    },
+    "HARDENED": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Common",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #1 (2016)"
+    },
+    "ICE": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Common",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Standard Case"
+    },
+    "MARBLE": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Common",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Standard Case"
+    },
+    "WANWOOD": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Common",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #1 (2016)"
+    },
+    "DAMASCUS": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Common",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #1 (2016)"
+    },
+    "BINARY": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Common",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #4 (2017)"
+    },
+    "EDGED": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Common",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #3 (2017)"
+    },
+    "POISON": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Common",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #3 (2017)"
+    },
+    "SHARK": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Common",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #3 (2017)"
+    },
+    "VIPER": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Common",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #4 (2017)"
+    },
+    "SAND": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Common",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #4 (2017)"
+    },
+    "WATER": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Common",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #4 (2017)"
+    },
+    "SPARKLE TIME": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Common",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #5 (2017)"
+    },
+    "POLAR": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Common",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #5 (2017)"
+    },
+    "DIY": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Common",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #5 (2017)"
+    },
+    "KITTY": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Common",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #5 (2017)"
+    },
+    "GHOUL": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Common",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #3 (2017)"
+    },
+    "MIDNIGHT": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Common",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Standard & Sturdy Cases"
+    },
+    "PITCH BLACK": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Common",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #6 (2018)"
+    },
+    "TALLY": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Common",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #6 (2018)"
+    },
+    "ENERGY FADE": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Common",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #6 (2018)"
+    },
+    "CAUSTIC": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Common",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #6 (2018)"
+    },
+    "SLIME": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Common",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #7 (2019)"
+    },
+    "GARNET": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Common",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #7 (2019)"
+    },
+    "BANANAS": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Common",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #7 (2019)"
+    },
+    "GOLD FOIL": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Common",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Case #7 (2019)"
+    },
+    "CLOUDY": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Common",
+        "OBTAIN": "Trading / Unboxing",
+        "ORIGIN": "Case #8 (2020)"
+    },
+    "SHEEP": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Common",
+        "OBTAIN": "Trading / Unboxing",
+        "ORIGIN": "Case #8 (2020)"
+    },
+    "BEAR": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Common",
+        "OBTAIN": "Trading / Unboxing",
+        "ORIGIN": "Case #8 (2020)"
+    },
+    "AI": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Common",
+        "OBTAIN": "Trading / Unboxing",
+        "ORIGIN": "Case #8 (2020)"
+    },
+    "CROW": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Rare",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Halloween 2021 Season Pass"
+    },
+    "SUMMER LIGHTS": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Rare",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Summer 2021 Event (Summer Case)"
+    },
+    "BOWLING": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Rare",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Summer 2021 Event (Summer Case)"
+    },
+    "GUM BUBBLES": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Rare",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Summer 2021 Event (Summer Case)"
+    },
+    "JUICE": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "2 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earning through the Season 6 pass"
+    },
+    "ROBIN EGGS": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "2 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earning through the Season 4 pass"
+    },
+    "COOL CLOVER": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "2 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earning through the Season 3 pass"
+    },
+    "JOLLY BELLS": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "2 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earning through the Season 2 pass"
+    },
+    "PINK CANE": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "2 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2020 Event (Merry Case)"
+    },
+    "NAUGHTY LIST": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "2 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2020 Event (Merry Case)"
+    },
+    "WRAPPED": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "2 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2020 Event (Merry Case)"
+    },
+    "SOFT FLAKES": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "2 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2020 Event (Merry Case)"
+    },
+    "FROGS": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earning through the Season 1 pass"
+    },
+    "WITCH": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Halloween 2020 Event (Pumpkin Case)"
+    },
+    "TREAT": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Halloween 2020 Event (Pumpkin Case)"
+    },
+    "BATS": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Halloween 2020 Event (Pumpkin Case)"
+    },
+    "EERIE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Halloween 2020 Event (Pumpkin Case)"
+    },
+    "MOON": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Summer 2020 Event (Summer Case)"
+    },
+    "MELON SEEDS": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Summer 2020 Event (Summer Case)"
+    },
+    "PUP": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Summer 2020 Event (Summer Case)"
+    },
+    "TENTACLE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Summer 2020 Event (Summer Case)"
+    },
+    "JOLLY TREES": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2019 Event (Festive Case)"
+    },
+    "METALLIC SNOW": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2019 Event (Festive Case)"
+    },
+    "DIVA": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2019 Event (Festive Case)"
+    },
+    "SNOWY FRIEND": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2019 Event (Festive Case)"
+    },
+    "JAWBREAKER": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Summer 2019 Event (Summer Case)"
+    },
+    "RASPBERRY RUSH": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Summer 2019 Event (Summer Case)"
+    },
+    "RIBBONS": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Summer 2019 Event (Summer Case)"
+    },
+    "LEMON": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Summer 2019 Event (Summer Case)"
+    },
+    "PASTEL RED": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Easter 2019 Event (Easter Case)"
+    },
+    "PASTEL GREEN": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Easter 2019 Event (Easter Case)"
+    },
+    "PASTEL PINK": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Easter 2019 Event (Easter Case)"
+    },
+    "SOUR SPRING": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Easter 2019 Event (Easter Case)"
+    },
+    "SWEET FRAGMENT": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Exotic",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2018 Event (Festive Case)"
+    },
+    "SLUSH": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Exotic",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2018 Event (Festive Case)"
+    },
+    "ICICLE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Exotic",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2018 Event (Festive Case)"
+    },
+    "APPLE CANE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Exotic",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Holiday 2018 Event (Festive Case)"
+    },
+    "CANDY CORN": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Exotic",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Halloween 2018 Event (Spooky Case)"
+    },
+    "MUMMY": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Exotic",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Halloween 2018 Event (Spooky Case)"
+    },
+    "MEAT": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Exotic",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Halloween 2018 Event (Spooky Case)"
+    },
+    "SPIDERWEBS": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Exotic",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Halloween 2018 Event (Spooky Case)"
+    },
+    "ROBO": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Exotic",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Redeemed using code \"p4nd0ra\" (2017)"
+    },
+    "TOFUU": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Exotic",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Redeemed using code \"t0fuu\" (2017)"
+    },
+    "SEEDENG": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Exotic",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Redeemed using code \"s33d3ng\" (2017)"
+    },
+    "POKE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Exotic",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Redeemed using code \"p0k3\" (2017)"
+    },
+    "PIZZA": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Exotic",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Redeemed using code \"zax0r\" (2017)"
+    },
+    "GRASS": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Easter 2018 Event (Spring Basket)"
+    },
+    "NATURE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Easter 2018 Event (Spring Basket)"
+    },
+    "ARTISAN": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Easter 2018 Event (Spring Basket)"
+    },
+    "AQUA GREEN": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Easter 2018 Event (Spring Basket)"
+    },
+    "CLOVER": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": "5 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Redeemed using code \"Lucky2018\" (2018)"
+    },
+    "KOOL-AID": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "5 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Redeemed using code \"OH YEAH!\" (2016)"
+    },
+    "SINISTER": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "5 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Redeemed using code \"Spooky2016\" (2016)"
+    },
+    "CANDY CANE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "5 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Redeemed twice using old codes (2016 & 2017)"
+    },
+    "1000 DEGREE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "5 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Redeemed using code \"For_Science\" (2017)"
+    },
+    "EGG": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "6 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Redeemed using code \"3ast3r\" (2017)"
+    },
+    "SLIME EYE": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": "20 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Redeemed through the Portals app in 2020"
+    },
+    "COAL": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "30 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Redeemed using code \"Naughty_List\" (2016)"
+    },
+    "PURPLE NATION": {
+        "DEMAND": "NOT TRADABLE",
+        "VALUE": "NOT TRADABLE",
+        "OBTAIN": "Redeeming Code",
+        "ORIGIN": "Redeeming code found in the Codes section"
+    },
+    "STUFFED": {
+        "DEMAND": "NOT TRADABLE",
+        "VALUE": "NOT TRADABLE",
+        "OBTAIN": "UNOBTAINABLE",
+        "ORIGIN": "Redeemed using code \"Holiday\" (2020)"
+    },
+    "SNOWFRIENDS": {
+        "DEMAND": "NOT TRADABLE",
+        "VALUE": "NOT TRADABLE",
+        "OBTAIN": "Redeeming Code",
+        "ORIGIN": "Redeeming code found in the Codes section"
+    },
+    "TURTLE": {
+        "DEMAND": "\u2605\u2606\u2606\u2606\u2606",
+        "VALUE": "2 T1 Commons",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Buying for 300 tokens in the Shop"
+    },
+    "CAT": {
+        "DEMAND": "\u2605\u2606\u2606\u2606\u2606",
+        "VALUE": "2 T1 Commons",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Buying for 800 tokens in the Shop"
+    },
+    "UFO": {
+        "DEMAND": "\u2605\u2606\u2606\u2606\u2606",
+        "VALUE": "2 T1 Commons",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Buying for 900 tokens in the Shop"
+    },
+    "PENGUIN": {
+        "DEMAND": "\u2605\u2606\u2606\u2606\u2606",
+        "VALUE": "2 T1 Commons",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Buying for 1,200 tokens in the Shop"
+    },
+    "SQUID": {
+        "DEMAND": "\u2605\u2606\u2606\u2606\u2606",
+        "VALUE": "2 T1 Commons",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Buying for 1,500 tokens in the Shop"
+    },
+    "JET": {
+        "DEMAND": "\u2605\u2606\u2606\u2606\u2606",
+        "VALUE": "2 T1 Commons",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Buying for 1,900 tokens in the Shop"
+    },
+    "FLUFFY UNICORN": {
+        "DEMAND": "\u2605\u2606\u2606\u2606\u2606",
+        "VALUE": "2 T1 Commons",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Buying for 2,000 tokens in the Shop"
+    },
+    "TANK": {
+        "DEMAND": "\u2605\u2606\u2606\u2606\u2606",
+        "VALUE": "2 T1 Commons",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Buying for 2,500 tokens in the Shop"
+    },
+    "DRAGON": {
+        "DEMAND": "\u2605\u2606\u2606\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Buying for 3,000 tokens in the Shop"
+    },
+    "CHILLS": {
+        "DEMAND": "\u2605\u2606\u2606\u2606\u2606",
+        "VALUE": "2 T1 Commons",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Pet Case #1"
+    },
+    "BADGER": {
+        "DEMAND": "\u2605\u2606\u2606\u2606\u2606",
+        "VALUE": "2 T1 Commons",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Pet Case #1"
+    },
+    "FAIRY": {
+        "DEMAND": "\u2605\u2606\u2606\u2606\u2606",
+        "VALUE": "2 T1 Commons",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Pet Case #1"
+    },
+    "TOY PLANE": {
+        "DEMAND": "\u2605\u2606\u2606\u2606\u2606",
+        "VALUE": "2 T1 Commons",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Pet Case #1"
+    },
+    "PINATA": {
+        "DEMAND": "\u2605\u2606\u2606\u2606\u2606",
+        "VALUE": "2 T1 Commons",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Pet Case #1"
+    },
+    "SKELEDOG": {
+        "DEMAND": "\u2605\u2606\u2606\u2606\u2606",
+        "VALUE": "2 T1 Commons",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Pet Case #1"
+    },
+    "SEAHORSE": {
+        "DEMAND": "\u2605\u2606\u2606\u2606\u2606",
+        "VALUE": "2 T1 Commons",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Pet Case #1"
+    },
+    "BALLOONS": {
+        "DEMAND": "\u2605\u2606\u2606\u2606\u2606",
+        "VALUE": "2 T1 Commons",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Pet Case #1"
+    },
+    "MECH SPIDER": {
+        "DEMAND": "\u2605\u2606\u2606\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Pet Case #1"
+    },
+    "MAGICAL UNICORN": {
+        "DEMAND": "\u2605\u2606\u2606\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Pet Case #1"
+    },
+    "HATCHLING": {
+        "DEMAND": "\u2605\u2606\u2606\u2606\u2606",
+        "VALUE": "2 T1 Commons",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Pet Case #2"
+    },
+    "SEAGULL": {
+        "DEMAND": "\u2605\u2606\u2606\u2606\u2606",
+        "VALUE": "2 T1 Commons",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Pet Case #2"
+    },
+    "NESSIE": {
+        "DEMAND": "\u2605\u2606\u2606\u2606\u2606",
+        "VALUE": "2 T1 Commons",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Pet Case #2"
+    },
+    "MEERKAT": {
+        "DEMAND": "\u2605\u2606\u2606\u2606\u2606",
+        "VALUE": "2 T1 Commons",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Pet Case #2"
+    },
+    "EVIL FLOWER": {
+        "DEMAND": "\u2605\u2606\u2606\u2606\u2606",
+        "VALUE": "2 T1 Commons",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Pet Case #2"
+    },
+    "ROBO PENGUIN": {
+        "DEMAND": "\u2605\u2606\u2606\u2606\u2606",
+        "VALUE": "2 T1 Commons",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Pet Case #2"
+    },
+    "NEON OCTOPUS": {
+        "DEMAND": "\u2605\u2606\u2606\u2606\u2606",
+        "VALUE": "2 T1 Commons",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Pet Case #2"
+    },
+    "GHOST DRAGON": {
+        "DEMAND": "\u2605\u2606\u2606\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Pet Case #2"
+    },
+    "PARTY TIGER": {
+        "DEMAND": "\u2605\u2606\u2606\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Pet Case #2"
+    },
+    "CHIMERA": {
+        "DEMAND": "\u2605\u2606\u2606\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Pet Case #2"
+    },
+    "LOVE LETTER": {
+        "DEMAND": "???",
+        "VALUE": "???",
+        "OBTAIN": "COMING SOON",
+        "ORIGIN": "30 point prize for the upcoming Comp Season"
+    },
+    "TIGER CUB": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Rares",
+        "OBTAIN": "Trading / Season Pass",
+        "ORIGIN": "Earned through the Season 12 pass"
+    },
+    "LUCKY NEKO": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Legendaries",
+        "OBTAIN": "Trading / Season Pass",
+        "ORIGIN": "Earned through the Season 12 pass"
+    },
+    "WIZARD FROG": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Season 11 pass"
+    },
+    "XMAS TEDDY": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "2 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Holiday 2021 Season Pass"
+    },
+    "STOCKING CAT": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "2 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Holiday 2021 Season Pass"
+    },
+    "SNOW GLOBE": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "2 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "30 Point Prize for the December 2021 Comp. Season"
+    },
+    "SNOW DUDE": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Holiday 2021 Season Pass"
+    },
+    "PUMPKIN HEAD": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "2 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Halloween 2021 Season Pass"
+    },
+    "PORTAL DEMON": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Halloween 2021 Season Pass"
+    },
+    "GLOBE": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "3 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Season 8 pass"
+    },
+    "ASTROLOTL": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Season 8 pass"
+    },
+    "LAVA SEAL": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "3 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Season 7 pass"
+    },
+    "PAIL PAL": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Season 7 pass"
+    },
+    "MUSHY": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "3 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Season 6 pass"
+    },
+    "GREG": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Season 6 pass"
+    },
+    "BUNCUP": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "3 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Season 5 pass"
+    },
+    "CHICK HATCHLING": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "3 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Season 5 pass"
+    },
+    "MR. HAT": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "3 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Season 4 pass"
+    },
+    "LANTERN": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "3 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Season 3 pass"
+    },
+    "MOTH": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "3 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Season 3 pass"
+    },
+    "COCOA CAT": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Season 2 pass"
+    },
+    "BASKETBALL": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "3 T1 Rares",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earned through the Season 1 pass"
+    },
+    "CANDY FRIEND": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "50 point prize for the October 2020 Comp. Season"
+    },
+    "ICE CREAM": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "50 point prize for the September 2020 Comp. Season"
+    },
+    "MATH HOMEWORK": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "50 point prize for the August 2020 Comp. Season"
+    },
+    "PRIS": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "50 point prize for the July 2020 Comp. Season"
+    },
+    "HOT AIR BALLOON": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "50 point prize for the June 2020 Comp. Season"
+    },
+    "TEDDY": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "50 point prize for the May 2020 Comp. Season"
+    },
+    "CANDY PLS": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "50 point prize for the November 2019 Comp. Season"
+    },
+    "BEACH BALL": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "50 point prize for the June 2019 Comp. Season"
+    },
+    "PIXEL DUCK": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "50 point prize for the May 2019 Comp. Season"
+    },
+    "CHOCO BUNNY": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "50 point prize for the April 2019 Comp. Season"
+    },
+    "DONKEY": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "50 point prize for the January 2019 Comp. Season"
+    },
+    "CHUPACABRA": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Bought for 30 \"Candy Corns\" during the 2018 Halloween Event"
+    },
+    "HAUNTING SPIRIT": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "50 point prize for the November 2018 Comp. Season"
+    },
+    "GINGERBREAD MAN": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Old Code from December 2018"
+    },
+    "OCTOPUS": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "50 point prize for the June 2018 Comp. Season"
+    },
+    "GHOSTLY SPIRIT": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Legendaries",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Bought for 100 \"Candy Corns\" during the 2018 Halloween Event"
+    },
+    "BUNNY": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "1 T1 Exotic",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Bought for 40 \"Eggs\" during the 2018 Easter Event"
+    },
+    "OVERLORD": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Exotic",
+        "OBTAIN": "Trading / Buying in Shop",
+        "ORIGIN": "Buying for 4,000 tokens in the Shop"
+    },
+    "PHOENIX": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Exotic",
+        "OBTAIN": "Trading / Buying in Shop",
+        "ORIGIN": "Buying for 5,000 tokens in the Shop"
+    },
+    "RAINBOW PHOENIX": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Exotic",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Pet Case #1"
+    },
+    "TOXIC PHOENIX": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Exotic",
+        "OBTAIN": "Trading/Timed Shop/Unboxing",
+        "ORIGIN": "Pet Case #2"
+    },
+    "COIN CORGI": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earning through the Season 4 pass"
+    },
+    "CANDLE SQUID": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earning through the Season 2 pass"
+    },
+    "CHOCO BOX": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Buying for 6,000 tokens in Shop (February 2021)"
+    },
+    "ROBOBUNNY": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "2 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Bought for 100 \"Eggs\" during the 2018 Easter Event"
+    },
+    "POLLY": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "5 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Bought for 1,200 tokens in Summer 2018"
+    },
+    "OVERSPIDER": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "5 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earning 500 points during the May 2018 Comp. Season"
+    },
+    "BIRTHDAY CAKE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "15 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Buying for 3,333 tokens in Shop (March 2019)"
+    },
+    "OMG": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": "15 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Bought for 12,345 tokens in Shop (April Fools 2021)"
+    },
+    "RED PANDA": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "15 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earning 500 points during the August 2017 Comp. Season"
+    },
+    "DUCKIE": {
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2605",
+        "VALUE": "50 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Redeeming an old randomized pet code (2018)"
+    },
+    "CRIMSON DRAKE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "50 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Earning 1,000 points during the June 2017 Comp. Season"
+    },
+    "GHOSTLY KNIGHT": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Buying the Fantasy Bundle (2017 & 2018)"
+    },
+    "MECH FALCON": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Buying the Sci-Fi Bundle (2017)"
+    },
+    "WRAITH": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Buying the Halloween Bundle (2017)"
+    },
+    "ICE DRAKE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Buying the Frozen Bundle (2017)"
+    },
+    "REINDEER": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Buying the Holiday Bundle (2017)"
+    },
+    "HEARTY": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Buying the Valentines Bundle (2018)"
+    },
+    "LEPRECHAUN": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Buying the Lucky Bundle (2018)"
+    },
+    "SPRING SUN": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Buying the Spring Bundle (2018)"
+    },
+    "PURPLE WHELP": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Buying the Crystal Bundle (2018)"
+    },
+    "UNDEAD GHOUL": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Buying the Undead Bundle (2018)"
+    },
+    "STARFISH": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Buying for 200 Robux in Shop in Summer 2018"
+    },
+    "BALD EAGLE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Buying the Patriotic Bundle (2018)"
+    },
+    "SHARKTOOTH": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Buying the Pirate Bundle (2018)"
+    },
+    "EMERALD DRAGON": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Buying the Dragon Bundle (2018)"
+    },
+    "SENTINEL FALCON": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Buying the Sky Bundle (2018)"
+    },
+    "CRIMSON EAGLE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Buying the Nature Bundle (2018)"
+    },
+    "SPIDER HORDE": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Buying the Grim Bundle (2018)"
+    },
+    "ICE PHOENIX": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Buying the Frigid Bundle (2018)"
+    },
+    "FIREWORKS": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Buying the 2019 Bundle (2018)"
+    },
+    "STORM": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Buying the Electricity Bundle (2019)"
+    },
+    "XOXO": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Buying the Love Bundle (2019)"
+    },
+    "EGGSECUTION": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Buying the Easter Bundle (2019)"
+    },
+    "DESERT KING": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Buying the Desert Bundle (2019)"
+    },
+    "MYSTIC UNDEAD": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Buying the Mystic Bundle (2019)"
+    },
+    "SAPLING BUD": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Buying the Oak Bundle (2019)"
+    },
+    "FLYING FORTRESS": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Buying the Exhaust Bundle (2019)"
+    },
+    "STRANGE DOG": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Buying the Strange Bundle (2019)"
+    },
+    "HOLY TURKEY": {
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Buying the Harvest Bundle (2019)"
+    },
+    "RAVEN": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "2 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Buying the Halloween 2020 Bundle (2020)"
+    },
+    "PEPPERMINT PAL": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "2 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Buying the Peppermint Bundle (2020)"
+    },
+    "PARTY BALL": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "2 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Buying the 2021 Bundle (2021)"
+    },
+    "5TH CANDLE": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "2 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Buying the Birthday Bundle (2021)"
+    },
+    "BUNNY PLUSH": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "2 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Buying the Bunny Bundle (2021)"
+    },
+    "VAPORSAUR": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "2 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Buying the Vaporwave Bundle (2021)"
+    },
+    "JETFOX": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "2 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Buying the Space Bundle (2021)"
+    },
+    "EDGY BOI": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "2 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Buying the Edgy Bundle (2021)"
+    },
+    "VOID HAND": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "2 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Buying the Void Bundle (2021)"
+    },
+    "COG DOG": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "2 T1 Exotics",
+        "OBTAIN": "Trading Only",
+        "ORIGIN": "Buying the 2022 Bundle (2022)"
+    },
+    "FLUFF BALL": {
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "2 T1 Exotics",
+        "OBTAIN": "Trading / Buying Bundle",
+        "ORIGIN": "Buying the Heart Bundle (2022)"
+    },
+    "WALRUS": {
+        "DEMAND": "NOT TRADABLE",
+        "VALUE": "NOT TRADABLE",
+        "OBTAIN": "Redeeming Code",
+        "ORIGIN": "Redeeming code found in the Codes section"
+    },
+    "DOGE": {
+        "DEMAND": "NOT TRADABLE",
+        "VALUE": "NOT TRADABLE",
+        "OBTAIN": "UNOBTAINABLE",
+        "ORIGIN": "VIP game pass pet from 2017-2018"
+    },
+    "CRYSTAL SKULL": {
+        "DEMAND": "NOT TRADABLE",
+        "VALUE": "NOT TRADABLE",
+        "OBTAIN": "UNOBTAINABLE",
+        "ORIGIN": "VIP game pass pet from 2018-2021"
+    },
+    "SPARKY": {
+        "DEMAND": "NOT TRADABLE",
+        "VALUE": "NOT TRADABLE",
+        "OBTAIN": "Purchasing VIP",
+        "ORIGIN": "Current pet that comes from buying the VIP game pass"
+    }
+}

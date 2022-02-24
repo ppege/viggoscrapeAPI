@@ -15,6 +15,7 @@
 
 # [START gae_flex_quickstart]
 import os
+import json
 from flask import render_template, request, jsonify, send_from_directory, Flask
 from scraper import get_assignments
 import scraper_v2
@@ -58,6 +59,22 @@ def nav():
 def demo():
     """Return the demo hero"""
     return render_template("demo.html")
+
+@app.route('/api/v2/assassin', methods=['GET'])
+def assassin():
+    with open("values.json", "r") as file:
+        values = json.load(file)
+    input = ""
+    try:
+        input = request.args['name'].upper().replace('_', ' ')
+        return values[input]
+    except:
+        return jsonify({
+            'DEMAND': None,
+            'VALUE': None,
+            'OBTAIN': None,
+            'ORIGIN': None
+        })
 
 @app.route('/api/v1/scrape', methods=['GET'])
 def scrape():
