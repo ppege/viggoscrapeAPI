@@ -68,9 +68,11 @@ def assassin():
 
     input = request.args['name'].upper().replace('_', ' ') if 'name' in request.args else "NOINPUT"
     if input in ["NOINPUT", ""]:
-        return jsonify({
+        response = jsonify({
             "ERROR": "No input"
         })
+        response.headers.add('Access-Control-Allow-Origin', '*')
+        return response
     
     knifeNames = get_close_matches(input, values.keys())
     knives = []
@@ -78,7 +80,9 @@ def assassin():
         knife = values[name]
         knife["NAME"] = name.capitalize()
         knives.append(knife)
-    return jsonify(knives)
+    response = jsonify(knives)
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
 
 @app.route('/api/v1/scrape', methods=['GET'])
 def scrape():
@@ -112,9 +116,11 @@ def scrape_v2():
     viggo.date_selected = args['date']
     viggo.group_by_assignment = bool(int(args['groupByAssignment']))
 
-    return jsonify(
+    response = jsonify(
         viggo.get_assignments()
     )
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
 
 def format_args(args):  # sourcery skip: remove-redundant-if
     """Sanitizes input"""
