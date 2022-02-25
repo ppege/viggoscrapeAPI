@@ -149,5 +149,5 @@ def format_args(args):  # sourcery skip: remove-redundant-if
 if __name__ == '__main__':
     # This is used when running locally only. When deploying to Google App
     # Engine, a webserver process such as Gunicorn will serve the app.
-    app.run(host='127.0.0.1')
+    app.run(host='0.0.0.0')
 # [END gae_flex_quickstart]
