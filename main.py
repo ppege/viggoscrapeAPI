@@ -27,41 +27,9 @@ app.config['JSONIFY_PRETTYPRINT_REGULAR'] = True
 @app.route('/', methods=['GET'])
 def home():
     """The homepage"""
-    return render_template('landing.html')
+    return jsonify({"Routes available": ["/v1/scrape", "/v2/scrape", "/v2/assassin"]})
 
-@app.route('/old', methods=['GET'])
-def homeold():
-    """The old homepage, for nostalgia"""
-    return render_template('landing-old.html')
-
-@app.route('/favicon.ico')
-def favicon():
-    """Website icon"""
-    return send_from_directory(os.path.join(app.root_path, 'static'),
-                                'favicon.ico', mimetype='image/vnc.microsoft.icon')
-
-@app.route('/placeholder')
-def placeholder():
-    """A placeholder"""
-    return render_template('placeholder.html')
-
-@app.route('/examples')
-def examples():
-    """Return the examples page"""
-    # return render_template("examples.html")
-    return "UNDER CONSTRUCTION!"
-
-@app.route('/_nav.html')
-def nav():
-    """Return the nav page"""
-    return render_template("nav.html")
-
-@app.route('/_demo.html')
-def demo():
-    """Return the demo hero"""
-    return render_template("demo.html")
-
-@app.route('/api/v2/assassin', methods=['GET'])
+@app.route('/v2/assassin', methods=['GET'])
 def assassin():
     with open("values.json", "r") as file:
         values = json.load(file)
@@ -84,7 +52,7 @@ def assassin():
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
 
-@app.route('/api/v1/scrape', methods=['GET'])
+@app.route('/v1/scrape', methods=['GET'])
 def scrape():
     """Route to access scraper v1. Outdated!!"""
     args = format_args(dict(request.args))
@@ -97,7 +65,7 @@ def scrape():
         )
     )
 
-@app.route('/api/v2/scrape', methods=['GET'])
+@app.route('/v2/scrape', methods=['GET'])
 def scrape_v2():
     """
     Route to access scraper v2.
@@ -155,5 +123,5 @@ def format_args(args):  # sourcery skip: remove-redundant-if
 if __name__ == '__main__':
     # This is used when running locally only. When deploying to Google App
     # Engine, a webserver process such as Gunicorn will serve the app.
-    app.run(host='0.0.0.0')
+    app.run(host='127.0.0.1')
 # [END gae_flex_quickstart]
