@@ -25,11 +25,11 @@ function toggleColors(mode) {
 $("#darkmode").click(function() {
     let button = document.getElementById("darkmode");
     if (button.textContent == "Dark mode"){
-        $('link[href="/static/styles/background.css"]').attr('href','/static/styles/background-dark.css');
+        $('link[href="static/styles/background.css"]').attr('href','static/styles/background-dark.css');
         button.textContent = "Light mode";
         toggleColors("dark");
     } else {
-        $('link[href="/static/styles/background-dark.css"]').attr('href','/static/styles/background.css');
+        $('link[href="static/styles/background-dark.css"]').attr('href','static/styles/background.css');
         button.textContent = "Dark mode";
         toggleColors("light");
     }
