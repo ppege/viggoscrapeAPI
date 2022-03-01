@@ -385,8 +385,8 @@
         "IMAGE": "https://i.imgur.com/DrQoEJ1.png"
     },
     "JADE CHAKRAM": {
-        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
-        "VALUE": "TO BE DETERMINED",
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "4",
         "OBTAIN": "Trading / Season Pass",
         "ORIGIN": "Earned through the Season 12 pass",
         "IMAGE": "https://i.imgur.com/iP1mi0N.png"
@@ -442,7 +442,7 @@
     },
     "ROCKET POP": {
         "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
-        "VALUE": 3,
+        "VALUE": 4,
         "OBTAIN": "Trading Only",
         "ORIGIN": "Summer 2021 Event Craftable Knife",
         "IMAGE": "https://i.imgur.com/kLe9RYG.png"
@@ -1128,56 +1128,56 @@
     },
     "HARVEST BLADE": {
         "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
-        "VALUE": 4,
+        "VALUE": 5,
         "OBTAIN": "Trading Only",
         "ORIGIN": "Harvest Bundle (2019)",
         "IMAGE": "https://i.imgur.com/fBZudeB.png"
     },
     "STRANGE BLADE": {
         "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
-        "VALUE": 4,
+        "VALUE": 5,
         "OBTAIN": "Trading Only",
         "ORIGIN": "Strange Bundle (2019)",
         "IMAGE": "https://i.imgur.com/AoDv6ba.png"
     },
     "TAILPIPE": {
         "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
-        "VALUE": 4,
+        "VALUE": 5,
         "OBTAIN": "Trading Only",
         "ORIGIN": "Exhaust Bundle (2019)",
         "IMAGE": "https://i.imgur.com/UfVZkaD.png"
     },
     "OAKEN ENFORCER": {
         "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
-        "VALUE": 4,
+        "VALUE": 5,
         "OBTAIN": "Trading Only",
         "ORIGIN": "Oak Bundle (2019)",
         "IMAGE": "https://i.imgur.com/Qgsc0dP.png"
     },
     "MYSTIC FALCHION": {
         "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
-        "VALUE": 4,
+        "VALUE": 5,
         "OBTAIN": "Trading Only",
         "ORIGIN": "Mystic Bundle (2019)",
         "IMAGE": "https://i.imgur.com/nGLGKbr.png"
     },
     "DESERT JEWEL": {
         "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
-        "VALUE": 4,
+        "VALUE": 5,
         "OBTAIN": "Trading Only",
         "ORIGIN": "Desert Bundle (2019)",
         "IMAGE": "https://i.imgur.com/COjO7SA.png"
     },
     "ROYAL EGG": {
         "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
-        "VALUE": 4,
+        "VALUE": 5,
         "OBTAIN": "Trading Only",
         "ORIGIN": "Easter Bundle (2019)",
         "IMAGE": "https://i.imgur.com/HRidSGC.png"
     },
     "MAGMA LORD": {
         "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
-        "VALUE": 4,
+        "VALUE": 5,
         "OBTAIN": "Trading Only",
         "ORIGIN": "Bought for 500 Robux in the Shop (2019)",
         "IMAGE": "https://i.imgur.com/js13Fo7.png"
@@ -1380,14 +1380,14 @@
     },
     "CUPID SWORD": {
         "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
-        "VALUE": 3,
+        "VALUE": 2,
         "OBTAIN": "Trading / Unboxing",
         "ORIGIN": "Valentine 2022 Event (Valentine Case)",
         "IMAGE": "https://i.imgur.com/cWnjpNS.png"
     },
     "LUNAR POLEARM": {
-        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
-        "VALUE": 4,
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": 3,
         "OBTAIN": "Trading / Season Pass",
         "ORIGIN": "Earned through the Season 12 pass",
         "IMAGE": "https://i.imgur.com/OqSJWVk.png"
@@ -1478,35 +1478,35 @@
     },
     "AQUA WISP": {
         "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
-        "VALUE": 3,
+        "VALUE": 2,
         "OBTAIN": "Trading Only",
         "ORIGIN": "Summer 2021 Event (Summer Case)",
         "IMAGE": "https://i.imgur.com/AmkSUlo.png"
     },
     "WHITE POP": {
         "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
-        "VALUE": 3,
+        "VALUE": 2,
         "OBTAIN": "Trading Only",
         "ORIGIN": "Summer 2021 Event (Summer Case)",
         "IMAGE": "https://i.imgur.com/gwC2Dxl.png"
     },
     "BLUE POP": {
         "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
-        "VALUE": 3,
+        "VALUE": 2,
         "OBTAIN": "Trading Only",
         "ORIGIN": "Summer 2021 Event (Summer Case)",
         "IMAGE": "https://i.imgur.com/ZUGu9BU.png"
     },
     "RED POP": {
         "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
-        "VALUE": 3,
+        "VALUE": 2,
         "OBTAIN": "Trading Only",
         "ORIGIN": "Summer 2021 Event (Summer Case)",
         "IMAGE": "https://i.imgur.com/emB9I77.png"
     },
     "SHARK HOOK": {
         "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
-        "VALUE": 3,
+        "VALUE": 2,
         "OBTAIN": "Trading Only",
         "ORIGIN": "Earned through the Season 7 pass",
         "IMAGE": "https://i.imgur.com/JaMiPI4.png"
@@ -2100,7 +2100,7 @@
         "IMAGE": "https://i.imgur.com/Um7ZSKp.png"
     },
     "ELEGANT BLADE": {
-        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
         "VALUE": 570,
         "OBTAIN": "Trading Only",
         "ORIGIN": "Top 100 Comp. Prize (June 2017-June 2018)",
@@ -3424,28 +3424,28 @@
     },
     "TOYS": {
         "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
-        "VALUE": "3 T1 Rares",
+        "VALUE": "1 T1 Legendary",
         "OBTAIN": "Trading Only",
         "ORIGIN": "Holiday 2020 Event (Merry & Decorated Cases)",
         "IMAGE": "https://i.imgur.com/Gwm556i.jpg"
     },
     "STARRY": {
         "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
-        "VALUE": "3 T1 Rares",
+        "VALUE": "1 T1 Legendary",
         "OBTAIN": "Trading Only",
         "ORIGIN": "Holiday 2020 Event (Merry & Decorated Cases)",
         "IMAGE": "https://i.imgur.com/36bCi9c.jpg"
     },
     "TREATS": {
         "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
-        "VALUE": "3 T1 Rares",
+        "VALUE": "1 T1 Legendary",
         "OBTAIN": "Trading Only",
         "ORIGIN": "Holiday 2020 Event (Merry & Decorated Cases)",
         "IMAGE": "https://i.imgur.com/970FsF8.jpg"
     },
     "LITTLE HELPERS": {
         "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
-        "VALUE": "3 T1 Rares",
+        "VALUE": "1 T1 Legendary",
         "OBTAIN": "Trading Only",
         "ORIGIN": "Holiday 2020 Event (Merry & Decorated Cases)",
         "IMAGE": "https://i.imgur.com/vIrTihl.jpg"
@@ -3606,14 +3606,14 @@
     },
     "SHINY LUCK": {
         "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
-        "VALUE": "3 T1 Legendaries",
+        "VALUE": "1 T1 Exotic",
         "OBTAIN": "Trading Only",
         "ORIGIN": "50 Point Comp. Prize (March 2019)",
         "IMAGE": "https://i.imgur.com/i7icrJP.png"
     },
     "GOLEM": {
         "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
-        "VALUE": "3 T1 Legendaries",
+        "VALUE": "1 T1 Exotic",
         "OBTAIN": "Trading Only",
         "ORIGIN": "50 Point Comp. Prize (February 2019)",
         "IMAGE": "https://i.imgur.com/JuOLozM.png"
@@ -3788,7 +3788,7 @@
     },
     "FLAKES": {
         "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
-        "VALUE": "35 T1 Exotics",
+        "VALUE": "50 T1 Exotics",
         "OBTAIN": "Trading Only",
         "ORIGIN": "Redeemed using code \"Happy_Holidays\" (2016)",
         "IMAGE": "https://i.imgur.com/OkmGxhr.png"
