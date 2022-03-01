@@ -24,6 +24,9 @@ import scraper_v2
 app = Flask(__name__)
 app.config['JSONIFY_PRETTYPRINT_REGULAR'] = True
 
+with open("values.json", "r") as file:
+    values = json.load(file)
+
 @app.route('/', methods=['GET'])
 def home():
     """The homepage"""
@@ -31,8 +34,6 @@ def home():
 
 @app.route('/v2/assassin', methods=['GET'])
 def assassin():
-    with open("values.json", "r") as file:
-        values = json.load(file)
 
     input = request.args['name'].upper().replace('_', ' ') if 'name' in request.args else "NOINPUT"
     if input in ["NOINPUT", ""]:
@@ -42,7 +43,10 @@ def assassin():
         response.headers.add('Access-Control-Allow-Origin', '*')
         return response
     
-    knifeNames = get_close_matches(input, values.keys())
+    if ',' in input:
+        knifeNames = input.split(',')
+    else:
+        knifeNames = get_close_matches(input, values.keys())
     knives = []
     for name in knifeNames:
         knife = values[name]
@@ -123,5 +127,5 @@ def format_args(args):  # sourcery skip: remove-redundant-if
 if __name__ == '__main__':
     # This is used when running locally only. When deploying to Google App
     # Engine, a webserver process such as Gunicorn will serve the app.
-    app.run(host='127.0.0.1')
+    app.run(host='0.0.0.0')
 # [END gae_flex_quickstart]
