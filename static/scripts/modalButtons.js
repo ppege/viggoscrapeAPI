@@ -48,8 +48,8 @@ $("#scrapeButton").click(function() {
     let grouping = document.getElementById("groupingSelect").value;
     let bool = + (grouping === "Group by assignment");
     let urlInput = document.getElementById("urlInput");
-    let fetchUrl = "/api/" + version + "/scrape?subdomain=" + subdomain + "&username=" + username +  "&date=" + date + "&groupByAssignment=" + bool + "&password=" + password;
-    urlInput.value = window.location.host + fetchUrl;
+    let fetchUrl = "https://api.nangurepo.com/" + version + "/scrape?subdomain=" + subdomain + "&username=" + username +  "&date=" + date + "&groupByAssignment=" + bool + "&password=" + password;
+    urlInput.value = fetchUrl;
     fetch(fetchUrl)
         .then(response => response.text())
         .then(data => {

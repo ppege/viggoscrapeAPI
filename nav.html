@@ -2,7 +2,7 @@
     <div class="container">
       <div class="navbar-brand">
         <a class="navbar-item" href="/">
-            <img src="/static/favicon.ico" style="padding-right:5px" alt="logo" width="32" height="32" id="logobrand">
+            <img src="static/favicon.ico" style="padding-right:5px" alt="logo" width="32" height="32" id="logobrand">
             <p class="is-1" style="padding: left 4px;">Viggoscrape</p>
         </a>
         <span class="navbar-burger" id="navbarBurger" data-target="navbarMenuHeroC">
@@ -32,25 +32,21 @@
               More
             </a>
             <div class="navbar-dropdown">
-              <a class="navbar-item">
-                About
+              <a class="navbar-item" href="https://nangurepo.com">
+                About me
               </a>
-              <a class="navbar-item">
-                Jobs
-              </a>
-              <a class="navbar-item">
-                Contact
+              <a class="navbar-item" href="https://api.nangurepo.com/v2/scrape">
+                API
               </a>
               <hr class="navbar-divider">
-              <a class="navbar-item">
-                Report an issue
-              </a>
+              <div class="navbar-item">
+                Version 2.0.0
+              </div>
             </div>
           </div>
           <span class="navbar-item">
             <div class="buttons">
-              <!-- <button class="button is-dark" id="darkmode">Dark mode</button> -->
-              <a class="button is-dark" id="openSource" onclick="window.open('https://github.com/nangurepo/viggoscrapeapi', '_blank').focus();">
+              <a class="button is-dark" id="openSource" href="https://github.com/nangurepo/viggoscrapeapi" target="_blank">
                 <span class="icon">
                   <i class="fab fa-github"></i>
                 </span>
@@ -60,7 +56,6 @@
           </span>
         </div>
       </div>
-      <script src="/static/scripts/navbarButtons.js"></script>
     </div>
     <script src="/static/scripts/navbar.js"></script>
     

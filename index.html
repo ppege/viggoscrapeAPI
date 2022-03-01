@@ -14,13 +14,13 @@
       </head>
     <body>
       <div id="page" class="hero">
-        <section class="hero" id="hero">
+        <section class="hero" id="hero" style="z-index:2">
           <div class="hero-navbar">
             <!--Navigation bar-->
             <nav id="navbar-place" class="navbar is-transparent" role="navigation"></nav>
             <script>
             $(function(){
-              $("#navbar-place").load("_nav.html", function() {
+              $("#navbar-place").load("./nav.html", function() {
                 $("#home").addClass("is-active");
               });
             });
@@ -39,12 +39,12 @@
           <script src="/static/scripts/home.js"></script>
         </div>
         <div class="section" style="z-index: 1; margin-top: 30px;">
-          <div class="container box">
+          <div class="container box" style="background-color:rgba(255, 255, 255, 0.2); backdrop-filter:blur(3px)">
             <h1 class="title is-3">Looking to use Viggoscrape?</h1>
             <h2 class="subtitle is-5">Here's what this tool can offer.</h2>
             <div class="tile is-ancestor">
               <div class="tile is-parent">
-                <div class="tile is-child box">
+                <div class="tile is-child notification is-primary">
                   <p class="title">Simplicity</p>
                   <p class="subtitle">
                     With API wrappers for Python and Node.js, getting Viggo assignments in JSON form has never been simpler.
@@ -52,14 +52,14 @@
                 </div>
               </div>
               <div class="tile is-parent">
-                <div class="tile is-child box">
-                  <p class="title">Possibility</p>
-                  <p class="subtitle">Need data from half a year ago? No problem. Need the data categorized by data type instead? That's done.</p>
+                <div class="tile is-child notification is-primary">
+                  <p class="title">Special cases</p>
+                  <p class="subtitle">Need data from half a year ago? No problem. Need the data categorized by field instead? You can do that.</p>
                 </div>
               </div>
               <div class="tile is-parent">
-                <div class="tile is-child box">
-                  <p class="title">Affordability</p>
+                <div class="tile is-child notification is-primary">
+                  <p class="title">FOSS</p>
                   <p class="subtitle">
                     Viggoscrape is completely free, open source software. And it will always be that way.
                   </p>
@@ -68,21 +68,21 @@
             </div>
             <div class="tile is-ancestor">
               <div class="tile is-parent">
-                <div class="tile is-child box">
-                  <p class="title">Flexibility</p>
-                  <p class="subtitle">Because Viggoscrape is a web API, you can use it anywhere.</p>
+                <div class="tile is-child notification is-primary">
+                  <p class="title">Portability</p>
+                  <p class="subtitle">Because Viggoscrape is a web API, you can use it literally anywhere using web requests. <a href="documentation">Here's the URI syntax.</a></p>
                 </div>
               </div>
               <div class="tile is-parent">
-                <div class="tile is-child box">
-                  <p class="title">Affordability</p>
-                  <p class="subtitle">BLA</p>
+                <div class="tile is-child notification is-primary">
+                  <p class="title">Speed</p>
+                  <p class="subtitle">Viggoscrape takes less than 2 seconds on average to scrape any amount of assignments, and <a href="demo">I can prove it.</a></p>
                 </div>
               </div>
               <div class="tile is-parent">
-                <div class="tile is-child box">
-                  <p class="title">Affordability</p>
-                  <p class="subtitle">BLA</p>
+                <div class="tile is-child notification is-primary">
+                  <p class="title">Documentation</p>
+                  <p class="subtitle">A full documentation of the API is available <a href="documentation">here.</a></p>
                 </div>
               </div>
             </div>
