@@ -2804,12 +2804,8 @@
         "VALUE": "2 T1 Legendaries",
         "OBTAIN": "Trading / Season Pass",
         "ORIGIN": "Earned through the Season 12 pass",
-<<<<<<< HEAD
-        "IMAGE": "",
-        "DEMANDNUMBER": 3
-=======
         "IMAGE": "https://i.imgur.com/dwJSlPs.png"
->>>>>>> 2305fa5c5ab9b096f6343c0e8dfa410139571f3a
+        "DEMANDNUMBER": 3
     },
     "COMET SHOWER": {
         "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
