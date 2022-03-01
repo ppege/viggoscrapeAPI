@@ -1372,9 +1372,9 @@
         "IMAGE": "https://i.imgur.com/krG2B3r.png"
     },
     "CAKE POP": {
-        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
-        "VALUE": 15,
-        "OBTAIN": "Trading Only",
+        "DEMAND": "\u2606\u2606\u2606\u2606\u2606",
+        "VALUE": -1000,
+        "OBTAIN": "Don't",
         "ORIGIN": "Redeemed through an old expired code (2022)",
         "IMAGE": "https://i.imgur.com/j6HUQuR.png"
     },
