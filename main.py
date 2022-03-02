@@ -37,7 +37,10 @@ def assassin():
     if 'read' in request.args and 'code' in request.args:
         with open('inventories.json', "r") as file:
             data = json.load(file)
-        return jsonify(data[request.args['code']])
+        if request.args['code'] in data.keys():
+            return jsonify(data[request.args['code']])
+        else:
+            return jsonify("failure")
     input = request.args['name'].upper().replace('_', ' ') if 'name' in request.args else "NOINPUT"
     if input in ["NOINPUT", ""]:
         response = jsonify({
