@@ -52,12 +52,12 @@ def assassin():
         try:
             with open('inventories.json', "r") as file:
                 data = json.load(file)
-            data[request.args['code']] = request.args["name"].upper().split(',')
+            data[request.args["code"]] = request.args["name"].replace(" ", "_").title().split(',')
             with open('inventories.json', "w") as file:
                 json.dump(data, file)
-            return jsonify({"result": "success"})
+            return jsonify("success")
         except:
-            return jsonify({"result": "failure"})
+            return jsonify("failure")
     if ',' in input:
         knifeNames = input.split(',')
     else:
