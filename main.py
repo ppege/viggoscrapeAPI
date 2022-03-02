@@ -38,9 +38,11 @@ def assassin():
         with open('inventories.json', "r") as file:
             data = json.load(file)
         if request.args['code'] in data.keys():
-            return jsonify(data[request.args['code']])
+            response = jsonify(data[request.args['code']])
         else:
-            return jsonify("failure")
+            response = jsonify("failure")
+        response.headers.add('Access-Control-Allow-Origin', '*')
+        return response
     input = request.args['name'].upper().replace('_', ' ') if 'name' in request.args else "NOINPUT"
     if input in ["NOINPUT", ""]:
         response = jsonify({
@@ -55,9 +57,13 @@ def assassin():
             data[request.args["code"]] = request.args["name"].replace(" ", "_").title().split(',')
             with open('inventories.json', "w") as file:
                 json.dump(data, file)
-            return jsonify("success")
+            response = jsonify("success")
+            response.headers.add('Access-Control-Allow-Origin', '*')
+            return response
         except:
-            return jsonify("failure")
+            response = jsonify("failure")
+            response.headers.add('Access-Control-Allow-Origin', '*')
+            return response
     if ',' in input:
         knifeNames = input.split(',')
     else:
