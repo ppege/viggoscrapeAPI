@@ -34,7 +34,10 @@ def home():
 
 @app.route('/v2/assassin', methods=['GET'])
 def assassin():
-
+    if 'read' in request.args and 'code' in request.args:
+        with open('inventories.json', "r") as file:
+            data = json.load(file)
+        return jsonify(data[request.args['code']])
     input = request.args['name'].upper().replace('_', ' ') if 'name' in request.args else "NOINPUT"
     if input in ["NOINPUT", ""]:
         response = jsonify({
@@ -42,7 +45,16 @@ def assassin():
         })
         response.headers.add('Access-Control-Allow-Origin', '*')
         return response
-    
+    if 'write' in request.args and 'code' in request.args:
+        try:
+            with open('inventories.json', "r") as file:
+                data = json.load(file)
+            data[request.args['code']] = request.args["name"].upper().split(',')
+            with open('inventories.json', "w") as file:
+                json.dump(data, file)
+            return jsonify({"result": "success"})
+        except:
+            return jsonify({"result": "failure"})
     if ',' in input:
         knifeNames = input.split(',')
     else:
@@ -127,5 +139,5 @@ def format_args(args):  # sourcery skip: remove-redundant-if
 if __name__ == '__main__':
     # This is used when running locally only. When deploying to Google App
     # Engine, a webserver process such as Gunicorn will serve the app.
-    app.run(host='0.0.0.0')
+    app.run(host='127.0.0.1')
 # [END gae_flex_quickstart]
