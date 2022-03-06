@@ -34,15 +34,33 @@ def home():
 
 @app.route('/v2/assassin', methods=['GET'])
 def assassin():
-    if 'read' in request.args and 'code' in request.args:
-        with open('inventories.json', "r") as file:
-            data = json.load(file)
-        if request.args['code'] in data.keys():
-            response = jsonify(data[request.args['code']])
+    if 'code' in request.args:
+        file_name = f'inventories/{request.args["code"]}.json'
+        try:
+            with open(file_name, "r") as file:
+                data = json.load(file)
+        except FileNotFoundError:
+            with open(file_name, "w") as file:
+                json.dump([], file)
+            with open(file_name, "r") as file:
+                data = json.load(file)
+        if 'name' in request.args:
+            try:
+                data = request.args["name"].replace(" ", "_").title().split(',')
+                with open(file_name, "w") as file:
+                    json.dump(data, file)
+                response = jsonify("success")
+                response.headers.add('Access-Control-Allow-Origin', '*')
+                return response
+            except:
+                response = jsonify("failure")
+                response.headers.add('Access-Control-Allow-Origin', '*')
+                return response
         else:
-            response = jsonify("failure")
-        response.headers.add('Access-Control-Allow-Origin', '*')
-        return response
+            response = jsonify(data)
+            response.headers.add('Access-Control-Allow-Origin', '*')
+            return response
+
     input = request.args['name'].upper().replace('_', ' ') if 'name' in request.args else "NOINPUT"
     if input in ["NOINPUT", ""]:
         response = jsonify({
@@ -50,20 +68,6 @@ def assassin():
         })
         response.headers.add('Access-Control-Allow-Origin', '*')
         return response
-    if 'write' in request.args and 'code' in request.args:
-        try:
-            with open('inventories.json', "r") as file:
-                data = json.load(file)
-            data[request.args["code"]] = request.args["name"].replace(" ", "_").title().split(',')
-            with open('inventories.json', "w") as file:
-                json.dump(data, file)
-            response = jsonify("success")
-            response.headers.add('Access-Control-Allow-Origin', '*')
-            return response
-        except:
-            response = jsonify("failure")
-            response.headers.add('Access-Control-Allow-Origin', '*')
-            return response
     if ',' in input:
         knifeNames = input.split(',')
     else:
