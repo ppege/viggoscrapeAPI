@@ -47,12 +47,14 @@ def assassin():
         if 'name' in request.args:
             try:
                 data = request.args["name"].replace(" ", "_").title().split(',')
+                data.sort(reverse=True, key=lambda x: values[x.upper().replace("_", " ")]['EXOTICVALUE'])
                 with open(file_name, "w") as file:
                     json.dump(data, file)
                 response = jsonify("success")
                 response.headers.add('Access-Control-Allow-Origin', '*')
                 return response
-            except:
+            except Exception as e:
+                print(e)
                 response = jsonify("failure")
                 response.headers.add('Access-Control-Allow-Origin', '*')
                 return response
