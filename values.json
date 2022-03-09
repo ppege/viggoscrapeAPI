@@ -90,13 +90,13 @@
         "EXOTICVALUE": 15
     },
     "QUEEN OF HEARTS": {
-        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
-        "VALUE": 20,
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": 10,
         "OBTAIN": "Trading / Crafting",
         "ORIGIN": "Valentine Event 2022 Craftable Knife",
         "IMAGE": "https://i.imgur.com/sWWaylQ.png",
-        "DEMANDNUMBER": 4,
-        "EXOTICVALUE": 20
+        "DEMANDNUMBER": 3,
+        "EXOTICVALUE": 10
     },
     "WATER DEMON": {
         "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
@@ -487,12 +487,12 @@
     },
     "CUPID STAR": {
         "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
-        "VALUE": 5,
+        "VALUE": 4,
         "OBTAIN": "Trading / Unboxing",
         "ORIGIN": "Valentine 2022 Event (Valentine Case)",
         "IMAGE": "https://i.imgur.com/DrQoEJ1.png",
         "DEMANDNUMBER": 4,
-        "EXOTICVALUE": 5
+        "EXOTICVALUE": 4
     },
     "JADE CHAKRAM": {
         "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
@@ -775,12 +775,12 @@
     },
     "SHURIKEN": {
         "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
-        "VALUE": 35,
+        "VALUE": 45,
         "OBTAIN": "Trading Only",
         "ORIGIN": "Bought with 1,400 Robux in Shop in 2020",
         "IMAGE": "https://i.imgur.com/x3GdSBX.png",
         "DEMANDNUMBER": 4,
-        "EXOTICVALUE": 35
+        "EXOTICVALUE": 45
     },
     "GRIM SCYTHE": {
         "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
@@ -1773,12 +1773,12 @@
         "EXOTICVALUE": 0.5
     },
     "CUPID SWORD": {
-        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
         "VALUE": 2,
         "OBTAIN": "Trading / Unboxing",
         "ORIGIN": "Valentine 2022 Event (Valentine Case)",
         "IMAGE": "https://i.imgur.com/cWnjpNS.png",
-        "DEMANDNUMBER": 4,
+        "DEMANDNUMBER": 3,
         "EXOTICVALUE": 2
     },
     "LUNAR POLEARM": {
@@ -1791,13 +1791,13 @@
         "EXOTICVALUE": 3
     },
     "ROSE CALIBUR": {
-        "DEMAND": "???",
-        "VALUE": "???",
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
+        "VALUE": 6,
         "OBTAIN": "COMING SOON",
         "ORIGIN": "450 Point Prize for the upcoming Comp Season",
         "IMAGE": "https://i.imgur.com/6WTiZ9a.png",
-        "DEMANDNUMBER": 0,
-        "EXOTICVALUE": "Unknown"
+        "DEMANDNUMBER": 4,
+        "EXOTICVALUE": 6
     },
     "GEM BERSERKER": {
         "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
@@ -2926,12 +2926,12 @@
     },
     "KING OF HEARTS": {
         "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
-        "VALUE": "1 T1 Exotic",
+        "VALUE": "2 T1 Legendaries",
         "OBTAIN": "Trading/Crafting/Timed Shop",
         "ORIGIN": "Standard / Polished / Sturdy / Elite Cases",
         "IMAGE": "https://i.imgur.com/pH4o0N1.png",
         "DEMANDNUMBER": 4,
-        "EXOTICVALUE": 1
+        "EXOTICVALUE": 0.3333333333333333
     },
     "FRIGID": {
         "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
@@ -6219,31 +6219,31 @@
         "EXOTICVALUE": 0.16666666666666666
     },
     "LOVE LETTER": {
-        "DEMAND": "???",
-        "VALUE": "???",
-        "OBTAIN": "COMING SOON",
+        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "VALUE": "3 T1 Rares",
+        "OBTAIN": "Trading / Earning in Comp",
         "ORIGIN": "30 point prize for the upcoming Comp Season",
         "IMAGE": "https://i.imgur.com/Hh879CK.png",
         "DEMANDNUMBER": 0,
-        "EXOTICVALUE": "Unknown"
+        "EXOTICVALUE": 0.1
     },
     "TIGER CUB": {
-        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
         "VALUE": "2 T1 Rares",
         "OBTAIN": "Trading / Season Pass",
         "ORIGIN": "Earned through the Season 12 pass",
         "IMAGE": "https://i.imgur.com/WmzMr9w.png",
-        "DEMANDNUMBER": 3,
+        "DEMANDNUMBER": 2,
         "EXOTICVALUE": 0.06666666666666667
     },
     "LUCKY NEKO": {
-        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
-        "VALUE": "2 T1 Legendaries",
+        "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
+        "VALUE": "1 T1 Legendary",
         "OBTAIN": "Trading / Season Pass",
         "ORIGIN": "Earned through the Season 12 pass",
         "IMAGE": "https://i.imgur.com/X3uIPd0.png",
         "DEMANDNUMBER": 3,
-        "EXOTICVALUE": 0.3333333333333333
+        "EXOTICVALUE": 0.16666666666666666
     },
     "WIZARD FROG": {
         "DEMAND": "\u2605\u2605\u2606\u2606\u2606",
@@ -6804,12 +6804,12 @@
         "EXOTICVALUE": 3
     },
     "STARFISH": {
-        "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
+        "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
         "VALUE": "3 T1 Exotics",
         "OBTAIN": "Trading Only",
         "ORIGIN": "Buying for 200 Robux in Shop in Summer 2018",
         "IMAGE": "https://i.imgur.com/XyVW5lO.png",
-        "DEMANDNUMBER": 3,
+        "DEMANDNUMBER": 4,
         "EXOTICVALUE": 3
     },
     "BALD EAGLE": {
