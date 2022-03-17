@@ -14,13 +14,6 @@
     <div class="hero-navbar">
       <!--Navigation bar-->
       <nav id="navbar-place" class="navbar is-transparent" role="navigation"></nav>
-      <script>
-      $(function(){
-        $("#navbar-place").load("nav.html", function() {
-          $("#home").addClass("is-active");
-        });
-      });
-      </script>
       <!--end of Navigation bar-->
     </div>
     <!-- Hero content: will be in the middle -->
@@ -126,9 +119,6 @@
                     <progress class="progress is-medium is-danger is-hidden" max="100">Loading...</progress>
                   </div>
                 </div>
-                <!-- <footer class="card-footer">
-                  <button class="card-footer-item button is-dark">Scrape!</a>
-                </footer> -->
               </div>
             </div>
             <div class="row is-one-fourth">
@@ -156,25 +146,21 @@
                     </div>
                   </div>
                 </div>
-                <!-- <footer class="card-footer">
-                  <button class="card-footer-item button is-dark">Scrape!</a>
-                </footer> -->
               </div>
             </div>
           </div>
-          
-          
-          
-          <!-- <input class="input" id="subdomainInput" type="text" placeholder="Subdomain">
-          <input class="input" id="dateInput" type="text" placeholder="YYYY-MM-DD">
-          <input class="input" id="usernameInput" type="text" placeholder="Username">
-          <input class="input" id="passwordInput" type="password" placeholder="Password">
-          <button class="button is-success" id="scrapeButton">Scrape!</button> -->
         </div>
       </div>
     </div>
+    <div id="footer-place"></div>
     <script src="/static/scripts/modalButtons.js"></script>
-    
-
+    <script>
+      $(function(){
+        $("#navbar-place").load("/resources/nav.html", function() {
+          $("#home").addClass("is-active");
+        });
+        $("#footer-place").load("/resources/footer.html");
+      });
+    </script>
   </section>
 </body>

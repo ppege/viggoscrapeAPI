@@ -1,1 +1,29 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
+.is-translucent {
+    background-color:rgba(255, 255, 255, 0.3);
+    backdrop-filter:blur(2px);
+}
+.has-gradient {
+    background: linear-gradient(270deg, #ff0000, #fd00ff);
+    background-size: 200% 200%;
+    background-attachment: fixed;
+    -webkit-animation: BoxGradient 7s ease infinite;
+    -moz-animation: BoxGradient 7s ease infinite;
+    animation: BoxGradient 7s ease infinite;
+}
+
+@-webkit-keyframes BoxGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes BoxGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes BoxGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}

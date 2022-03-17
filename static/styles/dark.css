@@ -174,7 +174,7 @@
     background-color: #fafafa !important;
   }
   .box {
-    background-color: #0a0a0a;
+    background-color:rgba(0, 0, 0, 0.3);
     box-shadow: 0 2px 3px rgba(255, 255, 255, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.1);
     color: #b5b5b5;
   }

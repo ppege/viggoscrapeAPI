@@ -10,30 +10,20 @@
         <link rel="stylesheet" type="text/css" id="dark-css" href="/static/styles/dark.css">
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script src="/static/scripts/navbar.js"></script>
-        <script src="/static/scripts/navbarButtons.js"></script>
         <script src="/static/scripts/examples.js"></script>
         <link rel="stylesheet" href="/static/styles/codeblock.min.css">
         <script src="/static/scripts/codeblock.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script>
-      </head>
-    <body class="has-navbar-fixed-top" id="exampleBody">
-        <section class="section" id="exampleHero">
-            <div>
-                <!--Navigation bar-->
-                <nav id="navbar-place" class="navbar is-fixed-top has-background-danger">
-                    
-                </nav>
-                <script>
-                    $(function(){
-                        $("#navbar-place").load("_nav.html", function() {
-                        $("#examples").addClass("is-active");
-                        });
-                    });
-                    </script>
-                <!--end of Navigation bar-->
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    </head>
+    <body id="exampleBody">
+        <section class="hero has-gradient" id="hero" style="z-index:2">
+            <div class="hero-navbar">
+              <!--Navigation bar-->
+              <nav id="navbar-place" class="navbar is-transparent" role="navigation"></nav>
+              <script src="/static/scripts/navbar.js"></script>
+  
+              <!--end of Navigation bar-->
             </div>
-        </section>
-        <section class="hero is-info is-medium is-bold">
             <div class="hero-body">
                 <div class="container has-text-centered">
                     <h1 class="title">
@@ -56,7 +46,7 @@
                                         <p class="title article-title">Implementing Viggoscrape</p>
                                         <div class="tags has-addons level-item">
                                             <a class="tag is-rounded is-info" href="/people/nangu">@nangu</a>
-                                            <span class="tag is-rounded">December 25, 2021</span>
+                                            <span class="tag is-rounded">March 16, 2022</span>
                                         </div>
                                     </div>
                                 </div>
@@ -68,31 +58,20 @@
                                     <p>
                                         These options can be used in various applications, for example as an embed or to create a notifier.
                                     </p>
-                                    <pre><code class="language-python">
-from viggoscrape import Viggoscrape
-
-v = Viggoscrape(
-    subdomain="example-subdomain",
-    username="viggouser@gmail.com",
-    password="password123456"
-) # initialization
-v.date = "2021-03-14" # get assignments within 2 weeks of this date
-
-print(v.get_assignments()) # get a list of dictionaries representing assignments
-                                    </code></pre>
                                     <p>
                                         So far I've only made 2 API wrappers for Viggoscrape, but more
                                         will come soon. The wrappers are for Javascript and Python.
                                         Both have their source code hosted on GitHub, with the packages
                                         distributed on their respective package managers:
-                                        <div class="pl-5 box">
-                                            <li><a href="https://github.com/nangurepo/viggoscrape.py">Python</a></li>
-                                            <li><a href="https://github.com/nangurepo/viggoscrape">Javascript</a></li>
-                                        </div>
+                                        <ul>
+                                            <li><a href="https://github.com/nangurepo/viggoscrape.py">Viggoscrape.py</a></li>
+                                            <li><a href="https://github.com/nangurepo/viggoscrape.js">Viggoscrape.js</a></li>
+                                        </ul>
                                     </p>
                                 </div>
                             </div>
                         </div>
+                        <div class="block"></div>
                         <div class="box">
                             <aside class="menu">
                                 <p class="menu-label">
@@ -101,9 +80,9 @@ print(v.get_assignments()) # get a list of dictionaries representing assignments
                                 <ul class="menu-list">
                                     <li>
                                         <ul>
-                                            <li><a onclick="goto('Python')">Python</a></li>
-                                            <li><a onclick="goto('Javascript')">Javascript</a></li>
-                                            <li><a onclick="goto('Others')">Others</a></li>
+                                            <li><a onclick="goto('python')">Python</a></li>
+                                            <li><a onclick="goto('javascript')">Javascript</a></li>
+                                            <li><a onclick="goto('other')">Others</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -111,73 +90,73 @@ print(v.get_assignments()) # get a list of dictionaries representing assignments
                         </div>
                         <!-- END ARTICLE -->
                         <!-- START ARTICLE -->
-                        <div class="pt-6" id="Languages"></div>
+                        <div class="block" id="python"></div>
                         <div class="card article">
                             <div class="card-content">
                                 <div class="media">
                                     <div class="media-center">
-                                        <img src="https://res.cloudinary.com/ameo/image/upload/v1639144778/typocat_svbspx.png" class="author-image" alt="Placeholder image">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" class="author-image" alt="Placeholder image">
                                     </div>
                                     <div class="media-content has-text-centered">
-                                        <p class="title article-title">Languages</p>
+                                        <p class="title article-title">Python</p>
                                     </div>
                                 </div>
-                                <div class="content article-body">
-                                    <p>
-                                        
-                                    </p>
+                                <div id="pythonBody" class="content article-body">
                                 </div>
                             </div>
                         </div>
                         <!-- END ARTICLE -->
-                        <!-- START PROMO BLOCK -->
-                        <section class="hero is-info is-bold is-small promo-block">
-                            <div class="hero-body">
-                                <div class="container">
-                                    <h1 class="title">
-                                        <i class="fa fa-bell-o"></i> Nemo enim ipsam voluptatem quia.</h1>
-                                    <span class="tag is-black is-medium is-rounded">
-                                            Natus error sit voluptatem
-                                        </span>
-                                </div>
-                            </div>
-                        </section>
-                        <!-- END PROMO BLOCK -->
                         <!-- START ARTICLE -->
+                        <div class="block" id="javascript"></div>
                         <div class="card article">
                             <div class="card-content">
                                 <div class="media">
                                     <div class="media-center">
-                                        <img src="https://res.cloudinary.com/ameo/image/upload/v1639144778/typocat_svbspx.png" class="author-image" alt="Placeholder image">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png" class="author-image" alt="Placeholder image">
                                     </div>
                                     <div class="media-content has-text-centered">
-                                        <p class="title article-title">Cras tincidunt lobortis feugiat vivamus.</p>
-                                        <p class="subtitle is-6 article-subtitle">
-                                            <a href="#">@angela</a> on October 7, 202X
-                                        </p>
+                                        <p class="title article-title">Javascript</p>
+                                    </div>
+                                </div>
+                                <div id="javascriptBody" class="content article-body">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END ARTICLE -->
+                        <!-- START ARTICLE -->
+                        <div class="block" id="other"></div>
+                        <div class="card article">
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-center">
+                                        <img src="https://cdn.shopify.com/s/files/1/1061/1924/products/Emoji_Icon_-_Thinking_large.png?v=1571606093" class="author-image" alt="Placeholder image">
+                                    </div>
+                                    <div class="media-content has-text-centered">
+                                        <p class="title article-title">Other methods</p>
                                     </div>
                                 </div>
                                 <div class="content article-body">
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Accumsan lacus vel facilisis volutpat est velit egestas. Sapien eget mi proin sed. Sit amet mattis vulputate enim.
-                                    </p>
-                                    <p>
-                                        Commodo ullamcorper a lacus vestibulum sed arcu. Fermentum leo vel orci porta non. Proin fermentum leo vel orci porta non pulvinar. Imperdiet proin fermentum leo vel. Tortor posuere ac ut consequat semper viverra. Vestibulum lectus mauris ultrices eros.
-                                    </p>
-                                    <h3 class="has-text-centered">“Everyone should be able to do one card trick, tell two jokes, and recite three poems, in case they are ever trapped in an elevator.”</h3>
-                                    <p>
-                                        In eu mi bibendum neque egestas congue quisque egestas diam. Enim nec dui nunc mattis enim ut tellus. Ut morbi tincidunt augue interdum velit euismod in. At in tellus integer feugiat scelerisque varius morbi enim nunc. Vitae suscipit tellus mauris a diam.
-                                        Arcu non sodales neque sodales ut etiam sit amet.
+                                        With other languages, you'll have to make use of HTTP requests to manually interact directly with the API. This is as simple as a GET request, no POST needed. The URI syntax is found within the documentation.
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <!-- END ARTICLE -->
                     </div>
-        
                 </section>
                 </div>
             </div>
         </section>
+        <div id="footer-place"></div>
     </body>
+    <script src="/static/scripts/externalLinks.js"></script>
+    <script>
+        $(function(){
+          $("#navbar-place").load("/resources/nav.html", function() {
+            $("#home").addClass("is-active");
+          });
+          $("#footer-place").load("/resources/footer.html");
+        });
+    </script>
 </html>
