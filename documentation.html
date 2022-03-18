@@ -9,6 +9,9 @@
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script src="/static/scripts/documentation.js"></script>
         <link rel="stylesheet" type="text/css" id="dark-css" href="/static/styles/dark.css">
+        <link rel="stylesheet" href="/static/styles/codeblock.min.css">
+        <script src="/static/scripts/codeblock.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     </head>
     <body></body>
 </html>
@@ -22,6 +25,9 @@
                 $("a[href$='documentation']").addClass("is-active");
             });
             $("#footer-place").load("/resources/footer.html")
+            $("#mainTitle").html("Documentation");
+            $("#mainSubtitle").html("This is the documentation for the Viggoscrape API. Here, you'll find how the API Wrappers work, how the URI requests are structured, what properties are available, and how to use the data you've retrieved.")
+            insertGist('https://gist.githubusercontent.com/NanguRepo/adb516bdab4b0e65f8e022553d2feca6/raw/');
         });
     });
 </script>

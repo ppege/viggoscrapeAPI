@@ -21,6 +21,15 @@
             });
             $("#docBody").load("/resources/docMenu.html", function() {
                 $("a[href$='properties']").addClass("is-active");
+                $("a[href$='properties']").after(`
+                <ul>
+                <li><a href="/documentation/properties#:~:text=This%20is,string.">Subdomain</a></li>
+                <li><a href="/documentation/properties#:~:text=Your%20username,to%20Viggo.">Credentials</a></li>
+                <li><a href="/documentation/properties#:~:text=This%20is%20an,2021.">Date</a></li>
+                <li><a href="/documentation/properties#:~:text=This%20is%20another,js.">Grouping</a></li>
+                <li><a href="/documentation/properties#:~:text=This%20isn't,scrape">Version</a></li>
+                </ul>
+                `);
             });
             $("#footer-place").load("/resources/footer.html")
             $("#mainTitle").html("API Properties");
