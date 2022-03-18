@@ -3,41 +3,25 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Viggoscrape API</title>
+        <title>Documentation | Viggoscrape</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
         <link rel="stylesheet" href="/static/styles/main.css">
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script src="/static/scripts/documentation.js"></script>
         <link rel="stylesheet" type="text/css" id="dark-css" href="/static/styles/dark.css">
     </head>
-    <body>
-      <div id="page" class="hero">
-        <section class="hero" id="hero" style="z-index:2">
-          <div class="hero-navbar">
-            <!--Navigation bar-->
-            <nav id="navbar-place" class="navbar is-transparent" role="navigation"></nav>
-            <script src="/static/scripts/navbar.js"></script>
-            <!--end of Navigation bar-->
-          </div>
-        </section>
-        <div class="container pt-6">
-            <h1 class="title">Documentation</h1>
-            <h2 class="subtitle">This is the documentation for the Viggoscrape API. Here, you'll find how the API Wrappers work, and how the URI requests are structured.</h2>
-            <div class="columns" id="docBody">
-            </div>
-        </div>
-        <div id="footer-place"></div>
-        <script>
-            $(function(){
-                $("#navbar-place").load("/resources/nav.html", function() {
-                    $("#documentation").addClass("is-active");
-                });
-                $("#docBody").load("/resources/docMenu.html", function() {
-                    $("a[href$='documentation']").addClass("is-active");
-                });
-                $("#footer-place").load("/resources/footer.html");
-            });
-        </script>
-      </div>
-    </body>
+    <body></body>
 </html>
+<script>
+    $(function(){
+        $("body").load("/resources/docTemplate.html", function() {
+            $("#navbar-place").load("/resources/nav.html", function() {
+                $("#documentation").addClass("is-active");
+            });
+            $("#docBody").load("/resources/docMenu.html", function() {
+                $("a[href$='documentation']").addClass("is-active");
+            });
+            $("#footer-place").load("/resources/footer.html")
+        });
+    });
+</script>

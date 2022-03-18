@@ -9,8 +9,6 @@
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script src="/static/scripts/documentation.js"></script>
         <link rel="stylesheet" type="text/css" id="dark-css" href="/static/styles/dark.css">
-        <link rel="stylesheet" href="/static/styles/codeblock.min.css">
-        <script src="/static/scripts/codeblock.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     </head>
     <body></body>
@@ -22,12 +20,12 @@
                 $("#documentation").addClass("is-active");
             });
             $("#docBody").load("/resources/docMenu.html", function() {
-                $("a[href$='python']").addClass("is-active");
+                $("a[href$='uri-syntax']").addClass("is-active");
             });
             $("#footer-place").load("/resources/footer.html")
-            $("#mainTitle").html("Python API Wrapper");
-            $("#mainSubtitle").html("This is the Viggoscrape API Wrapper for Python. Available through pip & <a href='https://pypi.org'>pypi.org</a>, this API wrapper is object-oriented and easy to use.")
-            insertGist('https://gist.githubusercontent.com/NanguRepo/7bec404ae851725b3abb7bdbec9fb88f/raw/');
+            $("#mainTitle").html("URI Syntax");
+            $("#mainSubtitle").html("This is the basic URI Syntax used by the Viggoscrape API. Use this to get a general idea of everything that's available.")
+            insertGist('https://gist.githubusercontent.com/NanguRepo/86a768cd06b854105325aadaa54edd84/raw')
         });
     });
 </script>
