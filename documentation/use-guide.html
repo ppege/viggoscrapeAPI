@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Documentation | Viggoscrape</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <link rel="stylesheet" href="/static/styles/main.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="/static/scripts/documentation.js"></script>
+        <link rel="stylesheet" type="text/css" id="dark-css" href="/static/styles/dark.css">
+        <link rel="stylesheet" href="/static/styles/codeblock.min.css">
+        <script src="/static/scripts/codeblock.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    </head>
+    <body></body>
+</html>
+<script>
+    $(function(){
+        $("body").load("/resources/docTemplate.html", function() {
+            $("#navbar-place").load("/resources/nav.html", function() {
+                $("#documentation").addClass("is-active");
+            });
+            $("#docBody").load("/resources/docMenu.html", function() {
+                $("a[href$='parsing-filtering']").addClass("is-active");
+            });
+            $("#footer-place").load("/resources/footer.html")
+            $("#mainTitle").html("Parsing and Filtering");
+            $("#mainSubtitle").html("A guide on how to use the data.")
+            insertGist('https://gist.githubusercontent.com/NanguRepo/3eb1fd2c4f2b42773211e39fcde99df8/raw')
+        });
+    });
+</script>
