@@ -14,17 +14,16 @@
 # limitations under the License.
 
 # [START gae_flex_quickstart]
-import os
 import json
 from difflib import get_close_matches
-from flask import render_template, request, jsonify, send_from_directory, Flask
+from flask import request, jsonify, Flask
 from scraper import get_assignments
 import scraper_v2
 
 app = Flask(__name__)
 app.config['JSONIFY_PRETTYPRINT_REGULAR'] = True
 
-with open("values.json", "r") as file:
+with open("values.json", "r", encoding="UTF-8") as file:
     values = json.load(file)
 
 @app.route('/', methods=['GET'])
@@ -100,7 +99,7 @@ def scrape():
 def scrape_v2():
     """
     Route to access scraper v2.
-    Takes subdomain, username, password, date, and groupByAssignment
+    Takes subdomain, username, password, date, groupByAssignment and errorAssignments
     """
     args = format_args(dict(request.args))
     if "errors" in args:
@@ -114,6 +113,7 @@ def scrape_v2():
     viggo.subdomain = args['subdomain']
     viggo.date_selected = args['date']
     viggo.group_by_assignment = bool(int(args['groupByAssignment']))
+    viggo.throw_errors_as_assignments = bool(int(args['errorAssignments']))
 
     response = jsonify(
         viggo.get_assignments()
@@ -126,10 +126,18 @@ def format_args(args):  # sourcery skip: remove-redundant-if
     error_list = []
     if 'date' not in args:
         args['date'] = None
+    if 'errorAssignments' not in args:
+        args['errorAssignments'] = "0"
+    if not args['errorAssignments'].isdigit():
+        error_list.append("errorAssignments must be an integer")
+    elif int(args['errorAssignments']) not in [0, 1]:
+        error_list.append(
+            f"""Property errorAssignments is not 0 or 1, recieved {args['errorAssignments']} instead"""
+        )
     if 'groupByAssignment' not in args:
         args['groupByAssignment'] = "1"
     if not args['groupByAssignment'].isdigit():
-        error_list.append("Property groupByAssignment is not an integer")
+        error_list.append("Property groupByAssignment must be an integer")
     elif int(args['groupByAssignment']) not in [0, 1]:
         error_list.append(
             f"""

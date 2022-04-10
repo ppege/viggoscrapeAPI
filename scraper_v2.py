@@ -11,11 +11,19 @@ class CredentialError(Exception):
 
 class Viggoscrape:
     """The main class. Takes 4 arguments, and uses those to get assignment data from viggo"""
-    def __init__(self, login_data=None, subdomain=None, date=None, group_by_assignment=True):
+    def __init__(
+        self,
+        login_data=None,
+        subdomain=None,
+        date=None,
+        group_by_assignment=True,
+        throw_errors_as_assignments=False
+    ):
         self.login_data = login_data
         self.subdomain = subdomain
         self.date_selected = date
         self.group_by_assignment = group_by_assignment
+        self.throw_errors_as_assignments = throw_errors_as_assignments
         self.html = None    # this variable will store the result of _get_html()
         self.data = None    # this variable will store the result of _get_variables()
 
@@ -24,7 +32,44 @@ class Viggoscrape:
         try:
             self._get_html()
         except (requests.exceptions.SSLError, requests.exceptions.ConnectionError, CredentialError) as exception:
+            if self.throw_errors_as_assignments:
+                return [
+                    {
+                        "author": "",
+                        "date": "",
+                        "description": str(exception),
+                        "subject": "Error",
+                        "time": "",
+                        "url": ""
+                    }
+                ]
             return {"errors": [str(exception)]}
+        except Exception as exception:
+            if self.throw_errors_as_assignments:
+                return [
+                    {
+                        "author": "",
+                        "date": "",
+                        "description": "Unknown error. Please report this to the developer. In the meantime, check your credentials for typos.",
+                        "subject": "Error",
+                        "time": "",
+                        "url": ""
+                    }
+                ]
+            return {"errors": ["Unknown error"]}
+        if self.html == "The service is unavailable.":
+            if self.throw_errors_as_assignments:
+                return [
+                    {
+                        "author": "",
+                        "date": "",
+                        "description": "The ViGGO service is currently down.",
+                        "subject": "Error",
+                        "time": "",
+                        "url": ""
+                    }
+                ]
+            return {"errors": ["Viggo is currently down"]}
         self._get_variables()
         return self._create_dictionary()
 

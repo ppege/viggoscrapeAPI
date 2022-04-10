@@ -775,12 +775,12 @@
     },
     "SHURIKEN": {
         "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
-        "VALUE": 45,
+        "VALUE": 50,
         "OBTAIN": "Trading Only",
         "ORIGIN": "Bought with 1,400 Robux in Shop in 2020",
         "IMAGE": "https://i.imgur.com/x3GdSBX.png",
         "DEMANDNUMBER": 4,
-        "EXOTICVALUE": 45
+        "EXOTICVALUE": 50
     },
     "GRIM SCYTHE": {
         "DEMAND": "\u2605\u2605\u2605\u2605\u2606",
@@ -2197,12 +2197,12 @@
     },
     "CANDLE HALBERD": {
         "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
-        "VALUE": 6,
+        "VALUE": 8,
         "OBTAIN": "Trading Only",
         "ORIGIN": "450 Comp. Point Prize (December 2021)",
         "IMAGE": "https://i.imgur.com/lV9HHjt.png",
         "DEMANDNUMBER": 3,
-        "EXOTICVALUE": 6
+        "EXOTICVALUE": 8
     },
     "VAMPIRE": {
         "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
@@ -2215,12 +2215,12 @@
     },
     "MYSTIC SLUGGER": {
         "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
-        "VALUE": 7,
+        "VALUE": 10,
         "OBTAIN": "Trading Only",
         "ORIGIN": "Redeemed using a QR code in the Portals App (2020)",
         "IMAGE": "https://i.imgur.com/dul4YVB.png",
         "DEMANDNUMBER": 3,
-        "EXOTICVALUE": 7
+        "EXOTICVALUE": 10
     },
     "BURGER BLADE": {
         "DEMAND": "\u2605\u2605\u2605\u2606\u2606",
