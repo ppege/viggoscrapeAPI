@@ -33,27 +33,30 @@ def home():
 
 @app.route('/v2/assassin', methods=['GET'])
 def assassin():
+    """Route to access assassin api"""
     if 'code' in request.args:
         file_name = f'inventories/{request.args["code"]}.json'
         try:
-            with open(file_name, "r") as file:
-                data = json.load(file)
+            with open(file_name, "r") as data_file:
+                data = json.load(data_file)
         except FileNotFoundError:
-            with open(file_name, "w") as file:
-                json.dump([], file)
-            with open(file_name, "r") as file:
-                data = json.load(file)
+            with open(file_name, "w", encoding="UTF-8") as data_file:
+                json.dump([], data_file)
+            with open(file_name, "r", encoding="UTF-8") as data_file:
+                data = json.load(data_file)
         if 'name' in request.args:
             try:
                 data = request.args["name"].replace(" ", "_").title().split(',')
-                data.sort(reverse=True, key=lambda x: values[x.upper().replace("_", " ")]['EXOTICVALUE'])
-                with open(file_name, "w") as file:
+                data.sort(
+                    reverse=True,
+                    key=lambda x: values[x.upper().replace("_", " ")]['EXOTICVALUE']
+                )
+                with open(file_name, "w", encoding="UTF-8") as file:
                     json.dump(data, file)
                 response = jsonify("success")
                 response.headers.add('Access-Control-Allow-Origin', '*')
                 return response
             except Exception as e:
-                print(e)
                 response = jsonify("failure")
                 response.headers.add('Access-Control-Allow-Origin', '*')
                 return response
@@ -162,5 +165,5 @@ def format_args(args):  # sourcery skip: remove-redundant-if
 if __name__ == '__main__':
     # This is used when running locally only. When deploying to Google App
     # Engine, a webserver process such as Gunicorn will serve the app.
-    app.run(host='127.0.0.1')
+    app.run(host='127.0.0.1', debug=True)
 # [END gae_flex_quickstart]
