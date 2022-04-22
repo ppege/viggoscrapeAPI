@@ -29,19 +29,19 @@ class Viggoscrape:
         self.session = None # this variable will store the session
         self.credential_hash = None
 
-    def _get_rich_error(self, error: str):
-        match error:
-            case 'Invalid credentials':
-                return 'Invalid username or password; you may have made a typo.'
-            case 'Invalid subdomain':
-                return 'Invalid subdomain; you may have made a typo.'
-            case 'Viggo is currently down':
-                return 'The ViGGO service is currently experiencing downtime. Try again later.'
-            case 'No internet access on host machine':
-                return 'The internal API is down. Please report this to the developer.'
-            case _:
-                return error
-
+    @staticmethod
+    def _get_rich_error(error: str):
+        errors = {
+            'Invalid credentials':
+            'Invalid username or password; you may have made a typo.',
+            'Invalid subdomain':
+            'Invalid subdomain; you may have made a typo.',
+            'Viggo is currently down':
+            'The ViGGO service is currently experiencing downtime. Try again later.',
+            'No internet access on host machine':
+            'The internal API is down. Please report this to the developer.'
+        }
+        return errors.get(error, error)
 
     def _throw_error(self, error: str):
         if self.throw_errors_as_assignments:
