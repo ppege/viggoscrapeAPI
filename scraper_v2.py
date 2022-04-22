@@ -4,7 +4,6 @@ import pickle
 import hashlib
 from pyquery import PyQuery as pq
 from requests.exceptions import SSLError
-from requests.exceptions import ConnectionError
 import requests
 
 class CredentialError(Exception):
@@ -30,13 +29,27 @@ class Viggoscrape:
         self.session = None # this variable will store the session
         self.credential_hash = None
 
+    def _get_rich_error(self, error: str):
+        match error:
+            case 'Invalid credentials':
+                return 'Invalid username or password; you may have made a typo.'
+            case 'Invalid subdomain':
+                return 'Invalid subdomain; you may have made a typo.'
+            case 'Viggo is currently down':
+                return 'The ViGGO service is currently experiencing downtime. Try again later.'
+            case 'No internet access on host machine':
+                return 'The internal API is down. Please report this to the developer.'
+            case _:
+                return error
+
+
     def _throw_error(self, error: str):
         if self.throw_errors_as_assignments:
             return [
                 {
                     "author": "",
-                    "date": "",
-                    "description": error,
+                    "date": "An error has occurred",
+                    "description": self._get_rich_error(error),
                     "subject": "Error",
                     "time": "",
                     "url": ""
@@ -99,7 +112,9 @@ class Viggoscrape:
                     raise SSLError("Viggo is currently down.") from ssl_error
                 raise SSLError("Invalid subdomain") from ssl_error
             except requests.exceptions.ConnectionError as connection_error:
-                raise ConnectionError("No internet access on host machine") from connection_error
+                raise requests.exceptions.ConnectionError(
+                    "No internet access on host machine"
+                ) from connection_error
             with open(f'pickles/{self.credential_hash}.pkl', 'wb') as file:
                 pickle.dump(self.session, file)
                 print('pickled!')
