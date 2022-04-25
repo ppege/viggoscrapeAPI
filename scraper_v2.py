@@ -85,6 +85,34 @@ class Viggoscrape:
         self._get_variables()
         return self._create_dictionary()
 
+    def _load_pickled_session(self):
+        with open(f'pickles/{self.credential_hash}.pkl', 'rb') as file:
+            self.session = pickle.load(file)
+
+    def _create_new_session(self):
+        self.session = requests.session()
+        keys = self._define_keys()
+        try:
+            pq(
+                f'https://{self.subdomain}.viggo.dk/Basic/Account/Login',
+                keys,
+                method='post',
+                session=self.session
+            )
+        except requests.exceptions.SSLError as ssl_error:
+            try:
+                self.session.get("https://viggo.dk")
+            except requests.exceptions.SSLError:
+                raise SSLError("Viggo is currently down.") from ssl_error
+            raise SSLError("Invalid subdomain") from ssl_error
+        except requests.exceptions.ConnectionError as connection_error:
+            raise requests.exceptions.ConnectionError(
+                "No internet access on host machine"
+            ) from connection_error
+        with open(f'pickles/{self.credential_hash}.pkl', 'wb') as file:
+            pickle.dump(self.session, file)
+            print('pickled!')
+
     def _login(self):
         self.credential_hash = hashlib.sha256(
             (self.login_data["username"] +
@@ -92,32 +120,9 @@ class Viggoscrape:
             self.subdomain).encode()
         ).hexdigest()
         try:
-            with open(f'pickles/{self.credential_hash}.pkl', 'rb') as file:
-                self.session = pickle.load(file)
-                print('unpickled!')
+            self._load_pickled_session()
         except IOError:
-            self.session = requests.session()
-            keys = self._define_keys()
-            try:
-                pq(
-                    f'https://{self.subdomain}.viggo.dk/Basic/Account/Login',
-                    keys,
-                    method='post',
-                    session=self.session
-                )
-            except requests.exceptions.SSLError as ssl_error:
-                try:
-                    self.session.get("https://viggo.dk")
-                except requests.exceptions.SSLError:
-                    raise SSLError("Viggo is currently down.") from ssl_error
-                raise SSLError("Invalid subdomain") from ssl_error
-            except requests.exceptions.ConnectionError as connection_error:
-                raise requests.exceptions.ConnectionError(
-                    "No internet access on host machine"
-                ) from connection_error
-            with open(f'pickles/{self.credential_hash}.pkl', 'wb') as file:
-                pickle.dump(self.session, file)
-                print('pickled!')
+            self._create_new_session()
 
     def _get_html(self):
         try:
@@ -131,8 +136,9 @@ class Viggoscrape:
             self.html = pq(self.session.get(url).content)
         except requests.exceptions.TooManyRedirects as exception:
             raise CredentialError("Invalid credentials") from exception
-
         if "page-login" in self.html.html():
+            self._create_new_session()
+            self._get_html()
             raise CredentialError("Invalid credentials")
 
     def _define_keys(self):
