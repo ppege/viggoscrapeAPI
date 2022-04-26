@@ -124,7 +124,7 @@ class Viggoscrape:
         except IOError:
             self._create_new_session()
 
-    def _get_html(self):
+    def _get_html(self, recurse: bool=True):
         try:
             self._login()
         except requests.exceptions.TooManyRedirects as exception:
@@ -137,9 +137,11 @@ class Viggoscrape:
         except requests.exceptions.TooManyRedirects as exception:
             raise CredentialError("Invalid credentials") from exception
         if "page-login" in self.html.html():
-            self._create_new_session()
-            self._get_html()
-            raise CredentialError("Invalid credentials")
+            if recurse:
+                self._create_new_session()
+                self._get_html(False)
+            else:
+                raise CredentialError("Invalid credentials")
 
     def _define_keys(self):
         return {
