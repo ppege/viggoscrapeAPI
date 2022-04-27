@@ -37,7 +37,7 @@ def assassin():
     if 'code' in request.args:
         file_name = f'inventories/{request.args["code"]}.json'
         try:
-            with open(file_name, "r") as data_file:
+            with open(file_name, "r", encoding="UTF-8") as data_file:
                 data = json.load(data_file)
         except FileNotFoundError:
             with open(file_name, "w", encoding="UTF-8") as data_file:
@@ -51,12 +51,12 @@ def assassin():
                     reverse=True,
                     key=lambda x: values[x.upper().replace("_", " ")]['EXOTICVALUE']
                 )
-                with open(file_name, "w", encoding="UTF-8") as file:
-                    json.dump(data, file)
+                with open(file_name, "w", encoding="UTF-8") as data_file:
+                    json.dump(data, data_file)
                 response = jsonify("success")
                 response.headers.add('Access-Control-Allow-Origin', '*')
                 return response
-            except Exception as e:
+            except Exception:
                 response = jsonify("failure")
                 response.headers.add('Access-Control-Allow-Origin', '*')
                 return response
@@ -65,19 +65,19 @@ def assassin():
             response.headers.add('Access-Control-Allow-Origin', '*')
             return response
 
-    input = request.args['name'].upper().replace('_', ' ') if 'name' in request.args else "NOINPUT"
-    if input in ["NOINPUT", ""]:
+    user_input = request.args['name'].upper().replace('_', ' ') if 'name' in request.args else "NOINPUT"
+    if user_input in ["NOINPUT", ""]:
         response = jsonify({
             "ERROR": "No input"
         })
         response.headers.add('Access-Control-Allow-Origin', '*')
         return response
-    if ',' in input:
-        knifeNames = input.split(',')
+    if ',' in user_input:
+        knife_names = user_input.split(',')
     else:
-        knifeNames = get_close_matches(input, values.keys())
+        knife_names = get_close_matches(user_input, values.keys())
     knives = []
-    for name in knifeNames:
+    for name in knife_names:
         knife = values[name]
         knife["NAME"] = name.title()
         knives.append(knife)
@@ -118,9 +118,11 @@ def scrape_v2():
     viggo.group_by_assignment = bool(int(args['groupByAssignment']))
     viggo.throw_errors_as_assignments = bool(int(args['errorAssignments']))
 
-    response = jsonify(
-        viggo.get_assignments()
-    )
+    data = viggo.get_assignments()
+    if args['search'] is not None:
+        data = scraper_v2.search(data, args['search'])
+
+    response = jsonify(data)
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
 
@@ -131,11 +133,15 @@ def format_args(args):  # sourcery skip: remove-redundant-if
         args['date'] = None
     if 'errorAssignments' not in args:
         args['errorAssignments'] = "0"
+    if 'search' not in args:
+        args['search'] = None
     if not args['errorAssignments'].isdigit():
         error_list.append("errorAssignments must be an integer")
     elif int(args['errorAssignments']) not in [0, 1]:
         error_list.append(
-            f"""Property errorAssignments is not 0 or 1, recieved {args['errorAssignments']} instead"""
+            f"""
+            Property errorAssignments is not 0 or 1, recieved {args['errorAssignments']} instead
+            """
         )
     if 'groupByAssignment' not in args:
         args['groupByAssignment'] = "1"

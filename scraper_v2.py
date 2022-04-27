@@ -9,6 +9,13 @@ import requests
 class CredentialError(Exception):
     """Thrown when HTML contains 'page-login', which indicates a failed login attempt"""
 
+def search(data: list, keyword: str):
+    """Search for a string in a list of dictionaries"""
+    return list(filter(
+        lambda x: any(keyword.lower() in value.lower() for value in x.values()),
+        data
+    ))
+
 class Viggoscrape:
     """The main class. Takes 4 arguments, and uses those to get assignment data from viggo"""
     def __init__(
