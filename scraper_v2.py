@@ -118,7 +118,6 @@ class Viggoscrape:
             ) from connection_error
         with open(f'pickles/{self.credential_hash}.pkl', 'wb') as file:
             pickle.dump(self.session, file)
-            print('pickled!')
 
     def _login(self):
         self.credential_hash = hashlib.sha256(
