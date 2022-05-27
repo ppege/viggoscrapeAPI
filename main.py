@@ -1,4 +1,4 @@
-"""Router for Viggoscrape.xyz"""
+"""Router for nangurepo api"""
 # Copyright 2015 Google Inc. All Rights Reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,6 +15,9 @@
 
 # [START gae_flex_quickstart]
 import json
+import string
+import random
+import os.path
 from difflib import get_close_matches
 from flask import request, jsonify, Flask
 from scraper import get_assignments
@@ -22,14 +25,45 @@ import scraper_v2
 
 app = Flask(__name__)
 app.config['JSONIFY_PRETTYPRINT_REGULAR'] = True
-
 with open("values.json", "r", encoding="UTF-8") as file:
     values = json.load(file)
 
 @app.route('/', methods=['GET'])
 def home():
     """The homepage"""
-    return jsonify({"Routes available": ["/v1/scrape", "/v2/scrape", "/v2/assassin"]})
+    return jsonify({"Routes available": ["/v1/scrape", "/v2/scrape", "/v2/dvd", "/v2/assassin"]})
+
+def generate_share_code():
+    """generates a string of random letters and numbers"""
+    code = ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(4))
+    if os.path.exists(f'dvd_data/{code}.json'):
+        code = generate_share_code()
+    return code
+
+@app.route('/v2/dvd', methods=['GET'])
+def dvd():
+    """Function to generate and read share codes"""
+    if 'data' in request.args:
+        code = generate_share_code()
+        with open(f'dvd_data/{code}.json', 'w', encoding="UTF-8") as codefile:
+            try:
+                json.dump(json.loads(request.args['data']), codefile)
+            except json.decoder.JSONDecodeError:
+                return jsonify({"errors": ["Please provide valid JSON"]})
+        return code
+    if 'code' in request.args:
+        if not os.path.exists(f'dvd_data/{request.args["code"]}.json'):
+            return jsonify({"errors": [f"Share code {request.args['code']} does not exist."]})
+        with open(f'dvd_data/{request.args["code"]}.json', 'r', encoding="UTF-8") as codefile:
+            try:
+                response = jsonify(json.load(codefile))
+            except json.decoder.JSONDecodeError:
+                return jsonify({"errors": ["Invalid data on file"]})
+            response.headers.add('Access-Control-Allow-Origin', '*')
+            return response
+    return """
+    Either generate a share code using data keyword, or read a share code using the code keyword.
+    """
 
 @app.route('/v2/assassin', methods=['GET'])
 def assassin():
