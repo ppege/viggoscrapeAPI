@@ -25,8 +25,8 @@ from scraper import get_assignments
 import scraper_v2
 
 app = Flask(__name__)
-CORS(app)
 app.config['JSONIFY_PRETTYPRINT_REGULAR'] = True
+CORS(app)
 with open("values.json", "r", encoding="UTF-8") as file:
     values = json.load(file)
 
@@ -34,12 +34,6 @@ with open("values.json", "r", encoding="UTF-8") as file:
 def home():
     """The homepage"""
     return jsonify({"Routes available": ["/v1/scrape", "/v2/scrape", "/v2/dvd", "/v2/assassin"]})
-
-def json_response(data):
-    """Returns a json response"""
-    response = jsonify(data)
-    response.headers.add('Access-Control-Allow-Origin', '*')
-    return response
 
 def generate_share_code():
     """generates a string of random letters and numbers"""
@@ -57,17 +51,17 @@ def dvd():
             try:
                 json.dump(json.loads(request.args['data']), codefile)
             except json.decoder.JSONDecodeError:
-                return json_response({"errors": ["Please provide valid JSON"]})
-        return json_response(code)
+                return jsonify({"errors": ["Please provide valid JSON"]})
+        return jsonify(code)
     if 'code' in request.args:
         if not os.path.exists(f'dvd_data/{request.args["code"]}.json'):
-            return json_response({"errors": [f"Share code {request.args['code']} does not exist."]})
+            return jsonify({"errors": [f"Share code {request.args['code']} does not exist."]})
         with open(f'dvd_data/{request.args["code"]}.json', 'r', encoding="UTF-8") as codefile:
             try:
-                return json_response(json.load(codefile))
+                return jsonify(json.load(codefile))
             except json.decoder.JSONDecodeError:
-                return json_response({"errors": ["Invalid data on file"]})
-    return json_response(
+                return jsonify({"errors": ["Invalid data on file"]})
+    return jsonify(
         "Either generate a share code using data keyword, or read a share code using the code keyword."
     )
 
