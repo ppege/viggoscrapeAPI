@@ -50,20 +50,30 @@ def dvd():
         with open(f'dvd_data/{code}.json', 'w', encoding="UTF-8") as codefile:
             try:
                 json.dump(json.loads(request.args['data']), codefile)
+                response = jsonify(code)
             except json.decoder.JSONDecodeError:
-                return jsonify({"errors": ["Please provide valid JSON"]})
-        return jsonify(code)
+                response = jsonify({"errors": ["Please provide valid JSON"]})
+        response.headers.add('Access-Control-Allow-Origin', '*')
+        return response
     if 'code' in request.args:
         if not os.path.exists(f'dvd_data/{request.args["code"]}.json'):
-            return jsonify({"errors": [f"Share code {request.args['code']} does not exist."]})
+            response = jsonify({"errors": [f"Share code {request.args['code']} does not exist."]})
+            response.headers.add('Access-Control-Allow-Origin', '*')
+            return response
         with open(f'dvd_data/{request.args["code"]}.json', 'r', encoding="UTF-8") as codefile:
             try:
-                return jsonify(json.load(codefile))
+                response = jsonify(json.load(codefile))
+                response.headers.add('Access-Control-Allow-Origin', '*')
+                return response
             except json.decoder.JSONDecodeError:
-                return jsonify({"errors": ["Invalid data on file"]})
-    return jsonify(
+                response = jsonify({"errors": ["Invalid data on file"]})
+                response.headers.add('Access-Control-Allow-Origin', '*')
+                return response
+    response = jsonify(
         "Either generate a share code using data keyword, or read a share code using the code keyword."
     )
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
 
 @app.route('/v2/assassin', methods=['GET'])
 def assassin():
