@@ -20,10 +20,12 @@ import random
 import os.path
 from difflib import get_close_matches
 from flask import request, jsonify, Flask
+from flask_cors import CORS
 from scraper import get_assignments
 import scraper_v2
 
 app = Flask(__name__)
+CORS(app)
 app.config['JSONIFY_PRETTYPRINT_REGULAR'] = True
 with open("values.json", "r", encoding="UTF-8") as file:
     values = json.load(file)
