@@ -33,6 +33,12 @@ def home():
     """The homepage"""
     return jsonify({"Routes available": ["/v1/scrape", "/v2/scrape", "/v2/dvd", "/v2/assassin"]})
 
+def json_response(data):
+    """Returns a json response"""
+    response = jsonify(data)
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
+
 def generate_share_code():
     """generates a string of random letters and numbers"""
     code = ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(4))
@@ -49,21 +55,19 @@ def dvd():
             try:
                 json.dump(json.loads(request.args['data']), codefile)
             except json.decoder.JSONDecodeError:
-                return jsonify({"errors": ["Please provide valid JSON"]})
-        return code
+                return json_response({"errors": ["Please provide valid JSON"]})
+        return json_response(code)
     if 'code' in request.args:
         if not os.path.exists(f'dvd_data/{request.args["code"]}.json'):
-            return jsonify({"errors": [f"Share code {request.args['code']} does not exist."]})
+            return json_response({"errors": [f"Share code {request.args['code']} does not exist."]})
         with open(f'dvd_data/{request.args["code"]}.json', 'r', encoding="UTF-8") as codefile:
             try:
-                response = jsonify(json.load(codefile))
+                return json_response(json.load(codefile))
             except json.decoder.JSONDecodeError:
-                return jsonify({"errors": ["Invalid data on file"]})
-            response.headers.add('Access-Control-Allow-Origin', '*')
-            return response
-    return """
-    Either generate a share code using data keyword, or read a share code using the code keyword.
-    """
+                return json_response({"errors": ["Invalid data on file"]})
+    return json_response(
+        "Either generate a share code using data keyword, or read a share code using the code keyword."
+    )
 
 @app.route('/v2/assassin', methods=['GET'])
 def assassin():
