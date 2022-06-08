@@ -42,22 +42,25 @@ def generate_share_code():
         code = generate_share_code()
     return code
 
-@app.route('/v2/dvd', methods=['GET'])
+@app.route('/v2/postData', methods=['POST'])
+def post_data():
+    """Function to generate some share codes"""
+    code = generate_share_code()
+    with open(f'dvd_data/{code}.json', 'w', encoding="UTF-8") as codefile:
+        try:
+            json.dump(request.get_json(), codefile)
+            response = jsonify({"code": code})
+        except json.decoder.JSONDecodeError:
+            response = jsonify({"error": "Please provide valid JSON"})
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
+
+@app.route('/v2/dvd', methods=['GET', 'POST'])
 def dvd():
-    """Function to generate and read share codes"""
-    if 'data' in request.args:
-        code = generate_share_code()
-        with open(f'dvd_data/{code}.json', 'w', encoding="UTF-8") as codefile:
-            try:
-                json.dump(json.loads(request.args['data']), codefile)
-                response = jsonify(code)
-            except json.decoder.JSONDecodeError:
-                response = jsonify({"errors": ["Please provide valid JSON"]})
-        response.headers.add('Access-Control-Allow-Origin', '*')
-        return response
+    """Function to read share codes"""
     if 'code' in request.args:
         if not os.path.exists(f'dvd_data/{request.args["code"]}.json'):
-            response = jsonify({"errors": [f"Share code {request.args['code']} does not exist."]})
+            response = jsonify({"error": f"Share code {request.args['code']} does not exist."})
             response.headers.add('Access-Control-Allow-Origin', '*')
             return response
         with open(f'dvd_data/{request.args["code"]}.json', 'r', encoding="UTF-8") as codefile:
@@ -66,12 +69,13 @@ def dvd():
                 response.headers.add('Access-Control-Allow-Origin', '*')
                 return response
             except json.decoder.JSONDecodeError:
-                response = jsonify({"errors": ["Invalid data on file"]})
+                response = jsonify({"error": "Invalid data on file"})
                 response.headers.add('Access-Control-Allow-Origin', '*')
                 return response
-    response = jsonify(
+    response = jsonify({
+        "error":
         "Either generate a share code using data keyword, or read a share code using the code keyword."
-    )
+    })
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
 
