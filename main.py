@@ -23,6 +23,7 @@ from flask import request, jsonify, Flask
 from flask_cors import CORS
 from scraper import get_assignments
 import scraper_v2
+import assassin as Assassin
 
 app = Flask(__name__)
 app.config['JSONIFY_PRETTYPRINT_REGULAR'] = True
@@ -82,6 +83,9 @@ def dvd():
 @app.route('/v2/assassin', methods=['GET'])
 def assassin():
     """Route to access assassin api"""
+    ass = Assassin.Assassin()
+    if 'update' in request.args:
+        return jsonify(ass.update_values())
     if 'code' in request.args:
         file_name = f'inventories/{request.args["code"]}.json'
         try:
@@ -104,8 +108,8 @@ def assassin():
                 response = jsonify("success")
                 response.headers.add('Access-Control-Allow-Origin', '*')
                 return response
-            except Exception:
-                response = jsonify("failure")
+            except Exception as exception: #pylint: disable=too-general-exception
+                response = jsonify({"status": "error", "exception": str(exception)})
                 response.headers.add('Access-Control-Allow-Origin', '*')
                 return response
         else:
@@ -123,7 +127,7 @@ def assassin():
     if ',' in user_input:
         knife_names = user_input.split(',')
     else:
-        knife_names = get_close_matches(user_input, values.keys())
+        knife_names = get_close_matches(user_input, values.keys(), int(request.args['limit'])) if 'limit' in request.args else get_close_matches(user_input, values.keys())
     knives = []
     for name in knife_names:
         knife = values[name]
