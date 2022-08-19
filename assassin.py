@@ -26,12 +26,12 @@ class Assassin:
                 if not value or value == "NAME":
                     continue
                 values[value] = {
-                    "DEMAND": category["Unnamed: 3"][key],
-                    "VALUE": category["Unnamed: 4"][key],
-                    "OBTAIN": category["Unnamed: 5"][key],
-                    "ORIGIN": category["Unnamed: 7"][key],
-                    "RARITY": rarities[i],
-                    "EXOTICVALUE": self._get_exotic_value(rarities[i], category["Unnamed: 4"][key])
+                    "demand": category["Unnamed: 3"][key],
+                    "value": category["Unnamed: 4"][key],
+                    "obtain": category["Unnamed: 5"][key],
+                    "origin": category["Unnamed: 7"][key],
+                    "rarity": rarities[i],
+                    "exoticvalue": self._get_exotic_value(rarities[i], category["Unnamed: 4"][key])
                 }
         return values
 

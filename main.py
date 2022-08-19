@@ -131,7 +131,7 @@ def assassin():
     knives = []
     for name in knife_names:
         knife = values[name]
-        knife["NAME"] = name.title()
+        knife["name"] = name.title()
         knives.append(knife)
     response = jsonify(knives)
     response.headers.add('Access-Control-Allow-Origin', '*')
