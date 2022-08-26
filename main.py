@@ -101,7 +101,7 @@ def assassin():
                 data = request.args["name"].replace(" ", "_").title().split(',')
                 data.sort(
                     reverse=True,
-                    key=lambda x: values[x.upper().replace("_", " ")]['EXOTICVALUE']
+                    key=lambda x: values[x.upper().replace("_", " ")]['exoticvalue']
                 )
                 with open(file_name, "w", encoding="UTF-8") as data_file:
                     json.dump(data, data_file)
