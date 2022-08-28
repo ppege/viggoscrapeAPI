@@ -98,7 +98,7 @@ def assassin():
                 data = json.load(data_file)
         if 'name' in request.args:
             try:
-                data = request.args["name"].replace(" ", "_").title().split(',')
+                data = sorted(request.args["name"].replace(" ", "_").title().split(','))
                 data.sort(
                     reverse=True,
                     key=lambda x: values[x.upper().replace("_", " ")]['exoticvalue']
