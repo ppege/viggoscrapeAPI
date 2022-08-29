@@ -80,6 +80,12 @@ def dvd():
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
 
+def get_exotic_value(data):
+    try:
+        return int(values[data.upper().replace("_", " ")]['exoticvalue'])
+    except ValueError:
+        return 0
+
 @app.route('/v2/assassin', methods=['GET'])
 def assassin():
     """Route to access assassin api"""
@@ -101,21 +107,19 @@ def assassin():
                 data = sorted(request.args["name"].replace(" ", "_").title().split(','))
                 data.sort(
                     reverse=True,
-                    key=lambda x: values[x.upper().replace("_", " ")]['exoticvalue']
+                    key=get_exotic_value
                 )
                 with open(file_name, "w", encoding="UTF-8") as data_file:
                     json.dump(data, data_file)
                 response = jsonify("success")
-                response.headers.add('Access-Control-Allow-Origin', '*')
-                return response
-            except Exception as exception: #pylint: disable=too-general-exception
+            except Exception as exception: #pylint: disable=broad-except
                 response = jsonify({"status": "error", "exception": str(exception)})
                 response.headers.add('Access-Control-Allow-Origin', '*')
                 return response
         else:
             response = jsonify(data)
-            response.headers.add('Access-Control-Allow-Origin', '*')
-            return response
+        response.headers.add('Access-Control-Allow-Origin', '*')
+        return response
 
     user_input = request.args['name'].upper().replace('_', ' ') if 'name' in request.args else "NOINPUT"
     if user_input in ["NOINPUT", ""]:
