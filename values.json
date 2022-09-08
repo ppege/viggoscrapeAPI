@@ -4425,10 +4425,10 @@
     },
     "CAKE POP": {
         "demand": "\u2605",
-        "value": null,
-        "obtain": null,
-        "origin": null,
+        "value": "2 T1 Legendaries",
+        "obtain": "Trading Only",
+        "origin": "Redeemed through old expired codes (2022)",
         "rarity": "Rare",
-        "exoticvalue": "Unknown"
+        "exoticvalue": 0.5
     }
 }
