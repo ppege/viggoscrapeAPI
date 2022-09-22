@@ -4485,7 +4485,7 @@
         "obtain": "Trading Only",
         "origin": "Redeemed through old expired codes (2022)",
         "rarity": "Rare",
-        "exoticvalue": "Unknown"
+        "exoticvalue": 0.5
     },
     "GOOD GLOW": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
