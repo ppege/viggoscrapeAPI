@@ -18,7 +18,7 @@ class Assassin:
         """reshape the dataframe into a neat json object"""
         values_json = [json.loads(df.to_json()) for df in dfs]
         # values_json.pop(0)
-        rarities = ["Info", "Dream", "Mythic", "Exotic", "Legendary", "Rare", "Common", "???"]
+        rarities = ["Info", "Dream", "Mythic", "Exotic", "Legendary", "Rare", "Common", "???", "???", "???", "???"]
         values = {}
         for i, category in enumerate(values_json):
             print(i)

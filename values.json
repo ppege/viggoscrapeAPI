@@ -18,7 +18,7 @@
     "CLICK HERE": {
         "demand": "CLICK HERE",
         "value": null,
-        "obtain": "CLICK HERE",
+        "obtain": "CLICK ME",
         "origin": null,
         "rarity": "Info",
         "exoticvalue": "Unknown"
@@ -39,18 +39,10 @@
         "rarity": "Info",
         "exoticvalue": "Unknown"
     },
-    "TRADING SERVER 5": {
-        "demand": "TRADING SERVER 5",
-        "value": null,
-        "obtain": "TRADING SERVER 6",
-        "origin": null,
-        "rarity": "Info",
-        "exoticvalue": "Unknown"
-    },
     "LINK EXPIRED": {
         "demand": "LINK EXPIRED",
         "value": null,
-        "obtain": "CLICK HERE",
+        "obtain": "LINK EXPIRED",
         "origin": null,
         "rarity": "Info",
         "exoticvalue": "Unknown"
@@ -58,7 +50,15 @@
     "[ OFFLINE ]": {
         "demand": "[ OFFLINE ]",
         "value": null,
-        "obtain": "[ ONLINE ]",
+        "obtain": "[ OFFLINE ]",
+        "origin": null,
+        "rarity": "Info",
+        "exoticvalue": "Unknown"
+    },
+    "TRADING SERVER 5": {
+        "demand": "TRADING SERVER 5",
+        "value": null,
+        "obtain": "TRADING SERVER 6",
         "origin": null,
         "rarity": "Info",
         "exoticvalue": "Unknown"
@@ -151,6 +151,14 @@
         "rarity": "Dream",
         "exoticvalue": 12
     },
+    "AQUA KNIGHT": {
+        "demand": "\u2605\u2605\u2605\u2605\u2606",
+        "value": "8",
+        "obtain": "Trading / Buying in Shop",
+        "origin": "Bought for 50,000 Tokens in Shop (Summer 2022)",
+        "rarity": "Dream",
+        "exoticvalue": 8
+    },
     "QUEEN OF HEARTS": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
         "value": "10",
@@ -175,6 +183,14 @@
         "rarity": "Dream",
         "exoticvalue": 13
     },
+    "ILLUMINA": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "15",
+        "obtain": "Trading Only",
+        "origin": "Bought for 1,500 Robux in Shop (2020)",
+        "rarity": "Dream",
+        "exoticvalue": 15
+    },
     "WATER DEMON": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
         "value": "20",
@@ -182,22 +198,6 @@
         "origin": "Summer Event 2021 Craftable Knife",
         "rarity": "Dream",
         "exoticvalue": 20
-    },
-    "ILLUMINA": {
-        "demand": "\u2605\u2605\u2605\u2606\u2606",
-        "value": "20",
-        "obtain": "Trading Only",
-        "origin": "Bought for 1,500 Robux in Shop (2020)",
-        "rarity": "Dream",
-        "exoticvalue": 20
-    },
-    "TWISTED": {
-        "demand": "\u2605\u2605\u2605\u2606\u2606",
-        "value": "30",
-        "obtain": "Trading Only",
-        "origin": "Halloween 2020 Event Craftable Knife",
-        "rarity": "Dream",
-        "exoticvalue": 30
     },
     "MAGMA": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
@@ -223,6 +223,14 @@
         "rarity": "Dream",
         "exoticvalue": 35
     },
+    "TWISTED": {
+        "demand": "\u2605\u2605\u2605\u2605\u2606",
+        "value": "45",
+        "obtain": "Trading Only",
+        "origin": "Halloween 2020 Event Craftable Knife",
+        "rarity": "Dream",
+        "exoticvalue": 45
+    },
     "DREAMWALKER": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
         "value": "45",
@@ -233,11 +241,11 @@
     },
     "SPIRIT TRIDENT": {
         "demand": "\u2605\u2605\u2605\u2605\u2606",
-        "value": "65",
+        "value": "80",
         "obtain": "Trading Only",
         "origin": "Holiday 2020 Event Craftable Knife",
         "rarity": "Dream",
-        "exoticvalue": 65
+        "exoticvalue": 80
     },
     "CRYOBEAST": {
         "demand": "\u2605\u2605\u2605\u2605\u2606",
@@ -257,35 +265,35 @@
     },
     "INFERNAL GUARDIAN": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
-        "value": "1700",
+        "value": "1400",
         "obtain": "Trading Only",
         "origin": "Top 10 Competitive Prize (September 2020-February 2021)",
         "rarity": "Dream",
-        "exoticvalue": 1700
+        "exoticvalue": 1400
     },
     "BLACK HOLE": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
-        "value": "2000",
+        "value": "1700",
         "obtain": "Trading Only",
         "origin": "Top 10 Competitive Prize (May 2020-September 2020)",
         "rarity": "Dream",
-        "exoticvalue": 2000
+        "exoticvalue": 1700
     },
     "CHAMPION AXE II": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
-        "value": "2600",
+        "value": "2300",
         "obtain": "Trading Only",
         "origin": "Top 10 Competitive Prize (January 2019-August 2019)",
         "rarity": "Dream",
-        "exoticvalue": 2600
+        "exoticvalue": 2300
     },
     "CHAMPION AXE": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
-        "value": "2900",
+        "value": "2700",
         "obtain": "Trading Only",
         "origin": "Top 10 Competitive Prize (June 2018-January 2019)",
         "rarity": "Dream",
-        "exoticvalue": 2900
+        "exoticvalue": 2700
     },
     "VOID CHAMPION": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
@@ -314,7 +322,7 @@
     "NEBULA KNIGHT": {
         "demand": "NOT TRADABLE",
         "value": "NOT TRADABLE",
-        "obtain": "UNobtainABLE",
+        "obtain": "UNOBTAINABLE",
         "origin": "Top 10 Competitive Prize (February 2021-July 2021)",
         "rarity": "Dream",
         "exoticvalue": "Unknown"
@@ -322,17 +330,17 @@
     "ARCALIBUR": {
         "demand": "NOT TRADABLE",
         "value": "NOT TRADABLE",
-        "obtain": "UNobtainABLE",
+        "obtain": "UNOBTAINABLE",
         "origin": "Top 10 Competitive Prize (July 2021-February 2022)",
         "rarity": "Dream",
         "exoticvalue": "Unknown"
     },
     "STARS": {
-        "demand": "MEANING",
+        "demand": "DEMAND",
         "value": null,
         "obtain": "COLOR DEFINITIONS",
         "origin": null,
-        "rarity": "Legendary",
+        "rarity": "Common",
         "exoticvalue": "Unknown"
     },
     "\u2605\u2606\u2606\u2606\u2606": {
@@ -340,23 +348,23 @@
         "value": null,
         "obtain": "Black = Stable",
         "origin": null,
-        "rarity": "Legendary",
+        "rarity": "???",
         "exoticvalue": "Unknown"
     },
     "\u2605\u2605\u2606\u2606\u2606": {
         "demand": "Low",
         "value": null,
-        "obtain": "Green = Raising",
+        "obtain": "Red = Lowering",
         "origin": null,
-        "rarity": "Legendary",
+        "rarity": "???",
         "exoticvalue": "Unknown"
     },
     "\u2605\u2605\u2605\u2606\u2606": {
         "demand": "Average",
         "value": null,
-        "obtain": "Red = Lowering",
+        "obtain": "Green = Raising",
         "origin": null,
-        "rarity": "Legendary",
+        "rarity": "???",
         "exoticvalue": "Unknown"
     },
     "\u2605\u2605\u2605\u2605\u2606": {
@@ -364,7 +372,7 @@
         "value": null,
         "obtain": "Purple = Unstable",
         "origin": null,
-        "rarity": "Legendary",
+        "rarity": "???",
         "exoticvalue": "Unknown"
     },
     "\u2605\u2605\u2605\u2605\u2605": {
@@ -372,7 +380,7 @@
         "value": null,
         "obtain": "Blue = Hyped",
         "origin": null,
-        "rarity": "Legendary",
+        "rarity": "???",
         "exoticvalue": "Unknown"
     },
     "ELEMENTAL SCIMITAR": {
@@ -552,20 +560,28 @@
         "exoticvalue": 7
     },
     "ARMOR EYE": {
-        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
         "value": "10",
         "obtain": "Trading / Crafting",
         "origin": "Introduced in 2022 as a craftable knife",
         "rarity": "Mythic",
         "exoticvalue": 10
     },
-    "SUMMER SUNDAE": {
+    "RADIANT STAR": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
-        "value": "4",
+        "value": "3",
         "obtain": "Trading / Season Pass",
-        "origin": "Earned through the Summer 2022 Season Pass",
+        "origin": "Earned through the 2nd Summer 2022 Season Pass",
         "rarity": "Mythic",
-        "exoticvalue": 4
+        "exoticvalue": 3
+    },
+    "SUMMER SUNDAE": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "3",
+        "obtain": "Trading Only",
+        "origin": "Earned through the 1st Summer 2022 Season Pass",
+        "rarity": "Mythic",
+        "exoticvalue": 3
     },
     "WINDFORCE": {
         "demand": "\u2605\u2605\u2606\u2606\u2606",
@@ -857,11 +873,11 @@
     },
     "FESTIVE SCYTHE": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
-        "value": "20",
+        "value": "25",
         "obtain": "Trading Only",
         "origin": "Bought with 20,000 tokens during Holiday 2019",
         "rarity": "Mythic",
-        "exoticvalue": 20
+        "exoticvalue": 25
     },
     "WATER ELEMENTAL": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
@@ -879,21 +895,21 @@
         "rarity": "Mythic",
         "exoticvalue": 30
     },
-    "GRIM SCYTHE": {
+    "SHURIKEN": {
         "demand": "\u2605\u2605\u2605\u2605\u2606",
         "value": "60",
         "obtain": "Trading Only",
-        "origin": "Craftable during the 2018 Halloween Event",
+        "origin": "Bought with 1,400 Robux in Shop in 2020",
         "rarity": "Mythic",
         "exoticvalue": 60
     },
-    "SHURIKEN": {
+    "GRIM SCYTHE": {
         "demand": "\u2605\u2605\u2605\u2605\u2606",
-        "value": "70",
+        "value": "65",
         "obtain": "Trading Only",
-        "origin": "Bought with 1,400 Robux in Shop in 2020",
+        "origin": "Craftable during the 2018 Halloween Event",
         "rarity": "Mythic",
-        "exoticvalue": 70
+        "exoticvalue": 65
     },
     "INFERNO": {
         "demand": "\u2605\u2605\u2605\u2605\u2606",
@@ -921,11 +937,11 @@
     },
     "HEARTH": {
         "demand": "\u2605\u2605\u2605\u2605\u2606",
-        "value": "190",
+        "value": "150",
         "obtain": "Trading Only",
         "origin": "Craftable during the 2018 Holiday Event",
         "rarity": "Mythic",
-        "exoticvalue": 190
+        "exoticvalue": 150
     },
     "HOLY GUARDIAN": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
@@ -969,24 +985,24 @@
     },
     "CHAMPION BLADE": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
-        "value": "3600",
+        "value": "3400",
         "obtain": "Trading Only",
         "origin": "Top 10 Comp. Prize (June 2017-June 2018)",
         "rarity": "Mythic",
-        "exoticvalue": 3600
+        "exoticvalue": 3400
     },
     "CYBERSHOT": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
-        "value": "85",
+        "value": "80",
         "obtain": "Placing in the Top 100",
         "origin": "Current Top 100 Comp. Prize",
         "rarity": "Mythic",
-        "exoticvalue": 85
+        "exoticvalue": 80
     },
     "ONYX TIER": {
         "demand": "NOT TRADABLE",
         "value": "NOT TRADABLE",
-        "obtain": "UNobtainABLE",
+        "obtain": "UNOBTAINABLE",
         "origin": "Top 10 Clan Prize (2019-2020)",
         "rarity": "Mythic",
         "exoticvalue": "Unknown"
@@ -994,7 +1010,7 @@
     "ONYX CHAMPION": {
         "demand": "NOT TRADABLE",
         "value": "NOT TRADABLE",
-        "obtain": "UNobtainABLE",
+        "obtain": "UNOBTAINABLE",
         "origin": "Top 10 Clan Prize (2020-2021)",
         "rarity": "Mythic",
         "exoticvalue": "Unknown"
@@ -1010,7 +1026,7 @@
     "BAN HAMMER": {
         "demand": "NOT TRADABLE",
         "value": "NOT TRADABLE",
-        "obtain": "UNobtainABLE",
+        "obtain": "UNOBTAINABLE",
         "origin": "Given out to Assassin! Team members",
         "rarity": "Mythic",
         "exoticvalue": "Unknown"
@@ -1368,7 +1384,7 @@
         "exoticvalue": 4
     },
     "EARTHEN STAFF": {
-        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
         "value": "4",
         "obtain": "Trading / Crafting",
         "origin": "Craftable since 2022",
@@ -1378,7 +1394,7 @@
     "COCO CUTTER": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
         "value": "3",
-        "obtain": "Trading / Buying Bundle",
+        "obtain": "Trading Only",
         "origin": "Coco Bundle (2022)",
         "rarity": "Exotic",
         "exoticvalue": 3
@@ -1839,26 +1855,42 @@
         "rarity": "Exotic",
         "exoticvalue": 5
     },
+    "FRUIT KEBAB": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "2",
+        "obtain": "Trading / Season Pass",
+        "origin": "Earned through the 2nd Summer 2022 Season Pass",
+        "rarity": "Exotic",
+        "exoticvalue": 2
+    },
+    "CAPTAIN'S HOOK": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "4",
+        "obtain": "Trading Only",
+        "origin": "450 point comp. prize (August 2022)",
+        "rarity": "Exotic",
+        "exoticvalue": 4
+    },
     "POOL NOODLE": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
         "value": "5",
-        "obtain": "Trading / Earning in Comp",
+        "obtain": "Trading Only",
         "origin": "450 point comp. prize (July 2022)",
         "rarity": "Exotic",
         "exoticvalue": 5
     },
     "SEAFOAM": {
-        "demand": "\u2605\u2605\u2605\u2606\u2606",
-        "value": "3",
-        "obtain": "Trading / Season Pass",
-        "origin": "Earned through the Summer 2022 Season Pass",
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "2",
+        "obtain": "Trading Only",
+        "origin": "Earned through the 1st Summer 2022 Season Pass",
         "rarity": "Exotic",
-        "exoticvalue": 3
+        "exoticvalue": 2
     },
     "SOLAR SABER": {
         "demand": "\u2605\u2605\u2606\u2606\u2606",
         "value": "5",
-        "obtain": "Trading / Unboxing",
+        "obtain": "Trading Only",
         "origin": "Summer 2022 Event (Elite Case)",
         "rarity": "Exotic",
         "exoticvalue": 5
@@ -1961,27 +1993,27 @@
     },
     "OLD SHOVEL": {
         "demand": "\u2605\u2605\u2606\u2606\u2606",
-        "value": "2",
+        "value": "3",
         "obtain": "Trading Only",
         "origin": "Halloween 2021 Event (Coffin Case)",
         "rarity": "Exotic",
-        "exoticvalue": 2
+        "exoticvalue": 3
     },
     "INFERNAL CLEAVER": {
         "demand": "\u2605\u2605\u2606\u2606\u2606",
-        "value": "2",
+        "value": "3",
         "obtain": "Trading Only",
         "origin": "Halloween 2021 Event (Coffin Case)",
         "rarity": "Exotic",
-        "exoticvalue": 2
+        "exoticvalue": 3
     },
     "IMP TRIDENT": {
         "demand": "\u2605\u2605\u2606\u2606\u2606",
-        "value": "2",
+        "value": "3",
         "obtain": "Trading Only",
         "origin": "Earned through the Halloween 2021 Season Pass",
         "rarity": "Exotic",
-        "exoticvalue": 2
+        "exoticvalue": 3
     },
     "COSMO KATANA": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
@@ -2089,11 +2121,11 @@
     },
     "SNOWMAN NOSE": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
-        "value": "4",
+        "value": "5",
         "obtain": "Trading Only",
         "origin": "Craftable during the Holiday 2020 Event",
         "rarity": "Exotic",
-        "exoticvalue": 4
+        "exoticvalue": 5
     },
     "POLAR KUNAI": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
@@ -2116,14 +2148,6 @@
         "value": "4",
         "obtain": "Trading Only",
         "origin": "Holiday 2020 Event (Decorated Case)",
-        "rarity": "Exotic",
-        "exoticvalue": 4
-    },
-    "BUTCHER COOKIE": {
-        "demand": "\u2605\u2605\u2605\u2606\u2606",
-        "value": "4",
-        "obtain": "Trading Only",
-        "origin": "Earned through the Season 2 pass",
         "rarity": "Exotic",
         "exoticvalue": 4
     },
@@ -2174,22 +2198,6 @@
         "origin": "Summer 2020 Event (Summer Case)",
         "rarity": "Exotic",
         "exoticvalue": 4
-    },
-    "GILDED HATCHET": {
-        "demand": "\u2605\u2605\u2605\u2605\u2606",
-        "value": "5",
-        "obtain": "Trading Only",
-        "origin": "Craftable from 2020 - 2022",
-        "rarity": "Exotic",
-        "exoticvalue": 5
-    },
-    "LINKED": {
-        "demand": "\u2605\u2605\u2605\u2606\u2606",
-        "value": "5",
-        "obtain": "Trading Only",
-        "origin": "Earned through the Season 1 pass",
-        "rarity": "Exotic",
-        "exoticvalue": 5
     },
     "SNOWMAN CONE": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
@@ -2247,6 +2255,14 @@
         "rarity": "Exotic",
         "exoticvalue": 5
     },
+    "BUTCHER COOKIE": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "5",
+        "obtain": "Trading Only",
+        "origin": "Earned through the Season 2 pass",
+        "rarity": "Exotic",
+        "exoticvalue": 5
+    },
     "VAMPIRE": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
         "value": "6",
@@ -2271,6 +2287,14 @@
         "rarity": "Exotic",
         "exoticvalue": 7
     },
+    "GILDED HATCHET": {
+        "demand": "\u2605\u2605\u2605\u2605\u2606",
+        "value": "8",
+        "obtain": "Trading Only",
+        "origin": "Craftable from 2020 - 2022",
+        "rarity": "Exotic",
+        "exoticvalue": 8
+    },
     "FAIRY AXE": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
         "value": "8",
@@ -2286,6 +2310,14 @@
         "origin": "1K Comp. Point Prize (May 2020)",
         "rarity": "Exotic",
         "exoticvalue": 8
+    },
+    "LINKED": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "10",
+        "obtain": "Trading Only",
+        "origin": "Earned through the Season 1 pass",
+        "rarity": "Exotic",
+        "exoticvalue": 10
     },
     "ROSE CALIBUR": {
         "demand": "\u2605\u2605\u2605\u2605\u2606",
@@ -2528,7 +2560,7 @@
         "exoticvalue": 30
     },
     "TOOTH": {
-        "demand": "\u2605\u2605\u2605\u2605\u2606",
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
         "value": "30",
         "obtain": "Trading Only",
         "origin": "1K Comp. Point Prize (October 2020)",
@@ -2664,7 +2696,7 @@
         "exoticvalue": 50
     },
     "KRAMPUS": {
-        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
         "value": "50",
         "obtain": "Trading Only",
         "origin": "Holiday 2016 Event (Craftable Knife)",
@@ -3095,11 +3127,19 @@
         "rarity": "Legendary",
         "exoticvalue": "Unknown"
     },
-    "FLAMINGO": {
+    "PALMS": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
         "value": "2 T1 Legendaries",
         "obtain": "Trading / Season Pass",
-        "origin": "Earned through the Summer 2022 Season Pass",
+        "origin": "Earned through the 2nd Summer 2022 Season Pass",
+        "rarity": "Legendary",
+        "exoticvalue": "Unknown"
+    },
+    "FLAMINGO": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "2 T1 Legendaries",
+        "obtain": "Trading Only",
+        "origin": "Earned through the 1st Summer 2022 Season Pass",
         "rarity": "Legendary",
         "exoticvalue": "Unknown"
     },
@@ -4007,10 +4047,26 @@
         "rarity": "Rare",
         "exoticvalue": "Unknown"
     },
+    "SANDCASTLE": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "2 T1 Rares",
+        "obtain": "Trading / Season Pass",
+        "origin": "Earned through the Summer 2022 Season Pass",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "CACTUS": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "2 T1 Legendaries",
+        "obtain": "Trading Only",
+        "origin": "30 Point Comp. Prize (August 2022)",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
     "CRYSTALLINE": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
-        "value": "1 T1 Legendary",
-        "obtain": "Trading / Earning in Comp",
+        "value": "2 T1 Legendaries",
+        "obtain": "Trading Only",
         "origin": "30 Point Comp. Prize (July 2022)",
         "rarity": "Rare",
         "exoticvalue": "Unknown"
@@ -4019,7 +4075,7 @@
         "demand": "\u2605\u2605\u2606\u2606\u2606",
         "value": "2 T1 Rares",
         "obtain": "Trading Only",
-        "origin": "Earned through the Season 14 pass",
+        "origin": "Earned through the Season 14 Pass",
         "rarity": "Rare",
         "exoticvalue": "Unknown"
     },
@@ -4249,7 +4305,7 @@
     },
     "STORM CLOUDS": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
-        "value": "2 T1 Legendaries",
+        "value": "1 T1 Exotic",
         "obtain": "Trading Only",
         "origin": "30 Point Comp. Prize (May 2021)",
         "rarity": "Rare",
@@ -4305,7 +4361,7 @@
     },
     "GOOD": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
-        "value": "1 T1 Legendary",
+        "value": "3 T1 Legendaries",
         "obtain": "Trading Only",
         "origin": "Earned through the Season 3 pass",
         "rarity": "Rare",
@@ -4345,7 +4401,7 @@
     },
     "BLESSED": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
-        "value": "1 T1 Legendary",
+        "value": "3 T1 Legendaries",
         "obtain": "Trading Only",
         "origin": "Earned through the Season 2 pass",
         "rarity": "Rare",
@@ -4353,7 +4409,7 @@
     },
     "FRUIT FIESTA": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
-        "value": "1 T1 Legendary",
+        "value": "3 T1 Legendaries",
         "obtain": "Trading Only",
         "origin": "Earned through the Season 1 pass",
         "rarity": "Rare",
@@ -4361,7 +4417,7 @@
     },
     "AWAKENED": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
-        "value": "1 T1 Legendary",
+        "value": "3 T1 Legendaries",
         "obtain": "Trading Only",
         "origin": "Redeemed using code \"Spooky2020\" (2020)",
         "rarity": "Rare",
@@ -4429,6 +4485,2630 @@
         "obtain": "Trading Only",
         "origin": "Redeemed through old expired codes (2022)",
         "rarity": "Rare",
-        "exoticvalue": 0.5
+        "exoticvalue": "Unknown"
+    },
+    "GOOD GLOW": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "2 T1 Legendaries",
+        "obtain": "Trading Only",
+        "origin": "Holiday 2019 Event (Festive & Jolly Cases)",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "BLUE LIGHT": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "2 T1 Legendaries",
+        "obtain": "Trading Only",
+        "origin": "Holiday 2019 Event (Festive & Jolly Cases)",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "FROZEN SOLID": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "2 T1 Legendaries",
+        "obtain": "Trading Only",
+        "origin": "Holiday 2019 Event (Festive & Jolly Cases)",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "DARK EVE": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "2 T1 Legendaries",
+        "obtain": "Trading Only",
+        "origin": "Holiday 2019 Event (Festive & Jolly Cases)",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "CHILLING ICE": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "2 T1 Legendaries",
+        "obtain": "Trading Only",
+        "origin": "Summer 2019 Event (Summer Case)",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "SOUR SUGAR": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "2 T1 Legendaries",
+        "obtain": "Trading Only",
+        "origin": "Summer 2019 Event (Summer Case)",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "LIME": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "2 T1 Legendaries",
+        "obtain": "Trading Only",
+        "origin": "Summer 2019 Event (Summer Case)",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "POPSICLE": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "2 T1 Legendaries",
+        "obtain": "Trading Only",
+        "origin": "Summer 2019 Event (Summer Case)",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "DEEP PASTEL": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Legendaries",
+        "obtain": "Trading Only",
+        "origin": "Easter 2019 Event (Easter Case)",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "COOL SPRING": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Legendaries",
+        "obtain": "Trading Only",
+        "origin": "Easter 2019 Event (Easter Case)",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "FANCY METALLIC": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Legendaries",
+        "obtain": "Trading Only",
+        "origin": "Easter 2019 Event (Easter Case)",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "SOUR CANE": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Legendaries",
+        "obtain": "Trading Only",
+        "origin": "Holiday 2018 Event (Festive & Jolly Cases)",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "HOLIDAY FADE": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Legendaries",
+        "obtain": "Trading Only",
+        "origin": "Holiday 2018 Event (Festive & Jolly Cases)",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "GREEN GLOW": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Legendaries",
+        "obtain": "Trading Only",
+        "origin": "Holiday 2018 Event (Festive & Jolly Cases)",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "SPACE BUDS": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Exotic",
+        "obtain": "Trading Only",
+        "origin": "30 point Comp. prize (September 2021)",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "FLUFFLE": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "1 T1 Exotic",
+        "obtain": "Trading Only",
+        "origin": "30 Point Comp. Prize (April 2021)",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "GOLDEN HOOF": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "1 T1 Exotic",
+        "obtain": "Trading Only",
+        "origin": "50 Point Comp. Prize (March 2021)",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "SUPER SUGAR": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "1 T1 Exotic",
+        "obtain": "Trading Only",
+        "origin": "50 Point Comp. Prize (August 2019)",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "NOXIOUS": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "1 T1 Exotic",
+        "obtain": "Trading Only",
+        "origin": "Halloween 2018 Event (Spooky & Haunted Cases)",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "SPIRIT": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "1 T1 Exotic",
+        "obtain": "Trading Only",
+        "origin": "Halloween 2018 Event (Spooky & Haunted Cases)",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "EYES": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "1 T1 Exotic",
+        "obtain": "Trading Only",
+        "origin": "Halloween 2018 Event (Spooky & Haunted Cases)",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "HAUNTED": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "1 T1 Exotic",
+        "obtain": "Trading Only",
+        "origin": "Winning a round on \"Asylum\" (Halloween 2018)",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "IRON REGAL": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "2 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Easter 2018 Event (Spring & Rare Spring Cases)",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "HONEYCOMB": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "2 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Easter 2018 Event (Spring & Rare Spring Cases)",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "SHINY LUCK": {
+        "demand": "\u2605\u2605\u2605\u2605\u2606",
+        "value": "3 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "50 Point Comp. Prize (March 2019)",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "GOLEM": {
+        "demand": "\u2605\u2605\u2605\u2605\u2606",
+        "value": "3 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "50 Point Comp. Prize (February 2019)",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "JOLLY GREEN": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Redeemed using code \"HappyHoliday\" (2018)",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "JOLLY BLUE": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Redeemed using code \"Snowman\" (2018)",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "JOLLY RED": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Redeemed using code \"Jolly\" (2018)",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "DECADENT RED": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Redeemed using code \"Easter2019\" (2019)",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "FROSTING": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Redeemed using code \"Birthday\" (2019)",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "SUN STAIN": {
+        "demand": "\u2605\u2605\u2605\u2605\u2606",
+        "value": "5 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "25 Point Comp. Prize (August 2018)",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "L0AD1NG": {
+        "demand": "\u2605\u2605\u2605\u2605\u2606",
+        "value": "5 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "50 Point Comp. Prize (May 2018)",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "RED SPARKLE TIME": {
+        "demand": "\u2605\u2605\u2605\u2605\u2606",
+        "value": "5 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "50 Point Comp. Prize (January 2018)",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "SPARKLE": {
+        "demand": "\u2605\u2605\u2605\u2605\u2606",
+        "value": "5 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "50 Point Comp. Prize (August 2017)",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "BLACK CHROMA": {
+        "demand": "\u2605\u2605\u2605\u2605\u2606",
+        "value": "5 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "50 Point Comp. Prize (July 2017)",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "RADIOACTIVE": {
+        "demand": "\u2605\u2605\u2605\u2605\u2606",
+        "value": "5 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "50 Point Comp. Prize (June 2017)",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "REAPER": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "7 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Winning a round on \"Haunted Manor\" (Halloween 2016)",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "ORNATE": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "15 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Redeemed twice using old codes (2016 & 2017)",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "STATIC": {
+        "demand": "\u2605\u2605\u2605\u2605\u2606",
+        "value": "20 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Case #1 (2016-2016)",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "SPECTRUM": {
+        "demand": "\u2605\u2605\u2605\u2605\u2606",
+        "value": "20 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Basic Case (2016-2016)",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "FLAKES": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "55 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Redeemed using code \"Happy_Holidays\" (2016)",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "TIER II": {
+        "demand": "NOT TRADABLE",
+        "value": "NOT TRADABLE",
+        "obtain": "Reaching Prestige 2 in-game",
+        "origin": "Automatically given at the appropriate prestige since 2018",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "TIER III": {
+        "demand": "NOT TRADABLE",
+        "value": "NOT TRADABLE",
+        "obtain": "Reaching Prestige 3 in-game",
+        "origin": "Automatically given at the appropriate prestige since 2018",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "TIER IV": {
+        "demand": "NOT TRADABLE",
+        "value": "NOT TRADABLE",
+        "obtain": "Reaching Prestige 4 in-game",
+        "origin": "Automatically given at the appropriate prestige since 2018",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "TIER V": {
+        "demand": "NOT TRADABLE",
+        "value": "NOT TRADABLE",
+        "obtain": "Reaching Prestige 5 in-game",
+        "origin": "Automatically given at the appropriate prestige since 2018",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "BRONZE TIER": {
+        "demand": "NOT TRADABLE",
+        "value": "NOT TRADABLE",
+        "obtain": "Earn at least 50pts in a clan with 500pts",
+        "origin": "500 Clan Point prize since 2019",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "SILVER TIER": {
+        "demand": "NOT TRADABLE",
+        "value": "NOT TRADABLE",
+        "obtain": "Earn at least 50pts in a clan with 2,500pts",
+        "origin": "2,500 Clan Point prize since 2019",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "NEON CANE": {
+        "demand": "NOT TRADABLE",
+        "value": "NOT TRADABLE",
+        "obtain": "Unobtainable",
+        "origin": "Completing one of the priSnowman Missions (Holiday 2019)",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "NINJA": {
+        "demand": "NOT TRADABLE",
+        "value": "NOT TRADABLE",
+        "obtain": "Completing Obby in Lobby",
+        "origin": "End of lobby prize since 2020",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "RED": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "1 T1 Common",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Standard Case",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "BLUE": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "1 T1 Common",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Standard Case",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "YELLOW": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "1 T1 Common",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Standard Case",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "PURPLE": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "1 T1 Common",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Standard Case",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "GREEN": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "1 T1 Common",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Standard Case",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "ORANGE": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "1 T1 Common",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Standard Case",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "PINK": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "1 T1 Common",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Standard Case",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "MEDIC": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Common",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Standard Case",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "SUNRISE": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Common",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Standard & Sturdy Cases",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "TRUNK": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Common",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Standard & Sturdy Cases",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "COW": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Common",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Standard & Sturdy Cases",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "DIAMOND PLATE": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Common",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Standard Case",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "PEBBLE": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Common",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Standard Case",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "ZEBRA": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Common",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Standard & Sturdy Cases",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "BURN": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Common",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Standard & Sturdy Cases",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "PEARL": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Common",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Case #1 (2016)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "METALLIC FADE": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Common",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Standard & Sturdy Cases",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "GREEN RUSH": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Common",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Case #2 (2016)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "DEEP ORANGE": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Common",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Case #2 (2016)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "PRISM": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Common",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Case #2 (2016)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "ROUGHED": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "1 T1 Common",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Case #2 (2016)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "HARDENED": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Common",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Case #1 (2016)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "ICE": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Common",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Standard Case",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "MARBLE": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Common",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Standard Case",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "WANWOOD": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "1 T1 Common",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Case #1 (2016)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "DAMASCUS": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "1 T1 Common",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Case #1 (2016)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "BINARY": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Common",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Case #4 (2017)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "EDGED": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "1 T1 Common",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Case #3 (2017)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "POISON": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Common",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Case #3 (2017)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "SHARK": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Common",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Case #3 (2017)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "VIPER": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Common",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Case #4 (2017)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "SAND": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Common",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Case #4 (2017)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "WATER": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Common",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Case #4 (2017)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "SPARKLE TIME": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Common",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Case #5 (2017)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "POLAR": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Common",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Case #5 (2017)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "DIY": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Common",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Case #5 (2017)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "KITTY": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Common",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Case #5 (2017)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "GHOUL": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Common",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Case #3 (2017)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "MIDNIGHT": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Common",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Standard & Sturdy Cases",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "PITCH BLACK": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Common",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Case #6 (2018)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "TALLY": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Common",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Case #6 (2018)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "ENERGY FADE": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Common",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Case #6 (2018)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "CAUSTIC": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Common",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Case #6 (2018)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "SLIME": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Common",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Case #7 (2019)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "GARNET": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Common",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Case #7 (2019)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "BANANAS": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Common",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Case #7 (2019)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "GOLD FOIL": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Common",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Case #7 (2019)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "CLOUDY": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Common",
+        "obtain": "Trading / Unboxing",
+        "origin": "Case #8 (2020)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "SHEEP": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Common",
+        "obtain": "Trading / Unboxing",
+        "origin": "Case #8 (2020)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "BEAR": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Common",
+        "obtain": "Trading / Unboxing",
+        "origin": "Case #8 (2020)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "AI": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Common",
+        "obtain": "Trading / Unboxing",
+        "origin": "Case #8 (2020)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "PIRATE": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "2 T1 Commons",
+        "obtain": "Trading / Season Pass",
+        "origin": "Earned through the 2nd Summer 2022 Season Pass",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "CREAMSICLE": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "2 T1 Commons",
+        "obtain": "Trading Only",
+        "origin": "Earned through the 1st Summer 2022 Season Pass",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "CROW": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Legendary",
+        "obtain": "Trading Only",
+        "origin": "Earned through the Halloween 2021 Season Pass",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "SUMMER LIGHTS": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "2 T1 Rares",
+        "obtain": "Trading Only",
+        "origin": "Summer 2021 Event (Summer Case)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "BOWLING": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "2 T1 Rares",
+        "obtain": "Trading Only",
+        "origin": "Summer 2021 Event (Summer Case)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "GUM BUBBLES": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "2 T1 Rares",
+        "obtain": "Trading Only",
+        "origin": "Summer 2021 Event (Summer Case)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "JUICE": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "3 T1 Rares",
+        "obtain": "Trading Only",
+        "origin": "Earning through the Season 6 pass",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "ROBIN EGGS": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "3 T1 Rares",
+        "obtain": "Trading Only",
+        "origin": "Earning through the Season 4 pass",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "COOL CLOVER": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Legendary",
+        "obtain": "Trading Only",
+        "origin": "Earning through the Season 3 pass",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "JOLLY BELLS": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Legendary",
+        "obtain": "Trading Only",
+        "origin": "Earning through the Season 2 pass",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "PINK CANE": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Legendary",
+        "obtain": "Trading Only",
+        "origin": "Holiday 2020 Event (Merry Case)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "NAUGHTY LIST": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Legendary",
+        "obtain": "Trading Only",
+        "origin": "Holiday 2020 Event (Merry Case)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "WRAPPED": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Legendary",
+        "obtain": "Trading Only",
+        "origin": "Holiday 2020 Event (Merry Case)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "SOFT FLAKES": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Legendary",
+        "obtain": "Trading Only",
+        "origin": "Holiday 2020 Event (Merry Case)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "FROGS": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "1 T1 Legendary",
+        "obtain": "Trading Only",
+        "origin": "Earning through the Season 1 pass",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "WITCH": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "1 T1 Legendary",
+        "obtain": "Trading Only",
+        "origin": "Halloween 2020 Event (Pumpkin Case)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "TREAT": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "1 T1 Legendary",
+        "obtain": "Trading Only",
+        "origin": "Halloween 2020 Event (Pumpkin Case)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "BATS": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "1 T1 Legendary",
+        "obtain": "Trading Only",
+        "origin": "Halloween 2020 Event (Pumpkin Case)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "EERIE": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "1 T1 Legendary",
+        "obtain": "Trading Only",
+        "origin": "Halloween 2020 Event (Pumpkin Case)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "MOON": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "1 T1 Legendary",
+        "obtain": "Trading Only",
+        "origin": "Summer 2020 Event (Summer Case)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "MELON SEEDS": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "1 T1 Legendary",
+        "obtain": "Trading Only",
+        "origin": "Summer 2020 Event (Summer Case)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "PUP": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "1 T1 Legendary",
+        "obtain": "Trading Only",
+        "origin": "Summer 2020 Event (Summer Case)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "TENTACLE": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "1 T1 Legendary",
+        "obtain": "Trading Only",
+        "origin": "Summer 2020 Event (Summer Case)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "JOLLY TREES": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "2 T1 Legendaries",
+        "obtain": "Trading Only",
+        "origin": "Holiday 2019 Event (Festive Case)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "METALLIC SNOW": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "2 T1 Legendaries",
+        "obtain": "Trading Only",
+        "origin": "Holiday 2019 Event (Festive Case)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "DIVA": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "2 T1 Legendaries",
+        "obtain": "Trading Only",
+        "origin": "Holiday 2019 Event (Festive Case)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "SNOWY FRIEND": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "2 T1 Legendaries",
+        "obtain": "Trading Only",
+        "origin": "Holiday 2019 Event (Festive Case)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "JAWBREAKER": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "2 T1 Legendaries",
+        "obtain": "Trading Only",
+        "origin": "Summer 2019 Event (Summer Case)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "RASPBERRY RUSH": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "2 T1 Legendaries",
+        "obtain": "Trading Only",
+        "origin": "Summer 2019 Event (Summer Case)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "RIBBONS": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "2 T1 Legendaries",
+        "obtain": "Trading Only",
+        "origin": "Summer 2019 Event (Summer Case)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "LEMON": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "2 T1 Legendaries",
+        "obtain": "Trading Only",
+        "origin": "Summer 2019 Event (Summer Case)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "PASTEL RED": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Legendaries",
+        "obtain": "Trading Only",
+        "origin": "Easter 2019 Event (Easter Case)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "PASTEL GREEN": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Legendaries",
+        "obtain": "Trading Only",
+        "origin": "Easter 2019 Event (Easter Case)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "PASTEL PINK": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Legendaries",
+        "obtain": "Trading Only",
+        "origin": "Easter 2019 Event (Easter Case)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "SOUR SPRING": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Legendaries",
+        "obtain": "Trading Only",
+        "origin": "Easter 2019 Event (Easter Case)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "SWEET FRAGMENT": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "1 T1 Exotic",
+        "obtain": "Trading Only",
+        "origin": "Holiday 2018 Event (Festive Case)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "SLUSH": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "1 T1 Exotic",
+        "obtain": "Trading Only",
+        "origin": "Holiday 2018 Event (Festive Case)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "ICICLE": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "1 T1 Exotic",
+        "obtain": "Trading Only",
+        "origin": "Holiday 2018 Event (Festive Case)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "APPLE CANE": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "1 T1 Exotic",
+        "obtain": "Trading Only",
+        "origin": "Holiday 2018 Event (Festive Case)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "CANDY CORN": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "1 T1 Exotic",
+        "obtain": "Trading Only",
+        "origin": "Halloween 2018 Event (Spooky Case)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "MUMMY": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "1 T1 Exotic",
+        "obtain": "Trading Only",
+        "origin": "Halloween 2018 Event (Spooky Case)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "MEAT": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "1 T1 Exotic",
+        "obtain": "Trading Only",
+        "origin": "Halloween 2018 Event (Spooky Case)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "SPIDERWEBS": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "1 T1 Exotic",
+        "obtain": "Trading Only",
+        "origin": "Halloween 2018 Event (Spooky Case)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "ROBO": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "1 T1 Exotic",
+        "obtain": "Trading Only",
+        "origin": "Redeemed using code \"p4nd0ra\" (2017)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "TOFUU": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "1 T1 Exotic",
+        "obtain": "Trading Only",
+        "origin": "Redeemed using code \"t0fuu\" (2017)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "SEEDENG": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "1 T1 Exotic",
+        "obtain": "Trading Only",
+        "origin": "Redeemed using code \"s33d3ng\" (2017)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "POKE": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "1 T1 Exotic",
+        "obtain": "Trading Only",
+        "origin": "Redeemed using code \"p0k3\" (2017)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "PIZZA": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "1 T1 Exotic",
+        "obtain": "Trading Only",
+        "origin": "Redeemed using code \"zax0r\" (2017)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "GRASS": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "2 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Easter 2018 Event (Spring Basket)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "NATURE": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "2 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Easter 2018 Event (Spring Basket)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "ARTISAN": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "2 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Easter 2018 Event (Spring Basket)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "AQUA GREEN": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "2 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Easter 2018 Event (Spring Basket)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "CLOVER": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "5 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Redeemed using code \"Lucky2018\" (2018)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "KOOL-AID": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "5 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Redeemed using code \"OH YEAH!\" (2016)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "SINISTER": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "5 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Redeemed using code \"Spooky2016\" (2016)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "CANDY CANE": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "5 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Redeemed twice using old codes (2016 & 2017)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "1000 DEGREE": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "5 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Redeemed using code \"For_Science\" (2017)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "SLIME EYE": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "5 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Redeemed through the Portals app in 2020",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "EGG": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "6 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Redeemed using code \"3ast3r\" (2017)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "COAL": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "30 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Redeemed using code \"Naughty_List\" (2016)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "PURPLE NATION": {
+        "demand": "NOT TRADABLE",
+        "value": "NOT TRADABLE",
+        "obtain": "Redeeming Code",
+        "origin": "Redeeming code found in the Codes section",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "STUFFED": {
+        "demand": "NOT TRADABLE",
+        "value": "NOT TRADABLE",
+        "obtain": "UNOBTAINABLE",
+        "origin": "Redeemed using code \"Holiday\" (2020)",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "SNOWFRIENDS": {
+        "demand": "NOT TRADABLE",
+        "value": "NOT TRADABLE",
+        "obtain": "Redeeming Code",
+        "origin": "Redeeming code found in the Codes section",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "TURTLE": {
+        "demand": "\u2605\u2606\u2606\u2606\u2606",
+        "value": "2 T1 Commons",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Buying for 300 tokens in the Shop",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "CAT": {
+        "demand": "\u2605\u2606\u2606\u2606\u2606",
+        "value": "2 T1 Commons",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Buying for 800 tokens in the Shop",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "UFO": {
+        "demand": "\u2605\u2606\u2606\u2606\u2606",
+        "value": "2 T1 Commons",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Buying for 900 tokens in the Shop",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "PENGUIN": {
+        "demand": "\u2605\u2606\u2606\u2606\u2606",
+        "value": "2 T1 Commons",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Buying for 1,200 tokens in the Shop",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "SQUID": {
+        "demand": "\u2605\u2606\u2606\u2606\u2606",
+        "value": "2 T1 Commons",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Buying for 1,500 tokens in the Shop",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "JET": {
+        "demand": "\u2605\u2606\u2606\u2606\u2606",
+        "value": "2 T1 Commons",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Buying for 1,900 tokens in the Shop",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "FLUFFY UNICORN": {
+        "demand": "\u2605\u2606\u2606\u2606\u2606",
+        "value": "2 T1 Commons",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Buying for 2,000 tokens in the Shop",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "TANK": {
+        "demand": "\u2605\u2606\u2606\u2606\u2606",
+        "value": "2 T1 Commons",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Buying for 2,500 tokens in the Shop",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "DRAGON": {
+        "demand": "\u2605\u2606\u2606\u2606\u2606",
+        "value": "1 T1 Legendary",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Buying for 3,000 tokens in the Shop",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "CHILLS": {
+        "demand": "\u2605\u2606\u2606\u2606\u2606",
+        "value": "2 T1 Commons",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Pet Case #1",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "BADGER": {
+        "demand": "\u2605\u2606\u2606\u2606\u2606",
+        "value": "2 T1 Commons",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Pet Case #1",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "FAIRY": {
+        "demand": "\u2605\u2606\u2606\u2606\u2606",
+        "value": "2 T1 Commons",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Pet Case #1",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "TOY PLANE": {
+        "demand": "\u2605\u2606\u2606\u2606\u2606",
+        "value": "2 T1 Commons",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Pet Case #1",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "PINATA": {
+        "demand": "\u2605\u2606\u2606\u2606\u2606",
+        "value": "2 T1 Commons",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Pet Case #1",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "SKELEDOG": {
+        "demand": "\u2605\u2606\u2606\u2606\u2606",
+        "value": "2 T1 Commons",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Pet Case #1",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "SEAHORSE": {
+        "demand": "\u2605\u2606\u2606\u2606\u2606",
+        "value": "2 T1 Commons",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Pet Case #1",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "BALLOONS": {
+        "demand": "\u2605\u2606\u2606\u2606\u2606",
+        "value": "2 T1 Commons",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Pet Case #1",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "MECH SPIDER": {
+        "demand": "\u2605\u2606\u2606\u2606\u2606",
+        "value": "1 T1 Legendary",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Pet Case #1",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "MAGICAL UNICORN": {
+        "demand": "\u2605\u2606\u2606\u2606\u2606",
+        "value": "1 T1 Legendary",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Pet Case #1",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "HATCHLING": {
+        "demand": "\u2605\u2606\u2606\u2606\u2606",
+        "value": "2 T1 Commons",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Pet Case #2",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "SEAGULL": {
+        "demand": "\u2605\u2606\u2606\u2606\u2606",
+        "value": "2 T1 Commons",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Pet Case #2",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "NESSIE": {
+        "demand": "\u2605\u2606\u2606\u2606\u2606",
+        "value": "2 T1 Commons",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Pet Case #2",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "MEERKAT": {
+        "demand": "\u2605\u2606\u2606\u2606\u2606",
+        "value": "2 T1 Commons",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Pet Case #2",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "EVIL FLOWER": {
+        "demand": "\u2605\u2606\u2606\u2606\u2606",
+        "value": "2 T1 Commons",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Pet Case #2",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "ROBO PENGUIN": {
+        "demand": "\u2605\u2606\u2606\u2606\u2606",
+        "value": "2 T1 Commons",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Pet Case #2",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "NEON OCTOPUS": {
+        "demand": "\u2605\u2606\u2606\u2606\u2606",
+        "value": "2 T1 Commons",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Pet Case #2",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "GHOST DRAGON": {
+        "demand": "\u2605\u2606\u2606\u2606\u2606",
+        "value": "1 T1 Legendary",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Pet Case #2",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "PARTY TIGER": {
+        "demand": "\u2605\u2606\u2606\u2606\u2606",
+        "value": "1 T1 Legendary",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Pet Case #2",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "CHIMERA": {
+        "demand": "\u2605\u2606\u2606\u2606\u2606",
+        "value": "1 T1 Legendary",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Pet Case #2",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "PIRATE SHIP": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "2 T1 Rares",
+        "obtain": "Trading / Season Pass",
+        "origin": "Earned through the 2nd Summer 2022 Season Pass",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "CHESTER": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "2 T1 Legendaries",
+        "obtain": "Trading / Season Pass",
+        "origin": "Earned through the 2nd Summer 2022 Season Pass",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "SWIRLY": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "2 T1 Rares",
+        "obtain": "Trading Only",
+        "origin": "Earned through the 1st Summer 2022 Season Pass",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "CHOCTOPUS": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Legendary",
+        "obtain": "Trading Only",
+        "origin": "Earned through the 1st Summer 2022 Season Pass",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "SUBSPACE ENGRAM": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Legendaries",
+        "obtain": "Trading Only",
+        "origin": "30 point prize for the June 2022 Comp. Season",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "ROBOPAL": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "2 T1 Rares",
+        "obtain": "Trading Only",
+        "origin": "Earned through the Season 14 Season Pass",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "SECURITY DRONE": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "2 T1 Legendaries",
+        "obtain": "Trading Only",
+        "origin": "Earned through the Season 14 Season Pass",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "BUNNY DOGE": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Legendaries",
+        "obtain": "Trading Only",
+        "origin": "30 point prize for the May 2022 Comp. Season",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "CHOCOLATE BAR": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "2 T1 Rares",
+        "obtain": "Trading Only",
+        "origin": "Earned through the Easter 2022 Season Pass",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "MALLOWBUN": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "2 T1 Rares",
+        "obtain": "Trading Only",
+        "origin": "Earned through the Easter 2022 Season Pass",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "CHONK BUNNY": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Legendary",
+        "obtain": "Trading Only",
+        "origin": "Earned through the Easter 2022 Season Pass",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "LOVE LETTER": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Legendaries",
+        "obtain": "Trading Only",
+        "origin": "30 point prize for the February 2022 Comp. Season",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "TIGER CUB": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "2 T1 Rares",
+        "obtain": "Trading Only",
+        "origin": "Earned through the Season 12 Season Pass",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "LUCKY NEKO": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Legendary",
+        "obtain": "Trading Only",
+        "origin": "Earned through the Season 12 Season Pass",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "WIZARD FROG": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Legendary",
+        "obtain": "Trading Only",
+        "origin": "Earned through the Season 11 Season Pass",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "XMAS TEDDY": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "2 T1 Rares",
+        "obtain": "Trading Only",
+        "origin": "Earned through the Holiday 2021 Season Pass",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "STOCKING CAT": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "2 T1 Rares",
+        "obtain": "Trading Only",
+        "origin": "Earned through the Holiday 2021 Season Pass",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "SNOW GLOBE": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "3 T1 Legendaries",
+        "obtain": "Trading Only",
+        "origin": "30 Point Prize for the December 2021 Comp. Season",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "SNOW DUDE": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Legendary",
+        "obtain": "Trading Only",
+        "origin": "Earned through the Holiday 2021 Season Pass",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "PUMPKIN HEAD": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "2 T1 Rares",
+        "obtain": "Trading Only",
+        "origin": "Earned through the Halloween 2021 Season Pass",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "PORTAL DEMON": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Legendary",
+        "obtain": "Trading Only",
+        "origin": "Earned through the Halloween 2021 Season Pass",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "GLOBE": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "3 T1 Rares",
+        "obtain": "Trading Only",
+        "origin": "Earned through the Season 8 pass",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "ASTROLOTL": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Legendary",
+        "obtain": "Trading Only",
+        "origin": "Earned through the Season 8 pass",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "LAVA SEAL": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "3 T1 Rares",
+        "obtain": "Trading Only",
+        "origin": "Earned through the Season 7 pass",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "PAIL PAL": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Legendary",
+        "obtain": "Trading Only",
+        "origin": "Earned through the Season 7 pass",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "MUSHY": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "3 T1 Rares",
+        "obtain": "Trading Only",
+        "origin": "Earned through the Season 6 pass",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "GREG": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Legendary",
+        "obtain": "Trading Only",
+        "origin": "Earned through the Season 6 pass",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "BUNCUP": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "3 T1 Rares",
+        "obtain": "Trading Only",
+        "origin": "Earned through the Season 5 pass",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "CHICK HATCHLING": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "3 T1 Rares",
+        "obtain": "Trading Only",
+        "origin": "Earned through the Season 5 pass",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "MR. HAT": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "3 T1 Rares",
+        "obtain": "Trading Only",
+        "origin": "Earned through the Season 4 pass",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "LANTERN": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "3 T1 Rares",
+        "obtain": "Trading Only",
+        "origin": "Earned through the Season 3 pass",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "MOTH": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "3 T1 Rares",
+        "obtain": "Trading Only",
+        "origin": "Earned through the Season 3 pass",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "COCOA CAT": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Rares",
+        "obtain": "Trading Only",
+        "origin": "Earned through the Season 2 pass",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "BASKETBALL": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Legendary",
+        "obtain": "Trading Only",
+        "origin": "Earned through the Season 1 pass",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "CANDY FRIEND": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "3 T1 Legendaries",
+        "obtain": "Trading Only",
+        "origin": "50 point prize for the October 2020 Comp. Season",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "ICE CREAM": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Legendaries",
+        "obtain": "Trading Only",
+        "origin": "50 point prize for the September 2020 Comp. Season",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "MATH HOMEWORK": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Legendaries",
+        "obtain": "Trading Only",
+        "origin": "50 point prize for the August 2020 Comp. Season",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "PRIS": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Legendaries",
+        "obtain": "Trading Only",
+        "origin": "50 point prize for the July 2020 Comp. Season",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "HOT AIR BALLOON": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Legendaries",
+        "obtain": "Trading Only",
+        "origin": "50 point prize for the June 2020 Comp. Season",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "TEDDY": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Legendaries",
+        "obtain": "Trading Only",
+        "origin": "50 point prize for the May 2020 Comp. Season",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "CANDY PLS": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Legendaries",
+        "obtain": "Trading Only",
+        "origin": "50 point prize for the November 2019 Comp. Season",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "BEACH BALL": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Legendaries",
+        "obtain": "Trading Only",
+        "origin": "50 point prize for the June 2019 Comp. Season",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "PIXEL DUCK": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Legendaries",
+        "obtain": "Trading Only",
+        "origin": "50 point prize for the May 2019 Comp. Season",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "CHOCO BUNNY": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Legendaries",
+        "obtain": "Trading Only",
+        "origin": "50 point prize for the April 2019 Comp. Season",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "DONKEY": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Legendaries",
+        "obtain": "Trading Only",
+        "origin": "50 point prize for the January 2019 Comp. Season",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "CHUPACABRA": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Legendaries",
+        "obtain": "Trading Only",
+        "origin": "Bought for 30 \"Candy Corns\" during the 2018 Halloween Event",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "HAUNTING SPIRIT": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Legendaries",
+        "obtain": "Trading Only",
+        "origin": "50 point prize for the November 2018 Comp. Season",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "OCTOPUS": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Legendaries",
+        "obtain": "Trading Only",
+        "origin": "50 point prize for the June 2018 Comp. Season",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "GINGERBREAD MAN": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "1 T1 Exotic",
+        "obtain": "Trading Only",
+        "origin": "Old Code from December 2018",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "GHOSTLY SPIRIT": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "1 T1 Exotic",
+        "obtain": "Trading Only",
+        "origin": "Bought for 100 \"Candy Corns\" during the 2018 Halloween Event",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "OVERLORD": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Exotic",
+        "obtain": "Trading / Buying in Shop",
+        "origin": "Buying for 4,000 tokens in the Shop",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "PHOENIX": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Exotic",
+        "obtain": "Trading / Buying in Shop",
+        "origin": "Buying for 5,000 tokens in the Shop",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "RAINBOW PHOENIX": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Exotic",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Pet Case #1",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "TOXIC PHOENIX": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "1 T1 Exotic",
+        "obtain": "Trading/Timed Shop/Unboxing",
+        "origin": "Pet Case #2",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "BUNNY": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "2 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Bought for 40 \"Eggs\" during the 2018 Easter Event",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "COIN CORGI": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "2 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Earning through the Season 4 pass",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "CANDLE SQUID": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "2 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Earning through the Season 2 pass",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "CHOCO BOX": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "2 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Buying for 6,000 tokens in Shop (February 2021)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "ROBOBUNNY": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "5 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Bought for 100 \"Eggs\" during the 2018 Easter Event",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "POLLY": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "5 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Bought for 1,200 tokens in Summer 2018",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "OVERSPIDER": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "5 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Earning 500 points during the May 2018 Comp. Season",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "BIRTHDAY CAKE": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "15 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Buying for 3,333 tokens in Shop (March 2019)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "OMG": {
+        "demand": "\u2605\u2605\u2605\u2605\u2606",
+        "value": "15 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Bought for 12,345 tokens in Shop (April Fools 2021)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "RED PANDA": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "15 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Earning 500 points during the August 2017 Comp. Season",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "CRIMSON DRAKE": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "60 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Earning 1,000 points during the June 2017 Comp. Season",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "DUCKIE": {
+        "demand": "\u2605\u2605\u2605\u2605\u2606",
+        "value": "60 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Redeeming an old randomized pet code (2018)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "GHOSTLY KNIGHT": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Buying the Fantasy Bundle (2017 & 2018)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "MECH FALCON": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Buying the Sci-Fi Bundle (2017)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "WRAITH": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Buying the Halloween Bundle (2017)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "ICE DRAKE": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Buying the Frozen Bundle (2017)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "REINDEER": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Buying the Holiday Bundle (2017)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "HEARTY": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Buying the Valentines Bundle (2018)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "LEPRECHAUN": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Buying the Lucky Bundle (2018)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "SPRING SUN": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Buying the Spring Bundle (2018)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "PURPLE WHELP": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Buying the Crystal Bundle (2018)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "UNDEAD GHOUL": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Buying the Undead Bundle (2018)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "STARFISH": {
+        "demand": "\u2605\u2605\u2605\u2605\u2606",
+        "value": "15 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Buying for 200 Robux in Shop in Summer 2018",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "BALD EAGLE": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Buying the Patriotic Bundle (2018)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "SHARKTOOTH": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Buying the Pirate Bundle (2018)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "EMERALD DRAGON": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Buying the Dragon Bundle (2018)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "SENTINEL FALCON": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Buying the Sky Bundle (2018)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "CRIMSON EAGLE": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Buying the Nature Bundle (2018)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "SPIDER HORDE": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Buying the Grim Bundle (2018)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "ICE PHOENIX": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Buying the Frigid Bundle (2018)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "FIREWORKS": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Buying the 2019 Bundle (2018)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "STORM": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Buying the Electricity Bundle (2019)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "XOXO": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Buying the Love Bundle (2019)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "EGGSECUTION": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Buying the Easter Bundle (2019)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "DESERT KING": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Buying the Desert Bundle (2019)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "MYSTIC UNDEAD": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Buying the Mystic Bundle (2019)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "SAPLING BUD": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Buying the Oak Bundle (2019)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "FLYING FORTRESS": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Buying the Exhaust Bundle (2019)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "STRANGE DOG": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Buying the Strange Bundle (2019)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "HOLY TURKEY": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Buying the Harvest Bundle (2019)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "RAVEN": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "2 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Buying the Halloween 2020 Bundle (2020)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "PEPPERMINT PAL": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "2 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Buying the Peppermint Bundle (2020)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "PARTY BALL": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "2 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Buying the 2021 Bundle (2021)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "5TH CANDLE": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "2 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Buying the Birthday Bundle (2021)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "BUNNY PLUSH": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "2 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Buying the Bunny Bundle (2021)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "VAPORSAUR": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "2 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Buying the Vaporwave Bundle (2021)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "JETFOX": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "2 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Buying the Space Bundle (2021)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "EDGY BOI": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "2 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Buying the Edgy Bundle (2021)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "VOID HAND": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "2 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Buying the Void Bundle (2021)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "COG DOG": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "2 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Buying the 2022 Bundle (2022)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "FLUFF BALL": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "2 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Buying the Heart Bundle (2022)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "THE GUY": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "2 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Buying the April Fools 2022 Bundle (2022)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "BOOM ROCKET": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "2 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Buying the Liberty Bundle (2022)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "COCO MIMIC": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "2 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Buying the Coco Bundle (2022)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "WALRUS": {
+        "demand": "NOT TRADABLE",
+        "value": "NOT TRADABLE",
+        "obtain": "Redeeming Code",
+        "origin": "Redeeming code found in the Codes section",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "FLOATING KNIFE": {
+        "demand": "NOT TRADABLE",
+        "value": "NOT TRADABLE",
+        "obtain": "UNOBTAINABLE",
+        "origin": "Redeemed using an old expired code (2018)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "DOGE": {
+        "demand": "NOT TRADABLE",
+        "value": "NOT TRADABLE",
+        "obtain": "UNOBTAINABLE",
+        "origin": "VIP game pass pet from 2017-2018",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "CRYSTAL SKULL": {
+        "demand": "NOT TRADABLE",
+        "value": "NOT TRADABLE",
+        "obtain": "UNOBTAINABLE",
+        "origin": "VIP game pass pet from 2018-2021",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "SPARKY": {
+        "demand": "NOT TRADABLE",
+        "value": "NOT TRADABLE",
+        "obtain": "Purchasing VIP",
+        "origin": "Current pet that comes from buying the VIP game pass",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "RAINBOW (LEGENDARY)": {
+        "demand": null,
+        "value": "Blue+Red+Green+Orange+Yellow+Pink+Purple",
+        "obtain": "Blue+Red+Green+Orange+Yellow+Pink+Purple",
+        "origin": "(COMMONS)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "UNICORN (EXOTIC)": {
+        "demand": null,
+        "value": "1 DARK BLADE (EXOTIC)",
+        "obtain": "1 DARK BLADE (EXOTIC)",
+        "origin": "1 RAINBOW (LEGENDARY)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "DARK HORSE (MYTHIC)": {
+        "demand": null,
+        "value": "1 UNICORN (EXOTIC)",
+        "obtain": "1 UNICORN (EXOTIC)",
+        "origin": "2 DOOMBRINGERS (EXOTIC)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "STRIKER (EXOTIC)": {
+        "demand": null,
+        "value": "GILDED (EXOTIC)",
+        "obtain": "GILDED (EXOTIC)",
+        "origin": "LIGHTNING (LEGENDARY)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "STEAMPUNK (EXOTIC)": {
+        "demand": null,
+        "value": "3 PROTONS (EXOTIC)",
+        "obtain": "3 PROTONS (EXOTIC)",
+        "origin": "1 STRIKER (EXOTIC)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "FANG (MYTHIC)": {
+        "demand": null,
+        "value": "SPIDER (MYTHIC)",
+        "obtain": "SPIDER (MYTHIC)",
+        "origin": "1 DARK CLAW (EXOTIC)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "DARK AGE (MYTHIC)": {
+        "demand": null,
+        "value": "ONYX (MYTHIC)",
+        "obtain": "ONYX (MYTHIC)",
+        "origin": "SHADOW (EXOTIC)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "VOID (MYTHIC)": {
+        "demand": null,
+        "value": null,
+        "obtain": null,
+        "origin": null,
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "STARLIGHT (EXOTIC)": {
+        "demand": null,
+        "value": "LAVA BLADE (EXOTIC)",
+        "obtain": "LAVA BLADE (EXOTIC)",
+        "origin": "FAERIE (EXOTIC)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "ELEGANT SABER (DREAM)": {
+        "demand": null,
+        "value": null,
+        "obtain": null,
+        "origin": null,
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "RAINBOW SABER (DREAM)": {
+        "demand": null,
+        "value": "ELEGANT SABER (DREAM)",
+        "obtain": "ELEGANT SABER (DREAM)",
+        "origin": "STARLIGHT (EXOTIC)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "RUNIC BLADE (DREAM)": {
+        "demand": null,
+        "value": "DARK AGE (MYTHIC)",
+        "obtain": "DARK AGE (MYTHIC)",
+        "origin": "VOID (MYTHIC)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "KUNAI (EXOTIC)": {
+        "demand": null,
+        "value": "STRIKER (EXOTIC)",
+        "obtain": "STRIKER (EXOTIC)",
+        "origin": "FURY (EXOTIC)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "IMP (MYTHIC)": {
+        "demand": null,
+        "value": "FANG (MYTHIC)",
+        "obtain": "FANG (MYTHIC)",
+        "origin": "KUNAI (EXOTIC)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "ENERGY SLICER (MYTHIC)": {
+        "demand": null,
+        "value": "KUNAI (EXOTIC)",
+        "obtain": "KUNAI (EXOTIC)",
+        "origin": "EPIC BLUE (EXOTIC)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "FLAMETHROWER (MYTHIC)": {
+        "demand": null,
+        "value": "ENERGY SLICER (MYTHIC)",
+        "obtain": "ENERGY SLICER (MYTHIC)",
+        "origin": "FLAMEBRAND (EXOTIC)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "JADE MAIDEN (MYTHIC)": {
+        "demand": null,
+        "value": "ENCHANTED JADE (MYTHIC)",
+        "obtain": "ENCHANTED JADE (MYTHIC)",
+        "origin": "STEEL MAIDEN (EXOTIC)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "VINE (DREAM)": {
+        "demand": null,
+        "value": "RUNIC BLADE (DREAM)",
+        "obtain": "RUNIC BLADE (DREAM)",
+        "origin": "ELEMENTAL SCIMITAR (MYTHIC)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "ELEMENTAL SCIMITAR (MYTHIC)": {
+        "demand": null,
+        "value": "BLOSSOM SCIMITAR (EXOTIC)",
+        "obtain": "BLOSSOM SCIMITAR (EXOTIC)",
+        "origin": "WATER SCIMITAR (EXOTIC)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "DUALITY (MYTHIC)": {
+        "demand": null,
+        "value": "3X NEMESIS (EXOTIC)",
+        "obtain": "3X NEMESIS (EXOTIC)",
+        "origin": "3X NOBLE DAGGER (EXOTIC)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "WENDIGO (DREAM)": {
+        "demand": null,
+        "value": "DARK HORSE (MYTHIC)",
+        "obtain": "DARK HORSE (MYTHIC)",
+        "origin": "OBSIDIAN LORD (MYTHIC)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "EARTHEN STAFF (EXOTIC)": {
+        "demand": null,
+        "value": "2X EARTHEN BLADE (EXOTIC)",
+        "obtain": "2X EARTHEN BLADE (EXOTIC)",
+        "origin": "BLOSSOM SCIMITAR (EXOTIC)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
     }
 }
