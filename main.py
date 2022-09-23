@@ -31,17 +31,21 @@ CORS(app)
 with open("values.json", "r", encoding="UTF-8") as file:
     values = json.load(file)
 
+
 @app.route('/', methods=['GET'])
 def home():
     """The homepage"""
     return jsonify({"Routes available": ["/v1/scrape", "/v2/scrape", "/v2/dvd", "/v2/assassin"]})
 
+
 def generate_share_code():
     """generates a string of random letters and numbers"""
-    code = ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(4))
+    code = ''.join(random.choice(string.ascii_uppercase + string.digits)
+                   for _ in range(4))
     if os.path.exists(f'dvd_data/{code}.json'):
         code = generate_share_code()
     return code
+
 
 @app.route('/v2/postData', methods=['POST'])
 def post_data():
@@ -56,12 +60,14 @@ def post_data():
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
 
+
 @app.route('/v2/dvd', methods=['GET', 'POST'])
 def dvd():
     """Function to read share codes"""
     if 'code' in request.args:
         if not os.path.exists(f'dvd_data/{request.args["code"]}.json'):
-            response = jsonify({"error": f"Share code {request.args['code']} does not exist."})
+            response = jsonify(
+                {"error": f"Share code {request.args['code']} does not exist."})
             response.headers.add('Access-Control-Allow-Origin', '*')
             return response
         with open(f'dvd_data/{request.args["code"]}.json', 'r', encoding="UTF-8") as codefile:
@@ -80,11 +86,14 @@ def dvd():
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
 
+
 def get_exotic_value(data):
+    """Gets exotic values while handling exceptions"""
     try:
-        return int(values[data.upper().replace("_", " ")]['exoticvalue'])
+        return int(values[data["name"].upper().replace("_", " ")]['exoticvalue'])
     except ValueError:
         return 0
+
 
 @app.route('/v2/assassin', methods=['GET'])
 def assassin():
@@ -102,9 +111,9 @@ def assassin():
                 json.dump([], data_file)
             with open(file_name, "r", encoding="UTF-8") as data_file:
                 data = json.load(data_file)
-        if 'name' in request.args:
+        if 'data' in request.args:
             try:
-                data = sorted(request.args["name"].replace(" ", "_").title().split(','))
+                data = json.loads(request.args["data"])
                 data.sort(
                     reverse=True,
                     key=get_exotic_value
@@ -112,8 +121,9 @@ def assassin():
                 with open(file_name, "w", encoding="UTF-8") as data_file:
                     json.dump(data, data_file)
                 response = jsonify("success")
-            except Exception as exception: #pylint: disable=broad-except
-                response = jsonify({"status": "error", "exception": str(exception)})
+            except Exception as exception:  # pylint: disable=broad-except
+                response = jsonify(
+                    {"status": "error", "exception": str(exception)})
                 response.headers.add('Access-Control-Allow-Origin', '*')
                 return response
         else:
@@ -121,7 +131,8 @@ def assassin():
         response.headers.add('Access-Control-Allow-Origin', '*')
         return response
 
-    user_input = request.args['name'].upper().replace('_', ' ') if 'name' in request.args else "NOINPUT"
+    user_input = request.args['name'].upper().replace(
+        '_', ' ') if 'name' in request.args else "NOINPUT"
     if user_input in ["NOINPUT", ""]:
         response = jsonify({
             "ERROR": "No input"
@@ -131,7 +142,8 @@ def assassin():
     if ',' in user_input:
         knife_names = user_input.split(',')
     else:
-        knife_names = get_close_matches(user_input, values.keys(), int(request.args['limit'])) if 'limit' in request.args else get_close_matches(user_input, values.keys())
+        knife_names = get_close_matches(user_input, values.keys(), int(
+            request.args['limit'])) if 'limit' in request.args else get_close_matches(user_input, values.keys())
     knives = []
     for name in knife_names:
         knife = values[name]
@@ -140,6 +152,7 @@ def assassin():
     response = jsonify(knives)
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
+
 
 @app.route('/v1/scrape', methods=['GET'])
 def scrape():
@@ -153,6 +166,7 @@ def scrape():
             args
         )
     )
+
 
 @app.route('/v2/scrape', methods=['GET'])
 def scrape_v2():
@@ -181,6 +195,7 @@ def scrape_v2():
     response = jsonify(data)
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
+
 
 def format_args(args):  # sourcery skip: remove-redundant-if
     """Sanitizes input"""
@@ -223,6 +238,7 @@ def format_args(args):  # sourcery skip: remove-redundant-if
         return {"errors": ["Subdomain field is empty."]}
 
     return args
+
 
 if __name__ == '__main__':
     # This is used when running locally only. When deploying to Google App
