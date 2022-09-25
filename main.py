@@ -118,6 +118,9 @@ def assassin():
                     reverse=True,
                     key=get_exotic_value
                 )
+                data.sort(
+                    key=lambda x: 0 if x["favorite"] else 1
+                )
                 with open(file_name, "w", encoding="UTF-8") as data_file:
                     json.dump(data, data_file)
                 response = jsonify("success")
