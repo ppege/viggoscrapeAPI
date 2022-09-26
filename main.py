@@ -18,8 +18,11 @@ import json
 import string
 import random
 import os.path
+import contextlib
 from difflib import get_close_matches
+import bcrypt
 from flask import request, jsonify, Flask
+from flask_api import status
 from flask_cors import CORS
 from scraper import get_assignments
 import scraper_v2
@@ -94,67 +97,106 @@ def get_exotic_value(data):
     except ValueError:
         return 0
 
+def sort_items(data):
+    """Sort the items by value and favorite"""
+    data["items"].sort(
+        reverse=True,
+        key=get_exotic_value
+    )
+    data["items"].sort(
+        key=lambda x: 0 if x["favorite"] else 1
+    )
+    return data
 
-@app.route('/v2/assassin', methods=['GET'])
+def authenticate(file_name, data):
+    """Authenticate the user"""
+    with contextlib.suppress(FileNotFoundError):
+        with open(file_name, "r", encoding="UTF-8") as data_file:
+            loaded_file = json.load(data_file)
+        return loaded_file["password"] == bcrypt.hashpw(
+            bytes(data["password"], "utf-8"),
+            bytes(loaded_file["password"], "utf-8")
+        ).decode()
+    return True
+
+@app.route('/v2/assassin', methods=['POST', 'GET'])
 def assassin():
     """Route to access assassin api"""
-    ass = Assassin.Assassin()
-    if 'update' in request.args:
-        return jsonify(ass.update_values())
-    if 'code' in request.args:
-        file_name = f'inventories/{request.args["code"]}.json'
-        try:
+    if request.method == 'POST':
+        # try:
+        post_json = request.get_json()
+        file_name = f'inventories/{post_json["code"]}.json'
+        data = sort_items(post_json["data"])
+
+        if not authenticate(file_name, data):
+            response = jsonify("authentication failure")
+            response.headers.add('Access-Control-Allow-Origin', '*')
+            return response, status.HTTP_401_UNAUTHORIZED
+
+        if not os.path.isfile(file_name):
+            salt = bcrypt.gensalt()
+            data["password"] = bcrypt.hashpw(
+                bytes(data["password"], "utf-8"),
+                salt
+            ).decode()
+        else:
             with open(file_name, "r", encoding="UTF-8") as data_file:
-                data = json.load(data_file)
-        except FileNotFoundError:
-            with open(file_name, "w", encoding="UTF-8") as data_file:
-                json.dump([], data_file)
-            with open(file_name, "r", encoding="UTF-8") as data_file:
-                data = json.load(data_file)
-        if 'data' in request.args:
+                loaded_file = json.load(data_file)
+            data["password"] = bcrypt.hashpw(
+                bytes(data["password"], "utf-8"),
+                bytes(loaded_file["password"], "utf-8")
+            ).decode()
+        with open(file_name, "w", encoding="UTF-8") as data_file:
+            json.dump(data, data_file, indent=4)
+        response = jsonify("success")
+        response.headers.add('Access-Control-Allow-Origin', '*')
+        return response, status.HTTP_200_OK
+        # except Exception as exception:  # pylint: disable=broad-except
+        #     response = jsonify(
+        #         {"status": "error", "exception": str(exception)})
+        #     response.headers.add('Access-Control-Allow-Origin', '*')
+        #     return response, status.HTTP_400_BAD_REQUEST
+    else:
+        ass = Assassin.Assassin()
+        if 'update' in request.args:
+            return jsonify(ass.update_values())
+        if 'code' in request.args:
+            file_name = f'inventories/{request.args["code"]}.json'
             try:
-                data = json.loads(request.args["data"])
-                data.sort(
-                    reverse=True,
-                    key=get_exotic_value
-                )
-                data.sort(
-                    key=lambda x: 0 if x["favorite"] else 1
-                )
-                with open(file_name, "w", encoding="UTF-8") as data_file:
-                    json.dump(data, data_file)
-                response = jsonify("success")
-            except Exception as exception:  # pylint: disable=broad-except
+                with open(file_name, "r", encoding="UTF-8") as data_file:
+                    data = json.load(data_file)
+            except FileNotFoundError:
+                data = {"items": []}
+            if 'data' in request.args:
                 response = jsonify(
-                    {"status": "error", "exception": str(exception)})
+                    {"status": "error", "exception": "InvalidMethodError"}
+                )
                 response.headers.add('Access-Control-Allow-Origin', '*')
                 return response
+            response = jsonify(data["items"])
+            response.headers.add('Access-Control-Allow-Origin', '*')
+            return response
+        user_input = request.args['name'].upper().replace(
+            '_', ' ') if 'name' in request.args else "NOINPUT"
+        if user_input in ["NOINPUT", ""]:
+            response = jsonify({
+                "ERROR": "No input"
+            })
+            response.headers.add('Access-Control-Allow-Origin', '*')
+            return response
+        if ',' in user_input:
+            knife_names = user_input.split(',')
         else:
-            response = jsonify(data)
+            knife_names = get_close_matches(user_input, values.keys(), int(
+                request.args['limit'])) if 'limit' in request.args else get_close_matches(user_input, values.keys())
+        knives = []
+        for name in knife_names:
+            knife = values[name]
+            knife["name"] = name.title()
+            knives.append(knife)
+        response = jsonify(knives)
         response.headers.add('Access-Control-Allow-Origin', '*')
         return response
-
-    user_input = request.args['name'].upper().replace(
-        '_', ' ') if 'name' in request.args else "NOINPUT"
-    if user_input in ["NOINPUT", ""]:
-        response = jsonify({
-            "ERROR": "No input"
-        })
-        response.headers.add('Access-Control-Allow-Origin', '*')
-        return response
-    if ',' in user_input:
-        knife_names = user_input.split(',')
-    else:
-        knife_names = get_close_matches(user_input, values.keys(), int(
-            request.args['limit'])) if 'limit' in request.args else get_close_matches(user_input, values.keys())
-    knives = []
-    for name in knife_names:
-        knife = values[name]
-        knife["name"] = name.title()
-        knives.append(knife)
-    response = jsonify(knives)
-    response.headers.add('Access-Control-Allow-Origin', '*')
-    return response
 
 
 @app.route('/v1/scrape', methods=['GET'])
