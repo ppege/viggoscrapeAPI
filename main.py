@@ -119,6 +119,15 @@ def authenticate(file_name, data):
         ).decode()
     return True
 
+@app.route('/v2/assassin/verify', methods=['POST'])
+def verify():
+    """Lets API user verify if password is correct"""
+    post_json = request.get_json()
+    file_name = f'inventories/{post_json["code"]}.json'
+    if authenticate(file_name, post_json):
+        return "authorized", status.HTTP_200_OK
+    return "unauthorized", status.HTTP_401_UNAUTHORIZED
+
 @app.route('/v2/assassin', methods=['POST', 'GET'])
 def assassin():
     """Route to access assassin api"""
