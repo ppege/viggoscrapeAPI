@@ -89,11 +89,11 @@
     },
     "OKAMI STRIKER": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
-        "value": "7",
+        "value": "5",
         "obtain": "Trading / Unboxing",
         "origin": "Introduced to the Heroic Case in 2020",
         "rarity": "Dream",
-        "exoticvalue": 7
+        "exoticvalue": 5
     },
     "ELEGANT SABER": {
         "demand": "\u2605\u2605\u2606\u2606\u2606",
@@ -151,10 +151,26 @@
         "rarity": "Dream",
         "exoticvalue": 12
     },
+    "GOURD GUARDIAN": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "15",
+        "obtain": "Trading / Candy Shop",
+        "origin": "Bought for 5,000 \"Candies\" during the 2022 Halloween Event",
+        "rarity": "Dream",
+        "exoticvalue": 15
+    },
+    "THE BANISHER": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "13",
+        "obtain": "Trading / Crafting",
+        "origin": "Halloween 2022 Event Craftable Knife",
+        "rarity": "Dream",
+        "exoticvalue": 13
+    },
     "AQUA KNIGHT": {
-        "demand": "\u2605\u2605\u2605\u2605\u2606",
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
         "value": "8",
-        "obtain": "Trading / Buying in Shop",
+        "obtain": "Trading Only",
         "origin": "Bought for 50,000 Tokens in Shop (Summer 2022)",
         "rarity": "Dream",
         "exoticvalue": 8
@@ -225,11 +241,11 @@
     },
     "TWISTED": {
         "demand": "\u2605\u2605\u2605\u2605\u2606",
-        "value": "45",
+        "value": "50",
         "obtain": "Trading Only",
         "origin": "Halloween 2020 Event Craftable Knife",
         "rarity": "Dream",
-        "exoticvalue": 45
+        "exoticvalue": 50
     },
     "DREAMWALKER": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
@@ -240,28 +256,28 @@
         "exoticvalue": 45
     },
     "SPIRIT TRIDENT": {
-        "demand": "\u2605\u2605\u2605\u2605\u2606",
-        "value": "80",
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "70",
         "obtain": "Trading Only",
         "origin": "Holiday 2020 Event Craftable Knife",
         "rarity": "Dream",
-        "exoticvalue": 80
+        "exoticvalue": 70
     },
     "CRYOBEAST": {
-        "demand": "\u2605\u2605\u2605\u2605\u2606",
-        "value": "105",
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "90",
         "obtain": "Trading Only",
         "origin": "Craftable during the 2019 Holiday Event",
         "rarity": "Dream",
-        "exoticvalue": 105
+        "exoticvalue": 90
     },
     "NORTHERN STAR": {
-        "demand": "\u2605\u2605\u2605\u2605\u2606",
-        "value": "120",
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "95",
         "obtain": "Trading Only",
         "origin": "Craftable during the 2018 Holiday Event",
         "rarity": "Dream",
-        "exoticvalue": 120
+        "exoticvalue": 95
     },
     "INFERNAL GUARDIAN": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
@@ -303,7 +319,7 @@
         "rarity": "Dream",
         "exoticvalue": 3000
     },
-    "CYBERTANK": {
+    "WYVERN LEGEND": {
         "demand": "NOT TRADABLE",
         "value": "NOT TRADABLE",
         "obtain": "Placing in the Top 10",
@@ -311,11 +327,19 @@
         "rarity": "Dream",
         "exoticvalue": "Unknown"
     },
-    "ONYX SCEPTER": {
+    "ONYX HALBERD": {
         "demand": "NOT TRADABLE",
         "value": "NOT TRADABLE",
         "obtain": "Top 10 Clan Reward",
-        "origin": "Current Top 10 Clan Prize",
+        "origin": "Current Top 10 Clan Reward",
+        "rarity": "Dream",
+        "exoticvalue": "Unknown"
+    },
+    "ONYX SCEPTER": {
+        "demand": "NOT TRADABLE",
+        "value": "NOT TRADABLE",
+        "obtain": "UNOBTAINABLE",
+        "origin": "Top 10 Clan Prize (March 2021-October 2022)",
         "rarity": "Dream",
         "exoticvalue": "Unknown"
     },
@@ -332,6 +356,14 @@
         "value": "NOT TRADABLE",
         "obtain": "UNOBTAINABLE",
         "origin": "Top 10 Competitive Prize (July 2021-February 2022)",
+        "rarity": "Dream",
+        "exoticvalue": "Unknown"
+    },
+    "CYBERTANK": {
+        "demand": "NOT TRADABLE",
+        "value": "NOT TRADABLE",
+        "obtain": "UNOBTAINABLE",
+        "origin": "Top 10 Competitive Prize (February 2022-October 2022)",
         "rarity": "Dream",
         "exoticvalue": "Unknown"
     },
@@ -567,10 +599,58 @@
         "rarity": "Mythic",
         "exoticvalue": 10
     },
-    "RADIANT STAR": {
+    "GHOSTWALKER": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "5",
+        "obtain": "Trading Only",
+        "origin": "Bought for 400 Robux in Shop in 2022",
+        "rarity": "Mythic",
+        "exoticvalue": 5
+    },
+    "HEX POTION": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "4",
+        "obtain": "Trading / Candy Shop",
+        "origin": "Bought for 1,000 \"Candies\" during the 2022 Halloween Event",
+        "rarity": "Mythic",
+        "exoticvalue": 4
+    },
+    "HELLSAW": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3",
+        "obtain": "Trading / Unboxing",
+        "origin": "Halloween 2022 Event (Skeleton Case)",
+        "rarity": "Mythic",
+        "exoticvalue": 3
+    },
+    "MORTICIAN": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "7",
+        "obtain": "Trading / Crafting",
+        "origin": "Crafted in the 2022 Halloween Event",
+        "rarity": "Mythic",
+        "exoticvalue": 7
+    },
+    "SPECTRE": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
         "value": "3",
         "obtain": "Trading / Season Pass",
+        "origin": "Earned through the Halloween 2022 Season Pass",
+        "rarity": "Mythic",
+        "exoticvalue": 3
+    },
+    "COUNT BOKULA": {
+        "demand": "\u2605\u2605\u2605\u2605\u2606",
+        "value": "4",
+        "obtain": "Trading Only",
+        "origin": "Bought for 1,000 \"Candies\" during the 2022 Halloween Event",
+        "rarity": "Mythic",
+        "exoticvalue": 4
+    },
+    "RADIANT STAR": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "3",
+        "obtain": "Trading Only",
         "origin": "Earned through the 2nd Summer 2022 Season Pass",
         "rarity": "Mythic",
         "exoticvalue": 3
@@ -735,14 +815,6 @@
         "rarity": "Mythic",
         "exoticvalue": 5
     },
-    "SERAPH": {
-        "demand": "\u2605\u2605\u2605\u2606\u2606",
-        "value": "6",
-        "obtain": "Trading Only",
-        "origin": "Introduced in 2018 as a craftable knife",
-        "rarity": "Mythic",
-        "exoticvalue": 6
-    },
     "HEART SHREDDER": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
         "value": "5",
@@ -750,6 +822,14 @@
         "origin": "Earned through the Season 3 pass",
         "rarity": "Mythic",
         "exoticvalue": 5
+    },
+    "SERAPH": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "6",
+        "obtain": "Trading Only",
+        "origin": "Introduced in 2018 as a craftable knife",
+        "rarity": "Mythic",
+        "exoticvalue": 6
     },
     "FUSION WAND": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
@@ -767,27 +847,11 @@
         "rarity": "Mythic",
         "exoticvalue": 8
     },
-    "JOY": {
+    "BLACK WIDOW": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
         "value": "8",
         "obtain": "Trading Only",
-        "origin": "Holiday 2020 Event (Decorated Case)",
-        "rarity": "Mythic",
-        "exoticvalue": 8
-    },
-    "ENDOFROST": {
-        "demand": "\u2605\u2605\u2605\u2606\u2606",
-        "value": "8",
-        "obtain": "Trading Only",
-        "origin": "Earned through the Season 2 pass",
-        "rarity": "Mythic",
-        "exoticvalue": 8
-    },
-    "SEER WARRIOR": {
-        "demand": "\u2605\u2605\u2605\u2606\u2606",
-        "value": "8",
-        "obtain": "Trading Only",
-        "origin": "Earned through the Season 1 pass",
+        "origin": "Halloween 2020 Event (Coffin Case)",
         "rarity": "Mythic",
         "exoticvalue": 8
     },
@@ -799,13 +863,21 @@
         "rarity": "Mythic",
         "exoticvalue": 8
     },
-    "BLACK WIDOW": {
+    "JOY": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
-        "value": "8",
+        "value": "10",
         "obtain": "Trading Only",
-        "origin": "Halloween 2020 Event (Coffin Case)",
+        "origin": "Holiday 2020 Event (Decorated Case)",
         "rarity": "Mythic",
-        "exoticvalue": 8
+        "exoticvalue": 10
+    },
+    "SEER WARRIOR": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "10",
+        "obtain": "Trading Only",
+        "origin": "Earned through the Season 1 pass",
+        "rarity": "Mythic",
+        "exoticvalue": 10
     },
     "TOXIC BATTLEAXE": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
@@ -822,6 +894,14 @@
         "origin": "Craftable knife from 2017 - 2019",
         "rarity": "Mythic",
         "exoticvalue": 10
+    },
+    "ENDOFROST": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "15",
+        "obtain": "Trading Only",
+        "origin": "Earned through the Season 2 pass",
+        "rarity": "Mythic",
+        "exoticvalue": 15
     },
     "RAINBOW GOOP": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
@@ -896,12 +976,12 @@
         "exoticvalue": 30
     },
     "SHURIKEN": {
-        "demand": "\u2605\u2605\u2605\u2605\u2606",
-        "value": "60",
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "30",
         "obtain": "Trading Only",
         "origin": "Bought with 1,400 Robux in Shop in 2020",
         "rarity": "Mythic",
-        "exoticvalue": 60
+        "exoticvalue": 30
     },
     "GRIM SCYTHE": {
         "demand": "\u2605\u2605\u2605\u2605\u2606",
@@ -913,11 +993,19 @@
     },
     "INFERNO": {
         "demand": "\u2605\u2605\u2605\u2605\u2606",
-        "value": "100",
+        "value": "90",
         "obtain": "Trading Only",
         "origin": "Bought for 2,000 Robux in Shop in 2018",
         "rarity": "Mythic",
-        "exoticvalue": 100
+        "exoticvalue": 90
+    },
+    "CYBERSHOT": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "80",
+        "obtain": "Trading Only",
+        "origin": "Top 100 Comp. Prize (February 2022-October 2022)",
+        "rarity": "Mythic",
+        "exoticvalue": 80
     },
     "ROYAL DAGGER": {
         "demand": "\u2605\u2605\u2606\u2606\u2606",
@@ -944,7 +1032,7 @@
         "exoticvalue": 150
     },
     "HOLY GUARDIAN": {
-        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
         "value": "215",
         "obtain": "Trading Only",
         "origin": "Top 100 Comp. Prize (September 2020-February 2021)",
@@ -953,11 +1041,11 @@
     },
     "COMET": {
         "demand": "\u2605\u2605\u2606\u2606\u2606",
-        "value": "235",
+        "value": "200",
         "obtain": "Trading Only",
         "origin": "Top 100 Comp. Prize (May 2020-September 2020)",
         "rarity": "Mythic",
-        "exoticvalue": 235
+        "exoticvalue": 200
     },
     "COMPETITOR BLADE II": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
@@ -991,13 +1079,13 @@
         "rarity": "Mythic",
         "exoticvalue": 3400
     },
-    "CYBERSHOT": {
-        "demand": "\u2605\u2605\u2605\u2606\u2606",
-        "value": "80",
+    "WYVERN SLAYER": {
+        "demand": "\u2605\u2605\u2605\u2605\u2606",
+        "value": "TO BE DETERMINED",
         "obtain": "Placing in the Top 100",
         "origin": "Current Top 100 Comp. Prize",
         "rarity": "Mythic",
-        "exoticvalue": 80
+        "exoticvalue": "Unknown"
     },
     "ONYX TIER": {
         "demand": "NOT TRADABLE",
@@ -1018,8 +1106,16 @@
     "DIAMOND STAFF": {
         "demand": "NOT TRADABLE",
         "value": "NOT TRADABLE",
-        "obtain": "Top 25 Clan Reward",
-        "origin": "Current Top 25 Clan Prize",
+        "obtain": "UNOBTAINABLE",
+        "origin": "Top 25 Clan Prize (2021-2022)",
+        "rarity": "Mythic",
+        "exoticvalue": "Unknown"
+    },
+    "DIAMOND SLASHER": {
+        "demand": "NOT TRADABLE",
+        "value": "NOT TRADABLE",
+        "obtain": "Trading / Top 25 Clan Weekly",
+        "origin": "Current Top 25 Clan Reward",
         "rarity": "Mythic",
         "exoticvalue": "Unknown"
     },
@@ -1391,13 +1487,21 @@
         "rarity": "Exotic",
         "exoticvalue": 4
     },
+    "CLOWN BONK": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "4",
+        "obtain": "Trading Only",
+        "origin": "Spooky Bundle (2022)",
+        "rarity": "Exotic",
+        "exoticvalue": 4
+    },
     "COCO CUTTER": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
-        "value": "3",
+        "value": "4",
         "obtain": "Trading Only",
         "origin": "Coco Bundle (2022)",
         "rarity": "Exotic",
-        "exoticvalue": 3
+        "exoticvalue": 4
     },
     "LIBERATOR": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
@@ -1409,19 +1513,19 @@
     },
     "BUNNY BONK": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
-        "value": "5",
+        "value": "4",
         "obtain": "Trading Only",
         "origin": "Easter 2022 Bundle (2022)",
         "rarity": "Exotic",
-        "exoticvalue": 5
+        "exoticvalue": 4
     },
     "BAN HAMAR": {
-        "demand": "\u2605\u2605\u2605\u2606\u2606",
-        "value": "10",
+        "demand": "\u2605\u2605\u2605\u2605\u2606",
+        "value": "15",
         "obtain": "Trading Only",
         "origin": "April Fools 2022 Bundle (2022)",
         "rarity": "Exotic",
-        "exoticvalue": 10
+        "exoticvalue": 15
     },
     "CAKE FORK": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
@@ -1593,11 +1697,11 @@
     },
     "TAILPIPE": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
-        "value": "6",
+        "value": "8",
         "obtain": "Trading Only",
         "origin": "Exhaust Bundle (2019)",
         "rarity": "Exotic",
-        "exoticvalue": 6
+        "exoticvalue": 8
     },
     "OAKEN ENFORCER": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
@@ -1617,11 +1721,11 @@
     },
     "DESERT JEWEL": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
-        "value": "6",
+        "value": "10",
         "obtain": "Trading Only",
         "origin": "Desert Bundle (2019)",
         "rarity": "Exotic",
-        "exoticvalue": 6
+        "exoticvalue": 10
     },
     "ROYAL EGG": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
@@ -1681,11 +1785,11 @@
     },
     "DAWNSTAR": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
-        "value": "6",
+        "value": "8",
         "obtain": "Trading Only",
         "origin": "Frigid Bundle (2018)",
         "rarity": "Exotic",
-        "exoticvalue": 6
+        "exoticvalue": 8
     },
     "TECHNO": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
@@ -1737,11 +1841,11 @@
     },
     "GOLDEN EAGLE": {
         "demand": "\u2605\u2605\u2605\u2605\u2606",
-        "value": "8",
+        "value": "10",
         "obtain": "Trading Only",
         "origin": "Patriotic Bundle (2018)",
         "rarity": "Exotic",
-        "exoticvalue": 8
+        "exoticvalue": 10
     },
     "OCEAN BLADE": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
@@ -1849,27 +1953,91 @@
     },
     "AZURE": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
-        "value": "5",
+        "value": "6",
         "obtain": "Trading Only",
         "origin": "Fantasy Bundle (2017 & 2018)",
         "rarity": "Exotic",
+        "exoticvalue": 6
+    },
+    "PARASITE": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "2",
+        "obtain": "Trading / Unboxing",
+        "origin": "Halloween 2022 Event (Infected Case)",
+        "rarity": "Exotic",
+        "exoticvalue": 2
+    },
+    "SPIDER SICKLE": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "2",
+        "obtain": "Trading / Unboxing",
+        "origin": "Halloween 2022 Event (Skeleton Case)",
+        "rarity": "Exotic",
+        "exoticvalue": 2
+    },
+    "SKULL SPEAR": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "2",
+        "obtain": "Trading / Unboxing",
+        "origin": "Halloween 2022 Event (Skeleton Case)",
+        "rarity": "Exotic",
+        "exoticvalue": 2
+    },
+    "WICKED POLEARM": {
+        "demand": "\u2605\u2605\u2605\u2605\u2606",
+        "value": "5",
+        "obtain": "Trading / Earning in Comp",
+        "origin": "450 point comp. prize (October 2022)",
+        "rarity": "Exotic",
         "exoticvalue": 5
+    },
+    "CANDY KUNAI": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "2",
+        "obtain": "Trading / Halloween Store",
+        "origin": "Bought for 350 \"Candies\" during the 2022 Halloween Event",
+        "rarity": "Exotic",
+        "exoticvalue": 2
+    },
+    "GRAVE DIGGER": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "2",
+        "obtain": "Trading / Season Pass",
+        "origin": "Earned through the Halloween 2022 Season Pass",
+        "rarity": "Exotic",
+        "exoticvalue": 2
+    },
+    "UNDEAD ARM": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "4",
+        "obtain": "Trading Only",
+        "origin": "Bought for 500 \"Candies\" during the 2022 Halloween Event",
+        "rarity": "Exotic",
+        "exoticvalue": 4
+    },
+    "SINISTER SABER": {
+        "demand": "\u2605\u2605\u2605\u2605\u2606",
+        "value": "10",
+        "obtain": "Trading Only",
+        "origin": "Halloween 2022 Event (Elite Case)",
+        "rarity": "Exotic",
+        "exoticvalue": 10
     },
     "FRUIT KEBAB": {
         "demand": "\u2605\u2605\u2606\u2606\u2606",
         "value": "2",
-        "obtain": "Trading / Season Pass",
+        "obtain": "Trading Only",
         "origin": "Earned through the 2nd Summer 2022 Season Pass",
         "rarity": "Exotic",
         "exoticvalue": 2
     },
     "CAPTAIN'S HOOK": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
-        "value": "4",
+        "value": "5",
         "obtain": "Trading Only",
         "origin": "450 point comp. prize (August 2022)",
         "rarity": "Exotic",
-        "exoticvalue": 4
+        "exoticvalue": 5
     },
     "POOL NOODLE": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
@@ -1888,7 +2056,7 @@
         "exoticvalue": 2
     },
     "SOLAR SABER": {
-        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
         "value": "5",
         "obtain": "Trading Only",
         "origin": "Summer 2022 Event (Elite Case)",
@@ -2343,14 +2511,6 @@
         "rarity": "Exotic",
         "exoticvalue": 10
     },
-    "SUPERNOVA": {
-        "demand": "\u2605\u2605\u2605\u2606\u2606",
-        "value": "10",
-        "obtain": "Trading Only",
-        "origin": "400 point Comp. Prize (September 2021)",
-        "rarity": "Exotic",
-        "exoticvalue": 10
-    },
     "WIND SPEAR": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
         "value": "10",
@@ -2433,17 +2593,9 @@
     },
     "SOUL": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
-        "value": "11",
-        "obtain": "Trading Only",
-        "origin": "Holiday 2018 Event (Festive & Jolly Cases)",
-        "rarity": "Exotic",
-        "exoticvalue": 11
-    },
-    "COSMIC CAPTAIN": {
-        "demand": "\u2605\u2605\u2605\u2605\u2606",
         "value": "12",
         "obtain": "Trading Only",
-        "origin": "1K Comp. Point Prize (November 2019)",
+        "origin": "Holiday 2018 Event (Festive & Jolly Cases)",
         "rarity": "Exotic",
         "exoticvalue": 12
     },
@@ -2455,19 +2607,19 @@
         "rarity": "Exotic",
         "exoticvalue": 12
     },
+    "SUPERNOVA": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "15",
+        "obtain": "Trading Only",
+        "origin": "400 point Comp. Prize (September 2021)",
+        "rarity": "Exotic",
+        "exoticvalue": 15
+    },
     "DARK CRYSTAL": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
         "value": "15",
         "obtain": "Trading Only",
         "origin": "Redeemed through an old expired code (2018)",
-        "rarity": "Exotic",
-        "exoticvalue": 15
-    },
-    "HAUNTED FLAIL": {
-        "demand": "\u2605\u2605\u2605\u2605\u2606",
-        "value": "15",
-        "obtain": "Trading Only",
-        "origin": "450 Comp. Point Prize (October 2021)",
         "rarity": "Exotic",
         "exoticvalue": 15
     },
@@ -2503,6 +2655,14 @@
         "rarity": "Exotic",
         "exoticvalue": 20
     },
+    "COSMIC CAPTAIN": {
+        "demand": "\u2605\u2605\u2605\u2605\u2606",
+        "value": "20",
+        "obtain": "Trading Only",
+        "origin": "1K Comp. Point Prize (November 2019)",
+        "rarity": "Exotic",
+        "exoticvalue": 20
+    },
     "ULTRAVIOLET": {
         "demand": "\u2605\u2605\u2605\u2605\u2606",
         "value": "20",
@@ -2510,6 +2670,14 @@
         "origin": "Holiday 2018 Event (Festive Case)",
         "rarity": "Exotic",
         "exoticvalue": 20
+    },
+    "HAUNTED FLAIL": {
+        "demand": "\u2605\u2605\u2605\u2605\u2606",
+        "value": "30",
+        "obtain": "Trading Only",
+        "origin": "450 Comp. Point Prize (October 2021)",
+        "rarity": "Exotic",
+        "exoticvalue": 30
     },
     "DRAGON BREATH": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
@@ -2568,7 +2736,7 @@
         "exoticvalue": 30
     },
     "ROLLING PIN": {
-        "demand": "\u2605\u2605\u2605\u2605\u2606",
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
         "value": "30",
         "obtain": "Trading Only",
         "origin": "1K Comp. Point Prize (August 2020)",
@@ -2623,13 +2791,13 @@
         "rarity": "Exotic",
         "exoticvalue": 30
     },
-    "GILDED LUCK": {
-        "demand": "\u2605\u2605\u2605\u2605\u2606",
-        "value": "35",
+    "NEPTUNE": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "30",
         "obtain": "Trading Only",
-        "origin": "St. Patricks Day 2019 (Elite Case)",
+        "origin": "1K Point Comp. Prize (August 2017)",
         "rarity": "Exotic",
-        "exoticvalue": 35
+        "exoticvalue": 30
     },
     "BONE AXE": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
@@ -2639,11 +2807,11 @@
         "rarity": "Exotic",
         "exoticvalue": 35
     },
-    "NEPTUNE": {
-        "demand": "\u2605\u2605\u2606\u2606\u2606",
+    "GILDED LUCK": {
+        "demand": "\u2605\u2605\u2605\u2605\u2606",
         "value": "35",
         "obtain": "Trading Only",
-        "origin": "1K Point Comp. Prize (August 2017)",
+        "origin": "St. Patricks Day 2019 (Elite Case)",
         "rarity": "Exotic",
         "exoticvalue": 35
     },
@@ -2655,35 +2823,19 @@
         "rarity": "Exotic",
         "exoticvalue": 40
     },
-    "SUPERFREEZE": {
-        "demand": "\u2605\u2605\u2605\u2605\u2606",
-        "value": "45",
+    "LORD SINISTER": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "40",
         "obtain": "Trading Only",
-        "origin": "Holiday 2018 Event (Jolly Case)",
+        "origin": "Halloween 2017 Event (Elite Case)",
         "rarity": "Exotic",
-        "exoticvalue": 45
-    },
-    "ANGUISH": {
-        "demand": "\u2605\u2605\u2605\u2605\u2606",
-        "value": "45",
-        "obtain": "Trading Only",
-        "origin": "Holiday 2018 Event (Jolly Case)",
-        "rarity": "Exotic",
-        "exoticvalue": 45
+        "exoticvalue": 40
     },
     "NIGHTMARE": {
         "demand": "\u2605\u2605\u2605\u2605\u2606",
         "value": "45",
         "obtain": "Trading Only",
         "origin": "Halloween 2018 Event (Heroic & Elite Cases)",
-        "rarity": "Exotic",
-        "exoticvalue": 45
-    },
-    "LORD SINISTER": {
-        "demand": "\u2605\u2605\u2606\u2606\u2606",
-        "value": "45",
-        "obtain": "Trading Only",
-        "origin": "Halloween 2017 Event (Elite Case)",
         "rarity": "Exotic",
         "exoticvalue": 45
     },
@@ -2703,6 +2855,22 @@
         "rarity": "Exotic",
         "exoticvalue": 50
     },
+    "ANGUISH": {
+        "demand": "\u2605\u2605\u2605\u2605\u2606",
+        "value": "50",
+        "obtain": "Trading Only",
+        "origin": "Holiday 2018 Event (Jolly Case)",
+        "rarity": "Exotic",
+        "exoticvalue": 50
+    },
+    "SUPERFREEZE": {
+        "demand": "\u2605\u2605\u2605\u2605\u2606",
+        "value": "55",
+        "obtain": "Trading Only",
+        "origin": "Holiday 2018 Event (Jolly Case)",
+        "rarity": "Exotic",
+        "exoticvalue": 55
+    },
     "AUTUMN SABER": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
         "value": "60",
@@ -2713,35 +2881,35 @@
     },
     "LUCKY BLADE": {
         "demand": "\u2605\u2605\u2605\u2605\u2606",
-        "value": "70",
+        "value": "75",
         "obtain": "Trading Only",
         "origin": "St. Patricks Day 2018 (Elite Case)",
         "rarity": "Exotic",
-        "exoticvalue": 70
+        "exoticvalue": 75
     },
     "SPRING SABER": {
         "demand": "\u2605\u2605\u2606\u2606\u2606",
-        "value": "75",
+        "value": "40",
         "obtain": "Trading Only",
         "origin": "Spring 2017 Event (Elite & Sturdy Cases)",
         "rarity": "Exotic",
-        "exoticvalue": 75
+        "exoticvalue": 40
     },
     "HOLIDAY SABER": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
-        "value": "85",
+        "value": "60",
         "obtain": "Trading Only",
         "origin": "Holiday 2016 Event (Elite Case/Crafted up from Legends)",
         "rarity": "Exotic",
-        "exoticvalue": 85
+        "exoticvalue": 60
     },
     "SKELETON KING": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
-        "value": "85",
+        "value": "65",
         "obtain": "Trading Only",
         "origin": "Halloween 2016 Event (Elite Case)",
         "rarity": "Exotic",
-        "exoticvalue": 85
+        "exoticvalue": 65
     },
     "ELEGANT BLADE": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
@@ -2836,6 +3004,14 @@
         "value": "NOT TRADABLE",
         "obtain": "Purchasing VIP",
         "origin": "Current knife that comes from buying the VIP game pass",
+        "rarity": "Exotic",
+        "exoticvalue": "Unknown"
+    },
+    "PUMPKIN POP": {
+        "demand": "NOT TRADABLE",
+        "value": "NOT TRADABLE",
+        "obtain": "Unobtainable",
+        "origin": "Halloween 2022 Event Code",
         "rarity": "Exotic",
         "exoticvalue": "Unknown"
     },
@@ -3127,10 +3303,50 @@
         "rarity": "Legendary",
         "exoticvalue": "Unknown"
     },
-    "PALMS": {
+    "LUNA": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "2 T1 Legendaries",
+        "obtain": "Trading / Unboxing",
+        "origin": "Halloween 2020 Event (Skeleton & Infected Cases)",
+        "rarity": "Legendary",
+        "exoticvalue": "Unknown"
+    },
+    "DEPTHS": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "2 T1 Legendaries",
+        "obtain": "Trading / Unboxing",
+        "origin": "Halloween 2020 Event (Skeleton & Infected Cases)",
+        "rarity": "Legendary",
+        "exoticvalue": "Unknown"
+    },
+    "VOID VISION": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Legendaries",
+        "obtain": "Trading / Unboxing",
+        "origin": "Halloween 2020 Event (Skeleton Case)",
+        "rarity": "Legendary",
+        "exoticvalue": "Unknown"
+    },
+    "FRACTURED SOUL": {
+        "demand": "\u2605\u2605\u2605\u2605\u2606",
+        "value": "4 T1 Exotics",
+        "obtain": "Trading / Crafting",
+        "origin": "Crafted during the Halloween 2022 Event",
+        "rarity": "Legendary",
+        "exoticvalue": "Unknown"
+    },
+    "GHASTLY": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
         "value": "2 T1 Legendaries",
         "obtain": "Trading / Season Pass",
+        "origin": "Earned through the Halloween 2022 Season Pass",
+        "rarity": "Legendary",
+        "exoticvalue": "Unknown"
+    },
+    "PALMS": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "2 T1 Legendaries",
+        "obtain": "Trading Only",
         "origin": "Earned through the 2nd Summer 2022 Season Pass",
         "rarity": "Legendary",
         "exoticvalue": "Unknown"
@@ -4047,17 +4263,65 @@
         "rarity": "Rare",
         "exoticvalue": "Unknown"
     },
-    "SANDCASTLE": {
+    "TENDRILS": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "2 T1 Rares",
+        "obtain": "Trading / Unboxing",
+        "origin": "Halloween 2022 Event (Skeleton & Infected Cases)",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "BONE": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "2 T1 Rares",
+        "obtain": "Trading / Unboxing",
+        "origin": "Halloween 2022 Event (Skeleton & Infected Cases)",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "DOOR": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "2 T1 Rares",
+        "obtain": "Trading / Unboxing",
+        "origin": "Halloween 2022 Event (Skeleton Case)",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "HYPNOSIS": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "2 T1 Rares",
+        "obtain": "Trading / Unboxing",
+        "origin": "Halloween 2022 Event (Skeleton Case)",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "EMERGENCE": {
+        "demand": "\u2605\u2605\u2605\u2605\u2606",
+        "value": "3 T1 Legendaries",
+        "obtain": "Trading / Unboxing",
+        "origin": "Halloween 2022 Event (Skeleton & Infected Cases)",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "GRAVESTONE": {
         "demand": "\u2605\u2605\u2606\u2606\u2606",
         "value": "2 T1 Rares",
         "obtain": "Trading / Season Pass",
+        "origin": "Earned through the Halloween 2022 Season Pass",
+        "rarity": "Rare",
+        "exoticvalue": "Unknown"
+    },
+    "SANDCASTLE": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "2 T1 Rares",
+        "obtain": "Trading Only",
         "origin": "Earned through the Summer 2022 Season Pass",
         "rarity": "Rare",
         "exoticvalue": "Unknown"
     },
     "CACTUS": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
-        "value": "2 T1 Legendaries",
+        "value": "1 T1 Exotic",
         "obtain": "Trading Only",
         "origin": "30 Point Comp. Prize (August 2022)",
         "rarity": "Rare",
@@ -4065,7 +4329,7 @@
     },
     "CRYSTALLINE": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
-        "value": "2 T1 Legendaries",
+        "value": "1 T1 Exotic",
         "obtain": "Trading Only",
         "origin": "30 Point Comp. Prize (July 2022)",
         "rarity": "Rare",
@@ -4305,7 +4569,7 @@
     },
     "STORM CLOUDS": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
-        "value": "1 T1 Exotic",
+        "value": "2 T1 Exotics",
         "obtain": "Trading Only",
         "origin": "30 Point Comp. Prize (May 2021)",
         "rarity": "Rare",
@@ -4485,7 +4749,7 @@
         "obtain": "Trading Only",
         "origin": "Redeemed through old expired codes (2022)",
         "rarity": "Rare",
-        "exoticvalue": 0.5
+        "exoticvalue": "Unknown"
     },
     "GOOD GLOW": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
@@ -4601,7 +4865,7 @@
     },
     "SPACE BUDS": {
         "demand": "\u2605\u2605\u2606\u2606\u2606",
-        "value": "1 T1 Exotic",
+        "value": "2 T1 Exotics",
         "obtain": "Trading Only",
         "origin": "30 point Comp. prize (September 2021)",
         "rarity": "Rare",
@@ -4609,7 +4873,7 @@
     },
     "FLUFFLE": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
-        "value": "1 T1 Exotic",
+        "value": "2 T1 Exotics",
         "obtain": "Trading Only",
         "origin": "30 Point Comp. Prize (April 2021)",
         "rarity": "Rare",
@@ -4617,7 +4881,7 @@
     },
     "GOLDEN HOOF": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
-        "value": "1 T1 Exotic",
+        "value": "2 T1 Exotics",
         "obtain": "Trading Only",
         "origin": "50 Point Comp. Prize (March 2021)",
         "rarity": "Rare",
@@ -4625,7 +4889,7 @@
     },
     "SUPER SUGAR": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
-        "value": "1 T1 Exotic",
+        "value": "2 T1 Exotics",
         "obtain": "Trading Only",
         "origin": "50 Point Comp. Prize (August 2019)",
         "rarity": "Rare",
@@ -4817,7 +5081,7 @@
     },
     "FLAKES": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
-        "value": "55 T1 Exotics",
+        "value": "60 T1 Exotics",
         "obtain": "Trading Only",
         "origin": "Redeemed using code \"Happy_Holidays\" (2016)",
         "rarity": "Rare",
@@ -5295,10 +5559,50 @@
         "rarity": "Common",
         "exoticvalue": "Unknown"
     },
-    "PIRATE": {
+    "AYE NO CAP": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "2 T1 Commons",
+        "obtain": "Trading / Unboxing",
+        "origin": "Halloween 2022 Event (Infected Case*",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "BRANCHES": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "2 T1 Commons",
+        "obtain": "Trading / Unboxing",
+        "origin": "Halloween 2022 Event (Infected Case*",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "CANDY BAR": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "2 T1 Commons",
+        "obtain": "Trading / Unboxing",
+        "origin": "Halloween 2022 Event (Infected Case*",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "BOO": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "2 T1 Commons",
+        "obtain": "Trading / Unboxing",
+        "origin": "Halloween 2022 Event (Infected Case*",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "GOURD": {
         "demand": "\u2605\u2605\u2606\u2606\u2606",
         "value": "2 T1 Commons",
         "obtain": "Trading / Season Pass",
+        "origin": "Earned through the Halloween 2022 Season Pass",
+        "rarity": "Common",
+        "exoticvalue": "Unknown"
+    },
+    "PIRATE": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "2 T1 Commons",
+        "obtain": "Trading Only",
         "origin": "Earned through the 2nd Summer 2022 Season Pass",
         "rarity": "Common",
         "exoticvalue": "Unknown"
@@ -5769,7 +6073,7 @@
     },
     "COAL": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
-        "value": "30 T1 Exotics",
+        "value": "35 T1 Exotics",
         "obtain": "Trading Only",
         "origin": "Redeemed using code \"Naughty_List\" (2016)",
         "rarity": "Common",
@@ -6031,10 +6335,42 @@
         "rarity": "???",
         "exoticvalue": "Unknown"
     },
-    "PIRATE SHIP": {
+    "BAT BUDDY": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "3 T1 Rares",
+        "obtain": "Trading / Earning in Comp",
+        "origin": "30 point prize for the October 2022 Comp. Season",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "PUMPKIN PLUSH": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "2 T1 Rares",
+        "obtain": "Trading / Halloween Store",
+        "origin": "Bought for 200 \"Candies\" during the 2022 Halloween Event",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "RIP": {
         "demand": "\u2605\u2605\u2606\u2606\u2606",
         "value": "2 T1 Rares",
         "obtain": "Trading / Season Pass",
+        "origin": "Earned through the Halloween 2022 Season Pass",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "SOUL SPIRITS": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "3 T1 Legendaries",
+        "obtain": "Trading / Season Pass",
+        "origin": "Earned through the Halloween 2022 Season Pass",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "PIRATE SHIP": {
+        "demand": "\u2605\u2605\u2606\u2606\u2606",
+        "value": "2 T1 Rares",
+        "obtain": "Trading Only",
         "origin": "Earned through the 2nd Summer 2022 Season Pass",
         "rarity": "???",
         "exoticvalue": "Unknown"
@@ -6042,7 +6378,7 @@
     "CHESTER": {
         "demand": "\u2605\u2605\u2606\u2606\u2606",
         "value": "2 T1 Legendaries",
-        "obtain": "Trading / Season Pass",
+        "obtain": "Trading Only",
         "origin": "Earned through the 2nd Summer 2022 Season Pass",
         "rarity": "???",
         "exoticvalue": "Unknown"
@@ -6463,6 +6799,14 @@
         "rarity": "???",
         "exoticvalue": "Unknown"
     },
+    "GUMMY MONSTER": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "1 T1 Exotic",
+        "obtain": "Trading / Halloween Store",
+        "origin": "Bought for 200 \"Candies\" during the 2022 Halloween Event",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
     "BUNNY": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
         "value": "2 T1 Exotics",
@@ -6489,7 +6833,7 @@
     },
     "CHOCO BOX": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
-        "value": "2 T1 Exotics",
+        "value": "5 T1 Exotics",
         "obtain": "Trading Only",
         "origin": "Buying for 6,000 tokens in Shop (February 2021)",
         "rarity": "???",
@@ -6519,22 +6863,6 @@
         "rarity": "???",
         "exoticvalue": "Unknown"
     },
-    "BIRTHDAY CAKE": {
-        "demand": "\u2605\u2605\u2605\u2606\u2606",
-        "value": "15 T1 Exotics",
-        "obtain": "Trading Only",
-        "origin": "Buying for 3,333 tokens in Shop (March 2019)",
-        "rarity": "???",
-        "exoticvalue": "Unknown"
-    },
-    "OMG": {
-        "demand": "\u2605\u2605\u2605\u2605\u2606",
-        "value": "15 T1 Exotics",
-        "obtain": "Trading Only",
-        "origin": "Bought for 12,345 tokens in Shop (April Fools 2021)",
-        "rarity": "???",
-        "exoticvalue": "Unknown"
-    },
     "RED PANDA": {
         "demand": "\u2605\u2605\u2605\u2606\u2606",
         "value": "15 T1 Exotics",
@@ -6543,11 +6871,19 @@
         "rarity": "???",
         "exoticvalue": "Unknown"
     },
-    "CRIMSON DRAKE": {
-        "demand": "\u2605\u2605\u2606\u2606\u2606",
-        "value": "60 T1 Exotics",
+    "BIRTHDAY CAKE": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "20 T1 Exotics",
         "obtain": "Trading Only",
-        "origin": "Earning 1,000 points during the June 2017 Comp. Season",
+        "origin": "Buying for 3,333 tokens in Shop (March 2019)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "OMG": {
+        "demand": "\u2605\u2605\u2605\u2605\u2606",
+        "value": "20 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Bought for 12,345 tokens in Shop (April Fools 2021)",
         "rarity": "???",
         "exoticvalue": "Unknown"
     },
@@ -6556,6 +6892,14 @@
         "value": "60 T1 Exotics",
         "obtain": "Trading Only",
         "origin": "Redeeming an old randomized pet code (2018)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "CRIMSON DRAKE": {
+        "demand": "\u2605\u2605\u2605\u2605\u2606",
+        "value": "70 T1 Exotics",
+        "obtain": "Trading Only",
+        "origin": "Earning 1,000 points during the June 2017 Comp. Season",
         "rarity": "???",
         "exoticvalue": "Unknown"
     },
@@ -6641,7 +6985,7 @@
     },
     "STARFISH": {
         "demand": "\u2605\u2605\u2605\u2605\u2606",
-        "value": "15 T1 Exotics",
+        "value": "20 T1 Exotics",
         "obtain": "Trading Only",
         "origin": "Buying for 200 Robux in Shop in Summer 2018",
         "rarity": "???",
@@ -6892,6 +7236,14 @@
         "value": "2 T1 Exotics",
         "obtain": "Trading Only",
         "origin": "Buying the Coco Bundle (2022)",
+        "rarity": "???",
+        "exoticvalue": "Unknown"
+    },
+    "JESTER": {
+        "demand": "\u2605\u2605\u2605\u2606\u2606",
+        "value": "2 T1 Exotics",
+        "obtain": "Trading / Buying Bundle",
+        "origin": "Buying the Spooky Bundle (2022)",
         "rarity": "???",
         "exoticvalue": "Unknown"
     },
