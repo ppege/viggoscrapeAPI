@@ -108,13 +108,13 @@ def sort_items(data):
     )
     return data
 
-def authenticate(file_name, data):
+def authenticate(file_name, password):
     """Authenticate the user"""
     with contextlib.suppress(FileNotFoundError):
         with open(file_name, "r", encoding="UTF-8") as data_file:
             loaded_file = json.load(data_file)
         return loaded_file["password"] == bcrypt.hashpw(
-            bytes(data["password"], "utf-8"),
+            bytes(password, "utf-8"),
             bytes(loaded_file["password"], "utf-8")
         ).decode()
     return True
@@ -124,98 +124,117 @@ def verify():
     """Lets API user verify if password is correct"""
     post_json = request.get_json()
     file_name = f'inventories/{post_json["code"]}.json'
-    if authenticate(file_name, post_json):
+    if authenticate(file_name, post_json["password"]):
         return "authorized", status.HTTP_200_OK
     return "unauthorized", status.HTTP_401_UNAUTHORIZED
+
+def get_knife_names(user_input: string):
+    """Get the knife names"""
+    if ',' in user_input:
+        return user_input.split(',')
+    return get_close_matches(user_input, values.keys(), int(
+        request.args['limit'])) if 'limit' in request.args else get_close_matches(user_input, values.keys())
+
+def get_knives(names: list):
+    """Get the stats for specific knives"""
+    knives = []
+    for name in names:
+        knife = values[name]
+        knife["name"] = name.title()
+        knives.append(knife)
+    return knives
+
+def assassin_post(user_request):
+    """Handles the assassin function's incoming POST requests"""
+    post_json = user_request.get_json()
+    file_name = f'inventories/{post_json["code"]}.json'
+    data = sort_items(post_json["data"])
+
+    if not authenticate(file_name, data["password"]):
+        response = jsonify("authentication failure")
+        response.headers.add('Access-Control-Allow-Origin', '*')
+        return response, status.HTTP_401_UNAUTHORIZED
+
+    if not os.path.isfile(file_name):
+        salt = bcrypt.gensalt()
+        data["password"] = bcrypt.hashpw(
+            bytes(data["password"], "utf-8"),
+            salt
+        ).decode()
+    else:
+        with open(file_name, "r", encoding="UTF-8") as data_file:
+            loaded_file = json.load(data_file)
+        data["password"] = bcrypt.hashpw(
+            bytes(data["password"], "utf-8"),
+            bytes(loaded_file["password"], "utf-8")
+        ).decode()
+    with open(file_name, "w", encoding="UTF-8") as data_file:
+        json.dump(data, data_file, indent=4)
+    response = jsonify("success")
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response, status.HTTP_200_OK
+
+def get_inventory(code: string, password: string = None):
+    """
+    Gets the content of the user's inventory file; if it doesn't exist, allow it to be created
+    """
+    file_name = f'inventories/{code}.json'
+    try:
+        with open(file_name, "r", encoding="UTF-8") as data_file:
+            data = json.load(data_file)
+            if "private" in data.keys() and data["private"]:
+                if not password:
+                    return {"items": ["privateInventory"]}
+                if not authenticate(file_name, password):
+                    return {"items": ["privateInventory"]}
+            return data
+    except FileNotFoundError:
+        return {"items": []}
+
+def assassin_get(user_request):
+    """Handles the assassin function's incoming GET requests"""
+    ass = Assassin.Assassin()
+    if 'update' in user_request.args:
+        return jsonify(ass.update_values())
+    if 'code' in user_request.args:
+        data = get_inventory(
+            user_request.args["code"],
+            user_request.args["password"] if "password" in user_request.args else None
+        )
+        if 'data' in user_request.args:
+            response = jsonify(
+                {"status": "error", "exception": "InvalidMethodError"}
+            )
+            response.headers.add('Access-Control-Allow-Origin', '*')
+            return response
+        response = jsonify(data["items"])
+        response.headers.add('Access-Control-Allow-Origin', '*')
+        return response
+    user_input = user_request.args['name'].upper().replace(
+        '_', ' ') if 'name' in user_request.args else "NOINPUT"
+    if user_input in ["NOINPUT", ""]:
+        response = jsonify({
+            "ERROR": "No input"
+        })
+        response.headers.add('Access-Control-Allow-Origin', '*')
+        return response
+    response = jsonify(get_knives(get_knife_names(user_input)))
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
 
 @app.route('/v2/assassin', methods=['POST', 'GET'])
 def assassin():
     """Route to access assassin api"""
     if request.method == 'POST':
-        # try:
-        post_json = request.get_json()
-        file_name = f'inventories/{post_json["code"]}.json'
-        data = sort_items(post_json["data"])
-
-        if not authenticate(file_name, data):
-            response = jsonify("authentication failure")
-            response.headers.add('Access-Control-Allow-Origin', '*')
-            return response, status.HTTP_401_UNAUTHORIZED
-
-        if not os.path.isfile(file_name):
-            salt = bcrypt.gensalt()
-            data["password"] = bcrypt.hashpw(
-                bytes(data["password"], "utf-8"),
-                salt
-            ).decode()
-        else:
-            with open(file_name, "r", encoding="UTF-8") as data_file:
-                loaded_file = json.load(data_file)
-            data["password"] = bcrypt.hashpw(
-                bytes(data["password"], "utf-8"),
-                bytes(loaded_file["password"], "utf-8")
-            ).decode()
-        with open(file_name, "w", encoding="UTF-8") as data_file:
-            json.dump(data, data_file, indent=4)
-        response = jsonify("success")
-        response.headers.add('Access-Control-Allow-Origin', '*')
-        return response, status.HTTP_200_OK
-        # except Exception as exception:  # pylint: disable=broad-except
-        #     response = jsonify(
-        #         {"status": "error", "exception": str(exception)})
-        #     response.headers.add('Access-Control-Allow-Origin', '*')
-        #     return response, status.HTTP_400_BAD_REQUEST
-    else:
-        ass = Assassin.Assassin()
-        if 'update' in request.args:
-            return jsonify(ass.update_values())
-        if 'code' in request.args:
-            file_name = f'inventories/{request.args["code"]}.json'
-            try:
-                with open(file_name, "r", encoding="UTF-8") as data_file:
-                    data = json.load(data_file)
-            except FileNotFoundError:
-                data = {"items": []}
-            if 'data' in request.args:
-                response = jsonify(
-                    {"status": "error", "exception": "InvalidMethodError"}
-                )
-                response.headers.add('Access-Control-Allow-Origin', '*')
-                return response
-            response = jsonify(data["items"])
-            response.headers.add('Access-Control-Allow-Origin', '*')
-            return response
-        user_input = request.args['name'].upper().replace(
-            '_', ' ') if 'name' in request.args else "NOINPUT"
-        if user_input in ["NOINPUT", ""]:
-            response = jsonify({
-                "ERROR": "No input"
-            })
-            response.headers.add('Access-Control-Allow-Origin', '*')
-            return response
-        if ',' in user_input:
-            knife_names = user_input.split(',')
-        else:
-            knife_names = get_close_matches(user_input, values.keys(), int(
-                request.args['limit'])) if 'limit' in request.args else get_close_matches(user_input, values.keys())
-        knives = []
-        for name in knife_names:
-            knife = values[name]
-            knife["name"] = name.title()
-            knives.append(knife)
-        response = jsonify(knives)
-        response.headers.add('Access-Control-Allow-Origin', '*')
-        return response
+        return assassin_post(request)
+    return assassin_get(request)
 
 
 @app.route('/v1/scrape', methods=['GET'])
 def scrape():
     """Route to access scraper v1. Outdated!!"""
     args = format_args(dict(request.args))
-    if "errors" in args:
-        return jsonify(args)
-
-    return jsonify(
+    return jsonify(args) if "errors" in args else jsonify(
         get_assignments(
             args
         )
