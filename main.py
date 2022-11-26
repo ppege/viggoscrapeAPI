@@ -97,6 +97,7 @@ def get_exotic_value(data):
     except ValueError:
         return 0
 
+
 def sort_items(data):
     """Sort the items by value and favorite"""
     data["items"].sort(
@@ -107,6 +108,7 @@ def sort_items(data):
         key=lambda x: 0 if x["favorite"] else 1
     )
     return data
+
 
 def authenticate(file_name, password):
     """Authenticate the user"""
@@ -119,6 +121,7 @@ def authenticate(file_name, password):
         ).decode()
     return True
 
+
 @app.route('/v2/assassin/verify', methods=['POST'])
 def verify():
     """Lets API user verify if password is correct"""
@@ -128,12 +131,14 @@ def verify():
         return "authorized", status.HTTP_200_OK
     return "unauthorized", status.HTTP_401_UNAUTHORIZED
 
+
 def get_knife_names(user_input: string):
     """Get the knife names"""
     if ',' in user_input:
         return user_input.split(',')
     return get_close_matches(user_input, values.keys(), int(
         request.args['limit'])) if 'limit' in request.args else get_close_matches(user_input, values.keys())
+
 
 def get_knives(names: list):
     """Get the stats for specific knives"""
@@ -143,6 +148,7 @@ def get_knives(names: list):
         knife["name"] = name.title()
         knives.append(knife)
     return knives
+
 
 def assassin_post(user_request):
     """Handles the assassin function's incoming POST requests"""
@@ -174,6 +180,7 @@ def assassin_post(user_request):
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response, status.HTTP_200_OK
 
+
 def get_inventory(code: string, password: string = None):
     """
     Gets the content of the user's inventory file; if it doesn't exist, allow it to be created
@@ -182,14 +189,15 @@ def get_inventory(code: string, password: string = None):
     try:
         with open(file_name, "r", encoding="UTF-8") as data_file:
             data = json.load(data_file)
-            if "private" in data.keys() and data["private"]:
+            if data["meta"]["private"]:
                 if not password:
-                    return {"items": ["privateInventory"]}
+                    return {"items": [], "meta": {"private": True}}
                 if not authenticate(file_name, password):
-                    return {"items": ["privateInventory"]}
+                    return {"items": [], "meta": {"private": True}}
             return data
     except FileNotFoundError:
-        return {"items": []}
+        return {"items": [], "meta": {"private": False}}
+
 
 def assassin_get(user_request):
     """Handles the assassin function's incoming GET requests"""
@@ -207,7 +215,7 @@ def assassin_get(user_request):
             )
             response.headers.add('Access-Control-Allow-Origin', '*')
             return response
-        response = jsonify(data["items"])
+        response = jsonify({"items": data["items"], "meta": data["meta"]})
         response.headers.add('Access-Control-Allow-Origin', '*')
         return response
     user_input = user_request.args['name'].upper().replace(
@@ -221,6 +229,7 @@ def assassin_get(user_request):
     response = jsonify(get_knives(get_knife_names(user_input)))
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
+
 
 @app.route('/v2/assassin', methods=['POST', 'GET'])
 def assassin():
