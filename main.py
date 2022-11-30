@@ -132,6 +132,24 @@ def verify():
     return "unauthorized", status.HTTP_401_UNAUTHORIZED
 
 
+@app.route('/v2/assassin/changePassword', methods=['POST'])
+def change_password():
+    """Lets API user change inventory password; authentication required"""
+    post_json = request.get_json()
+    file_name = f'inventories/{post_json["code"]}.json'
+    if authenticate(file_name, post_json["password"]):
+        with open(file_name, "r", encoding="UTF-8") as data_file:
+            loaded_file = json.load(data_file)
+            salt = bcrypt.gensalt()
+            loaded_file["password"] = bcrypt.hashpw(
+                bytes(post_json["newPassword"], "utf-8"),
+                salt
+            ).decode()
+        with open(file_name, "w", encoding="UTF-8") as data_file:
+            json.dump(loaded_file, data_file, indent=4)
+        return "changed", status.HTTP_200_OK
+    return "unauthorized", status.HTTP_401_UNAUTHORIZED
+
 def get_knife_names(user_input: string):
     """Get the knife names"""
     if ',' in user_input:
