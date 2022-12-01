@@ -17,7 +17,7 @@
 import json
 import string
 import random
-import os.path
+from os import path, remove
 import contextlib
 from difflib import get_close_matches
 import bcrypt
@@ -45,7 +45,7 @@ def generate_share_code():
     """generates a string of random letters and numbers"""
     code = ''.join(random.choice(string.ascii_uppercase + string.digits)
                    for _ in range(4))
-    if os.path.exists(f'dvd_data/{code}.json'):
+    if path.exists(f'dvd_data/{code}.json'):
         code = generate_share_code()
     return code
 
@@ -68,7 +68,7 @@ def post_data():
 def dvd():
     """Function to read share codes"""
     if 'code' in request.args:
-        if not os.path.exists(f'dvd_data/{request.args["code"]}.json'):
+        if not path.exists(f'dvd_data/{request.args["code"]}.json'):
             response = jsonify(
                 {"error": f"Share code {request.args['code']} does not exist."})
             response.headers.add('Access-Control-Allow-Origin', '*')
@@ -140,14 +140,24 @@ def change_password():
     if authenticate(file_name, post_json["password"]):
         with open(file_name, "r", encoding="UTF-8") as data_file:
             loaded_file = json.load(data_file)
-            salt = bcrypt.gensalt()
-            loaded_file["password"] = bcrypt.hashpw(
-                bytes(post_json["newPassword"], "utf-8"),
-                salt
-            ).decode()
+        salt = bcrypt.gensalt()
+        loaded_file["password"] = bcrypt.hashpw(
+            bytes(post_json["newPassword"], "utf-8"),
+            salt
+        ).decode()
         with open(file_name, "w", encoding="UTF-8") as data_file:
             json.dump(loaded_file, data_file, indent=4)
         return "changed", status.HTTP_200_OK
+    return "unauthorized", status.HTTP_401_UNAUTHORIZED
+
+@app.route('/v2/assassin/deleteAccount', methods=['POST'])
+def delete_account():
+    """API endpoint to let users delete their account given authentication"""
+    post_json = request.get_json()
+    file_name = f'inventories/{post_json["code"]}.json'
+    if authenticate(file_name, post_json["password"]):
+        remove(file_name)
+        return "deleted", status.HTTP_200_OK
     return "unauthorized", status.HTTP_401_UNAUTHORIZED
 
 def get_knife_names(user_input: string):
@@ -179,7 +189,7 @@ def assassin_post(user_request):
         response.headers.add('Access-Control-Allow-Origin', '*')
         return response, status.HTTP_401_UNAUTHORIZED
 
-    if not os.path.isfile(file_name):
+    if not path.isfile(file_name):
         salt = bcrypt.gensalt()
         data["password"] = bcrypt.hashpw(
             bytes(data["password"], "utf-8"),
