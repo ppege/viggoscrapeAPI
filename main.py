@@ -41,19 +41,21 @@ def home():
     return jsonify({"Routes available": ["/v1/scrape", "/v2/scrape", "/v2/dvd", "/v2/assassin"]})
 
 
-def generate_share_code():
-    """generates a string of random letters and numbers"""
-    code = ''.join(random.choice(string.ascii_uppercase + string.digits)
-                   for _ in range(4))
+def generate_share_code(settings: bytes, addon: string = ""):
+    """Generates a string of random letters and numbers"""
+    code = bcrypt.hashpw(settings, bytes("")).hexdigest[:4] + addon
     if path.exists(f'dvd_data/{code}.json'):
-        code = generate_share_code()
+        with open(f'dvd_data/{code}.json', 'r', encoding="UTF-8") as data_file:
+            file_data = json.load(data_file)
+        if bytes(file_data) != settings:
+            code = generate_share_code(settings, f'{addon}_')
     return code
 
 
 @app.route('/v2/postData', methods=['POST'])
 def post_data():
     """Function to generate some share codes"""
-    code = generate_share_code()
+    code = generate_share_code(bytes(request.get_json()))
     with open(f'dvd_data/{code}.json', 'w', encoding="UTF-8") as codefile:
         try:
             json.dump(request.get_json(), codefile)
@@ -62,7 +64,6 @@ def post_data():
             response = jsonify({"error": "Please provide valid JSON"})
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
-
 
 @app.route('/v2/dvd', methods=['GET', 'POST'])
 def dvd():
@@ -150,6 +151,7 @@ def change_password():
         return "changed", status.HTTP_200_OK
     return "unauthorized", status.HTTP_401_UNAUTHORIZED
 
+
 @app.route('/v2/assassin/deleteAccount', methods=['POST'])
 def delete_account():
     """API endpoint to let users delete their account given authentication"""
@@ -159,6 +161,7 @@ def delete_account():
         remove(file_name)
         return "deleted", status.HTTP_200_OK
     return "unauthorized", status.HTTP_401_UNAUTHORIZED
+
 
 def get_knife_names(user_input: string):
     """Get the knife names"""
@@ -350,8 +353,25 @@ def format_args(args):  # sourcery skip: remove-redundant-if
     return args
 
 
+@app.route('/v2/bank', methods=['GET', 'POST'])
+def bank():
+    """A bank to store things"""
+    match request.method:
+        case "GET":
+            with open("bank/bankData.json", "r", encoding="utf-8") as data_file:
+                bank_data = json.load(data_file)
+            return jsonify(bank_data["balance"])
+        case "POST":
+            with open("bank/bankData.json", "r", encoding="utf-8") as data_file:
+                bank_data = json.load(data_file)
+            bank_data["balance"] += request.json["change"]
+            with open("bank/bankData.json", "w", encoding="utf-8") as data_file:
+                json.dump(bank_data, data_file, indent=4)
+            return jsonify(f'changed. new value is {bank_data["balance"]}')
+        case default:
+            return 'fuck you'
+
+
 if __name__ == '__main__':
-    # This is used when running locally only. When deploying to Google App
-    # Engine, a webserver process such as Gunicorn will serve the app.
     app.run(host='127.0.0.1', debug=True)
 # [END gae_flex_quickstart]
