@@ -1,19 +1,5 @@
 """Router for nangurepo api"""
-# Copyright 2015 Google Inc. All Rights Reserved.
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
 
-# [START gae_flex_quickstart]
 import json
 import string
 import random
@@ -38,7 +24,107 @@ with open("values.json", "r", encoding="UTF-8") as file:
 @app.route('/', methods=['GET'])
 def home():
     """The homepage"""
-    return jsonify({"Routes available": ["/v1/scrape", "/v2/scrape", "/v2/dvd", "/v2/assassin"]})
+    return jsonify({
+        "Routes available": [
+            "/v1/scrape",
+            "/v2/scrape",
+            "/v2/dvd",
+            "/v2/assassin",
+            "/v2/whosapp"
+        ]
+    })
+
+
+@app.route('/v2/whosapp/matchmaking', methods=['POST'])
+def matchmaking():
+    """Start conversation with random user on WhosApp"""
+    input_data = request.get_json()
+    with open("conversations/matchmaking.json", "r", encoding="UTF-8") as data_file:
+        json_data = json.load(data_file)
+    if json_data["available"]:
+        if input_data["user"] in json_data["available"]:
+            response = jsonify({"status": "usernameTaken"})
+        else:
+            response = create_connection(
+                [input_data["user"], json_data["available"][0]])
+    else:
+        json_data["available"].append(input_data["user"])
+        with open("conversations/matchmaking.json", "w", encoding="UTF-8") as data_file:
+            json.dump(json_data, data_file, indent=4)
+        response = jsonify({"status": "waiting"})
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
+
+
+def create_connection(users: list):
+    """Creates a connection between two users"""
+    with open(f"conversations/{users[1]}+{users[0]}.json", "w", encoding="UTF-8") as data_file:
+        json.dump([], data_file, indent=4)
+    with open("conversations/matchmaking.json", "r", encoding="UTF-8") as data_file:
+        json_data = json.load(data_file)
+    json_data["available"].pop(0)
+    json_data["active"][users[1]] = f"{users[1]}+{users[0]}"
+    with open("conversations/matchmaking.json", "w", encoding="UTF-8") as data_file:
+        json.dump(json_data, data_file, indent=4)
+    return jsonify({"status": "connected", "connectionName": f"{users[1]}+{users[0]}"})
+
+
+@app.route('/v2/whosapp/messages', methods=['POST'])
+def get_messages():
+    """Returns the messages in a conversation"""
+    with open(f"conversations/{request.get_json()['id']}.json", "r", encoding="UTF-8") as data_file:
+        json_data = json.load(data_file)
+    response = jsonify(json_data)
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
+
+
+@app.route('/v2/whosapp/send', methods=['POST'])
+def send_message():
+    """Append a new message to a chat log"""
+    with open(f"conversations/{request.get_json()['id']}.json", "r", encoding="UTF-8") as data_file:
+        json_data = json.load(data_file)
+    json_data.append(
+        {
+            "sender": request.get_json()['user'],
+            "message": request.get_json()['message']
+        }
+    )
+    with open(f"conversations/{request.get_json()['id']}.json", "w", encoding="UTF-8") as data_file:
+        json.dump(json_data, data_file, indent=4)
+    response = jsonify("OK")
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
+
+
+@app.route('/v2/whosapp/checkConnection', methods=['POST'])
+def check_connection():
+    """Check whether or not an end user has been found for matchmaking"""
+    with open("conversations/matchmaking.json", "r", encoding="UTF-8") as data_file:
+        json_data = json.load(data_file)
+    user = request.get_json()["user"]
+    if user in json_data["active"].keys():
+        response = jsonify(
+            {"status": "connected", "id": json_data["active"][user]})
+    else:
+        response = jsonify({"status": "waiting"})
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
+
+
+@app.route('/v2/whosapp/removeAvailability', methods=['POST'])
+def remove_availability():
+    """Remove a user from the available list"""
+    with open("conversations/matchmaking.json", "r", encoding="UTF-8") as data_file:
+        json_data = json.load(data_file)
+    user = request.get_json()["user"]
+    if user in json_data["available"]:
+        json_data["available"].remove(user)
+        response = jsonify({"status": "success"})
+    else:
+        response = jsonify({"status": "failure"}), status.HTTP_404_NOT_FOUND
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
 
 
 def generate_share_code():
@@ -150,6 +236,7 @@ def change_password():
         return "changed", status.HTTP_200_OK
     return "unauthorized", status.HTTP_401_UNAUTHORIZED
 
+
 @app.route('/v2/assassin/deleteAccount', methods=['POST'])
 def delete_account():
     """API endpoint to let users delete their account given authentication"""
@@ -159,6 +246,7 @@ def delete_account():
         remove(file_name)
         return "deleted", status.HTTP_200_OK
     return "unauthorized", status.HTTP_401_UNAUTHORIZED
+
 
 def get_knife_names(user_input: string):
     """Get the knife names"""
@@ -351,7 +439,4 @@ def format_args(args):  # sourcery skip: remove-redundant-if
 
 
 if __name__ == '__main__':
-    # This is used when running locally only. When deploying to Google App
-    # Engine, a webserver process such as Gunicorn will serve the app.
     app.run(host='127.0.0.1', debug=True)
-# [END gae_flex_quickstart]

@@ -3,3 +3,5 @@ __pycache__/
 inventories/
 pickles/
 dvd_data/
+conversations/
+rest
