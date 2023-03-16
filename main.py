@@ -62,7 +62,10 @@ def add_available():
         json_data = json.load(data_file)
     json_data["available"].append(request.get_json()["user"])
     with open("conversations/matchmaking.json", "w", encoding="UTF-8") as data_file:
-        json_data = json.load(data_file)
+        json.dump(json_data, data_file, indent=4)
+    response = jsonify({"status": "success"})
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
 
 @app.route('/v2/whosapp/getAvailable', methods=['GET', 'POST'])
 def get_available():
