@@ -55,7 +55,7 @@ def matchmaking():
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
 
-@app.route('v2/whosapp/addAvailable', methods=['POST'])
+@app.route('/v2/whosapp/addAvailable', methods=['POST'])
 def add_available():
     """Add a user to available in order to not match with the other available users"""
     with open("conversations/matchmaking.json", "r", encoding="UTF-8") as data_file:
