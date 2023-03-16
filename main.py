@@ -55,6 +55,15 @@ def matchmaking():
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
 
+@app.route('v2/whosapp/addAvailable', methods=['POST'])
+def add_available():
+    """Add a user to available in order to not match with the other available users"""
+    with open("conversations/matchmaking.json", "r", encoding="UTF-8") as data_file:
+        json_data = json.load(data_file)
+    json_data["available"].append(request.get_json()["user"])
+    with open("conversations/matchmaking.json", "w", encoding="UTF-8") as data_file:
+        json_data = json.load(data_file)
+
 @app.route('/v2/whosapp/getAvailable', methods=['GET', 'POST'])
 def get_available():
     """Returns available matches"""
@@ -128,6 +137,8 @@ def remove_availability():
     user = request.get_json()["user"]
     if user in json_data["available"]:
         json_data["available"].remove(user)
+        with open("conversations/matchmaking.json", "w", encoding="UTF-8") as data_file:
+            json.dump(json_data, data_file, indent=4)
         response = jsonify({"status": "success"})
     else:
         response = jsonify({"status": "failure"}), status.HTTP_404_NOT_FOUND
