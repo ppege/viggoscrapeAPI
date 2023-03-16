@@ -55,6 +55,14 @@ def matchmaking():
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
 
+@app.route('/v2/whosapp/getAvailable', methods=['GET', 'POST'])
+def get_available():
+    """Returns available matches"""
+    with open("conversations/matchmaking.json", "r", encoding="UTF-8") as data_file:
+        json_data = json.load(data_file)
+    response = jsonify(json_data["available"])
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
 
 def create_connection(users: list):
     """Creates a connection between two users"""
