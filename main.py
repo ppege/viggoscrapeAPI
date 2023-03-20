@@ -79,7 +79,15 @@ def get_available():
 @app.route('/v2/whosapp/createConnection', methods=['POST'])
 def remote_create_connection():
     """Create a connection remotely. Used in tandem with addAvailable."""
-    create_connection(request.get_json()["id"])
+    try:
+        create_connection(request.get_json()["id"])
+        response = jsonify({"status": "success"})
+        response_status = status.HTTP_200_OK
+    except FileNotFoundError:
+        response = jsonify({"status": "failure"})
+        response_status = status.HTTP_404_NOT_FOUND
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response, response_status
 
 def create_connection(users: list):
     """Creates a connection between two users"""
