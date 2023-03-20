@@ -80,7 +80,7 @@ def get_available():
 def remote_create_connection():
     """Create a connection remotely. Used in tandem with addAvailable."""
     try:
-        create_connection(request.get_json()["id"])
+        create_connection([request.get_json()["user1"], request.get_json()["user2"]])
         response = jsonify({"status": "success"})
         response_status = status.HTTP_200_OK
     except FileNotFoundError:
