@@ -76,6 +76,11 @@ def get_available():
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
 
+@app.route('/v2/whosapp/createConnection', methods=['POST'])
+def remote_create_connection():
+    """Create a connection remotely. Used in tandem with addAvailable."""
+    create_connection(request.get_json()["id"])
+
 def create_connection(users: list):
     """Creates a connection between two users"""
     with open(f"conversations/{users[1]}+{users[0]}.json", "w", encoding="UTF-8") as data_file:
