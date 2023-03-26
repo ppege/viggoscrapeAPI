@@ -297,6 +297,8 @@ def get_knives(names: list):
     for name in names:
         knife = values[name]
         knife["name"] = name.title()
+        if knife["exoticvalue"] == "Unknown":
+            knife["exoticvalue"] = 0
         knives.append(knife)
     return knives
 
