@@ -20,6 +20,28 @@ CORS(app)
 with open("values.json", "r", encoding="UTF-8") as file:
     values = json.load(file)
 
+def json_from_file(file_path: string) -> json:
+    """Shorthand method to quickly get data from a json file path"""
+    with open(file_path, "r", encoding="UTF-8") as data_file:
+        return json.load(data_file)
+
+def json_to_file(file_path: string, json_data: json):
+    """Shorthand method to quickly dump json data onto a file path"""
+    with open(file_path, "w", encoding="UTF-8") as data_file:
+        json.dump(json_data, data_file, indent=4)
+
+def corsify(json_data: json):
+    """Add cors headers to some json data"""
+    response = jsonify(json_data)
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
+
+def authorize(file_name: string, password: string, func):
+    """Perform a function if the user is authenticated, otherwise return unauthorized 401"""
+    if authenticate(file_name, password) and path.exists(file_name):
+        func()
+        return "authorized", status.HTTP_200_OK
+    return "unauthorized", status.HTTP_401_UNAUTHORIZED
 
 @app.route('/', methods=['GET'])
 def home():
@@ -30,10 +52,63 @@ def home():
             "/v2/scrape",
             "/v2/dvd",
             "/v2/assassin",
-            "/v2/whosapp"
+            "/v2/whosapp",
+            "/v2/stepienbook"
         ]
     })
 
+
+@app.route('/v2/stepienbook/createAccount', methods=['POST'])
+def stepienbook_create_account():
+    """Creates an account for stepienbook"""
+    input_data = request.get_json()
+    json_data = json_from_file("stepienbook/accounts.json")
+    if input_data["username"] not in json_data:
+        json_data.append(input_data["username"])
+        json_to_file("stepienbook/accounts.json", json_data)
+        json_to_file("stepienbook/accounts/" + input_data["username"] + ".json", {
+            "profile": {},
+            "username": input_data["username"],
+            "password": bcrypt.hashpw(
+                bytes(input_data["password"], encoding="UTF-8"),
+                bcrypt.gensalt()
+            ).decode()
+        })
+        return corsify({"result": "OK"}), status.HTTP_200_OK
+    return corsify({"result": "TAKEN"}), status.HTTP_400_BAD_REQUEST
+
+@app.route('/v2/stepienbook/verify', methods=['POST'])
+def stepienbook_verify():
+    """Verifies successful authentication, used in the website's pseudo-login screen"""
+    input_data = request.get_json()
+    file_name = "stepienbook/accounts/" + input_data["username"] + ".json"
+    return authorize(file_name, input_data["password"], lambda: None)
+
+@app.route('/v2/stepienbook/getProfile', methods=['POST'])
+def get_profile():
+    """Fetch public profile info of an account."""
+    input_data = request.get_json()
+    json_data = json_from_file("stepienbook/accounts/" + input_data["user"] + ".json")
+    return corsify(json_data["profile"])
+
+@app.route('/v2/stepienbook/setProfile', methods=['POST'])
+def set_profile():
+    """Set the profile info of an account, requires authentication"""
+    input_data = request.get_json()
+    file_name = "stepienbook/accounts/" + input_data["user"] + ".json"
+    def overwrite():
+        json_data = json_from_file(file_name)
+        json_data["profile"] = input_data["profile"]
+        json_to_file(file_name, json_data)
+    return authorize(file_name, input_data["password"], overwrite)
+
+#@app.route('/v2/stepienbook/createPost', methods=['POST'])
+#def create_post():
+#    """Create a post"""
+#    input_data = request.get_json()
+#    file_name = "stepienbook/accounts/" + input_data["user"] + ".json"
+#    def post():
+#        pass
 
 @app.route('/v2/whosapp/matchmaking', methods=['POST'])
 def matchmaking():
@@ -55,6 +130,7 @@ def matchmaking():
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
 
+
 @app.route('/v2/whosapp/addAvailable', methods=['POST'])
 def add_available():
     """Add a user to available in order to not match with the other available users"""
@@ -67,6 +143,7 @@ def add_available():
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
 
+
 @app.route('/v2/whosapp/getAvailable', methods=['GET', 'POST'])
 def get_available():
     """Returns available matches"""
@@ -76,11 +153,13 @@ def get_available():
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
 
+
 @app.route('/v2/whosapp/createConnection', methods=['POST'])
 def remote_create_connection():
     """Create a connection remotely. Used in tandem with addAvailable."""
     try:
-        create_connection([request.get_json()["user1"], request.get_json()["user2"]])
+        create_connection([request.get_json()["user1"],
+                          request.get_json()["user2"]])
         response = jsonify({"status": "success"})
         response_status = status.HTTP_200_OK
     except FileNotFoundError:
@@ -88,6 +167,7 @@ def remote_create_connection():
         response_status = status.HTTP_404_NOT_FOUND
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response, response_status
+
 
 def create_connection(users: list):
     """Creates a connection between two users"""
@@ -234,11 +314,10 @@ def sort_items(data):
 def authenticate(file_name, password):
     """Authenticate the user"""
     with contextlib.suppress(FileNotFoundError):
-        with open(file_name, "r", encoding="UTF-8") as data_file:
-            loaded_file = json.load(data_file)
-        return loaded_file["password"] == bcrypt.hashpw(
+        json_data = json_from_file(file_name)
+        return json_data["password"] == bcrypt.hashpw(
             bytes(password, "utf-8"),
-            bytes(loaded_file["password"], "utf-8")
+            bytes(json_data["password"], "utf-8")
         ).decode()
     return True
 
