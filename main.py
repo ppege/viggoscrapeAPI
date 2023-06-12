@@ -67,7 +67,11 @@ def stepienbook_create_account():
         json_data.append(input_data["username"])
         json_to_file("stepienbook/accounts.json", json_data)
         json_to_file("stepienbook/accounts/" + input_data["username"] + ".json", {
-            "profile": {},
+            "profile": {
+                "displayName": None,
+                "bio": None,
+                "profilePicture": None
+            },
             "username": input_data["username"],
             "password": bcrypt.hashpw(
                 bytes(input_data["password"], encoding="UTF-8"),
@@ -88,8 +92,11 @@ def stepienbook_verify():
 def get_profile():
     """Fetch public profile info of an account."""
     input_data = request.get_json()
-    json_data = json_from_file("stepienbook/accounts/" + input_data["user"] + ".json")
-    return corsify(json_data["profile"])
+    try:
+        json_data = json_from_file("stepienbook/accounts/" + input_data["user"] + ".json")
+        return corsify(json_data["profile"])
+    except FileNotFoundError:
+        return corsify("not found"), status.HTTP_404_NOT_FOUND
 
 @app.route('/v2/stepienbook/setProfile', methods=['POST'])
 def set_profile():
@@ -98,7 +105,7 @@ def set_profile():
     file_name = "stepienbook/accounts/" + input_data["user"] + ".json"
     def overwrite():
         json_data = json_from_file(file_name)
-        json_data["profile"] = input_data["profile"]
+        json_data["profile"] = { **json_data["profile"], **input_data["profile"] }
         json_to_file(file_name, json_data)
     return authorize(file_name, input_data["password"], overwrite)
 
