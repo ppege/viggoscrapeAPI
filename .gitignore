@@ -4,6 +4,6 @@ inventories/
 pickles/
 dvd_data/
 conversations/
+stepienbook/accounts.json
 stepienbook/*/*
-accounts.json
 rest
