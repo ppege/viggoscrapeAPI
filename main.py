@@ -13,6 +13,7 @@ from flask_cors import CORS
 from scraper import get_assignments
 import scraper_v2
 import assassin as Assassin
+import re
 
 app = Flask(__name__)
 app.config['JSONIFY_PRETTYPRINT_REGULAR'] = True
@@ -20,15 +21,18 @@ CORS(app)
 with open("values.json", "r", encoding="UTF-8") as file:
     values = json.load(file)
 
+
 def json_from_file(file_path: string) -> json:
     """Shorthand method to quickly get data from a json file path"""
     with open(file_path, "r", encoding="UTF-8") as data_file:
         return json.load(data_file)
 
+
 def json_to_file(file_path: string, json_data: json):
     """Shorthand method to quickly dump json data onto a file path"""
     with open(file_path, "w", encoding="UTF-8") as data_file:
         json.dump(json_data, data_file, indent=4)
+
 
 def corsify(json_data: json):
     """Add cors headers to some json data"""
@@ -36,12 +40,14 @@ def corsify(json_data: json):
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
 
+
 def authorize(file_name: string, password: string, func):
     """Perform a function if the user is authenticated, otherwise return unauthorized 401"""
     if authenticate(file_name, password) and path.exists(file_name):
         func()
         return "authorized", status.HTTP_200_OK
     return "unauthorized", status.HTTP_401_UNAUTHORIZED
+
 
 @app.route('/', methods=['GET'])
 def home():
@@ -56,6 +62,73 @@ def home():
             "/v2/stepienbook"
         ]
     })
+
+
+@app.route('/v2/staerkemaend/getImages', methods=['GET', 'POST'])
+def get_images():
+    """Returns the list of image objects for stærkemænd.dk"""
+    return (corsify(json_from_file("staerkemaend/images.json")))
+
+
+def check_type_safety(object: dict, type_definition: dict):
+    """Check if an object fits a type definition"""
+    for key in type_definition.keys():
+        if key not in object.keys():
+            return {"error": f"argument {key} missing"}
+        if str(type(object[key])) != type_definition[key]:
+            return {
+                "error": f"{key} is of type {type(object[key])} when it should be {type_definition[key]}"
+            }
+    return {"success": "valid"}
+
+
+def is_image_url(string: str):
+    expression = r"https?://.*\.(?:png|jpg)"
+    return len(re.findall(expression, string, re.IGNORECASE)) > 0
+
+@app.route('/v2/staerkemaend/addImage', methods=['POST'])
+def add_image():
+    """Endpoint to add an image object to images.json"""
+    input_data = request.get_json()
+    type_check_result = check_type_safety(input_data, {
+        "src": "<class 'str'>",
+        "tags": "<class 'list'>",
+        "id": "<class 'int'>",
+        "password": "<class 'str'>"
+    })
+    if "error" in type_check_result:
+        return corsify(type_check_result), status.HTTP_400_BAD_REQUEST
+    if not is_image_url(input_data["src"]):
+        return corsify({"error": "src must be a URL that points to a jpg or png file"}), status.HTTP_400_BAD_REQUEST
+
+    def mutate_list():
+        image_list = json_from_file("staerkemaend/images.json")
+        image_list.append({i: input_data[i]
+                          for i in input_data if i != 'password'})
+        json_to_file("staerkemaend/images.json", image_list)
+
+    return authorize(
+        "staerkemaend/admin.json",
+        input_data["password"],
+        mutate_list
+    )
+
+
+def get_index(list_of_dicts, key, value):
+    for index, item in enumerate(list_of_dicts):
+        if key in item and item[key] == value:
+            return index
+    return -1
+
+
+@app.route('/v2/staerkemaend/removeImage', methods=['POST'])
+def remove_image():
+    """Remove an image from the list"""
+    input_data = request.get_json()
+    type_check_result = check_type_safety(input_data, {
+        "id": "<class 'int'>"
+    })
+    
 
 
 @app.route('/v2/stepienbook/createAccount', methods=['POST'])
@@ -81,6 +154,7 @@ def stepienbook_create_account():
         return corsify({"result": "OK"}), status.HTTP_200_OK
     return corsify({"result": "TAKEN"}), status.HTTP_400_BAD_REQUEST
 
+
 @app.route('/v2/stepienbook/verify', methods=['POST'])
 def stepienbook_verify():
     """Verifies successful authentication, used in the website's pseudo-login screen"""
@@ -88,34 +162,40 @@ def stepienbook_verify():
     file_name = "stepienbook/accounts/" + input_data["username"] + ".json"
     return authorize(file_name, input_data["password"], lambda: None)
 
+
 @app.route('/v2/stepienbook/getProfile', methods=['POST'])
 def get_profile():
     """Fetch public profile info of an account."""
     input_data = request.get_json()
     try:
-        json_data = json_from_file("stepienbook/accounts/" + input_data["user"] + ".json")
+        json_data = json_from_file(
+            "stepienbook/accounts/" + input_data["user"] + ".json")
         return corsify(json_data["profile"])
     except FileNotFoundError:
         return corsify("not found"), status.HTTP_404_NOT_FOUND
+
 
 @app.route('/v2/stepienbook/setProfile', methods=['POST'])
 def set_profile():
     """Set the profile info of an account, requires authentication"""
     input_data = request.get_json()
     file_name = "stepienbook/accounts/" + input_data["user"] + ".json"
+
     def overwrite():
         json_data = json_from_file(file_name)
-        json_data["profile"] = { **json_data["profile"], **input_data["profile"] }
+        json_data["profile"] = {
+            **json_data["profile"], **input_data["profile"]}
         json_to_file(file_name, json_data)
     return authorize(file_name, input_data["password"], overwrite)
 
-#@app.route('/v2/stepienbook/createPost', methods=['POST'])
-#def create_post():
+# @app.route('/v2/stepienbook/createPost', methods=['POST'])
+# def create_post():
 #    """Create a post"""
 #    input_data = request.get_json()
 #    file_name = "stepienbook/accounts/" + input_data["user"] + ".json"
 #    def post():
 #        pass
+
 
 @app.route('/v2/whosapp/matchmaking', methods=['POST'])
 def matchmaking():
