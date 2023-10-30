@@ -125,10 +125,23 @@ def get_index(list_of_dicts, key, value):
 def remove_image():
     """Remove an image from the list"""
     input_data = request.get_json()
+    images = json_from_file("staerkemaend/images.json")
     type_check_result = check_type_safety(input_data, {
-        "id": "<class 'int'>"
+        "id": "<class 'int'>",
+        "password": "<class 'str'>"
     })
-    
+    if "error" in type_check_result:
+        return type_check_result
+
+    index = get_index(images, "id", input_data["id"])
+    if index == -1:
+        return corsify({"error": f"invalid id {input_data['id']}"}), status.HTTP_400_BAD_REQUEST
+
+    def mutate_list():
+        del images[index]
+        json_to_file("staerkemaend/images.json", images)
+
+    return authorize("staerkemaend/admin.json", input_data["password"], mutate_list)
 
 
 @app.route('/v2/stepienbook/createAccount', methods=['POST'])
