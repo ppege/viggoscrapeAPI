@@ -82,6 +82,22 @@ def check_type_safety(object: dict, type_definition: dict):
     return {"success": "valid"}
 
 
+@app.route('/v2/staerkemaend/getImage', methods=['POST'])
+def get_image():
+    """Returns the data for an image given an id"""
+    input_data = request.get_json()
+    type_check_result = check_type_safety(input_data, {
+        "id": "<class 'int'>"
+    })
+    if "error" in type_check_result:
+        return corsify(type_check_result), status.HTTP_400_BAD_REQUEST
+
+    images = json_from_file("staerkemaend/images.json")
+    index = get_index(images, "id", input_data["id"])
+    if index == -1:
+        return corsify({"error": f"invalid id {input_data['id']}"}), status.HTTP_400_BAD_REQUEST
+    return corsify(images[index])
+
 def is_image_url(string: str):
     expression = r"https?://.*\.(?:png|jpg)"
     return len(re.findall(expression, string, re.IGNORECASE)) > 0
