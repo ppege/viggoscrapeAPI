@@ -98,9 +98,33 @@ def get_image():
         return corsify({"error": f"invalid id {input_data['id']}"}), status.HTTP_400_BAD_REQUEST
     return corsify(images[index])
 
+
+@app.route('/v2/staerkemaend/searchImage', methods=['POST'])
+def search_image():
+    """Search an image by tag"""
+    input_data = request.get_json()
+    type_check_result = check_type_safety(input_data, {
+        "tags": "<class 'list'>"
+    })
+    if "error" in type_check_result:
+        return corsify(type_check_result), status.HTTP_400_BAD_REQUEST
+    images = json_from_file("staerkemaend/images.json")
+    return corsify(find_by_tag(images, input_data["tags"]))
+
+
+def find_by_tag(images, tags):
+    """Find an element in the images list from a tag list"""
+    results = []
+    for index, item in enumerate(images):
+        if all(tag in item.get('tags', []) for tag in tags):
+            results.append(images[index])
+    return results
+
+
 def is_image_url(string: str):
     expression = r"https?://.*\.(?:png|jpg)"
     return len(re.findall(expression, string, re.IGNORECASE)) > 0
+
 
 @app.route('/v2/staerkemaend/addImage', methods=['POST'])
 def add_image():
