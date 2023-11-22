@@ -7,7 +7,8 @@ from os import path, remove
 import contextlib
 from difflib import get_close_matches
 import bcrypt
-from flask import request, jsonify, Flask
+from flask import request, jsonify, Flask, redirect, url_for, send_from_directory
+from werkzeug.utils import secure_filename
 from flask_api import status
 from flask_cors import CORS
 from scraper import get_assignments
@@ -15,11 +16,20 @@ import scraper_v2
 import assassin as Assassin
 import re
 
+UPLOAD_FOLDER = 'uploads'
+ALLOWED_EXTENSIONS = {'txt', 'pdf', 'md', 'docx', 'png', 'jpg', 'jpeg', 'gif'}
+
 app = Flask(__name__)
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.config['JSONIFY_PRETTYPRINT_REGULAR'] = True
 CORS(app)
 with open("values.json", "r", encoding="UTF-8") as file:
     values = json.load(file)
+
+
+def allowed_file(filename):
+    return '.' in filename and \
+        filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
 
 def json_from_file(file_path: string) -> json:
@@ -59,9 +69,50 @@ def home():
             "/v2/dvd",
             "/v2/assassin",
             "/v2/whosapp",
-            "/v2/stepienbook"
+            "/v2/stepienbook",
+            "/v2/image"
         ]
     })
+
+
+@app.route('/v2/image/upload', methods=['GET', 'POST'])
+def upload_image():
+    if request.method == 'POST':
+        # check if the post request has the file part
+        if 'file' not in request.files:
+            return corsify({"error": "No file part"}), status.HTTP_400_BAD_REQUEST
+            return redirect(request.url)
+        file = request.files['file']
+        # if user does not select file, browser also
+        # submit an empty part without filename
+        if file.filename == '':
+            return corsify({"error": "No selected file"})
+            return redirect(request.url)
+        if file:
+            if not allowed_file(file.filename):
+                return corsify(
+                    {
+                        "error":
+                        "Invalid filtype. Accepted filetypes are " + ", ".join(ALLOWED_EXTENSIONS)
+                    }
+                )
+            filename = secure_filename(file.filename)
+            file.save(path.join(app.config['UPLOAD_FOLDER'], filename))
+            return redirect(url_for('uploaded_file', filename=filename))
+    return '''
+        <!doctype html>
+        <title>Upload new File</title>
+        <h1>Upload new File</h1>
+        <form method=post enctype=multipart/form-data>
+          <input type=file name=file>
+          <input type=submit value=Upload>
+        </form>
+    '''
+
+
+@app.route('/v2/uploads/<filename>')
+def uploaded_file(filename):
+    return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
 
 
 @app.route('/v2/staerkemaend/getImages', methods=['GET', 'POST'])
@@ -95,7 +146,8 @@ def get_image():
     images = json_from_file("staerkemaend/images.json")
     index = get_index(images, "id", input_data["id"])
     if index == -1:
-        return corsify({"error": f"invalid id {input_data['id']}"}), status.HTTP_400_BAD_REQUEST
+        return corsify({"error": f"invalid id {input_data['id']}"}), \
+            status.HTTP_400_BAD_REQUEST
     return corsify(images[index])
 
 
@@ -139,7 +191,8 @@ def add_image():
     if "error" in type_check_result:
         return corsify(type_check_result), status.HTTP_400_BAD_REQUEST
     if not is_image_url(input_data["src"]):
-        return corsify({"error": "src must be a URL that points to a jpg or png file"}), status.HTTP_400_BAD_REQUEST
+        return corsify({"error": "src must be a URL that points to a jpg or png file"}), \
+                status.HTTP_400_BAD_REQUEST
 
     def mutate_list():
         image_list = json_from_file("staerkemaend/images.json")
@@ -175,13 +228,17 @@ def remove_image():
 
     index = get_index(images, "id", input_data["id"])
     if index == -1:
-        return corsify({"error": f"invalid id {input_data['id']}"}), status.HTTP_400_BAD_REQUEST
+        return corsify({"error": f"invalid id {input_data['id']}"}), \
+            status.HTTP_400_BAD_REQUEST
 
     def mutate_list():
         del images[index]
         json_to_file("staerkemaend/images.json", images)
 
-    return authorize("staerkemaend/admin.json", input_data["password"], mutate_list)
+    return authorize(
+        "staerkemaend/admin.json", input_data["password"],
+        mutate_list
+    )
 
 
 @app.route('/v2/stepienbook/createAccount', methods=['POST'])
@@ -192,18 +249,20 @@ def stepienbook_create_account():
     if input_data["username"] not in json_data:
         json_data.append(input_data["username"])
         json_to_file("stepienbook/accounts.json", json_data)
-        json_to_file("stepienbook/accounts/" + input_data["username"] + ".json", {
-            "profile": {
-                "displayName": None,
-                "bio": None,
-                "profilePicture": None
-            },
-            "username": input_data["username"],
-            "password": bcrypt.hashpw(
-                bytes(input_data["password"], encoding="UTF-8"),
-                bcrypt.gensalt()
-            ).decode()
-        })
+        json_to_file(
+            "stepienbook/accounts/" + input_data["username"] + ".json",
+            {
+                "profile": {
+                    "displayName": None,
+                    "bio": None,
+                    "profilePicture": None
+                },
+                "username": input_data["username"],
+                "password": bcrypt.hashpw(
+                    bytes(input_data["password"], encoding="UTF-8"),
+                    bcrypt.gensalt()
+                ).decode()
+            })
         return corsify({"result": "OK"}), status.HTTP_200_OK
     return corsify({"result": "TAKEN"}), status.HTTP_400_BAD_REQUEST
 
