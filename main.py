@@ -118,7 +118,21 @@ def uploaded_file(filename):
 @app.route('/v2/staerkemaend/getImages', methods=['GET', 'POST'])
 def get_images():
     """Returns the list of image objects for stærkemænd.dk"""
-    return (corsify(json_from_file("staerkemaend/images.json")))
+    return corsify(json_from_file("staerkemaend/images.json"))
+
+
+@app.route('/v2/staerkemaend/getTags', methods=['GET', 'POST'])
+def get_tags():
+    """Returns the list of tags throughout every image object present in images.json"""
+    json_data = json_from_file('staerkemaend/images.json')
+    tags_output = {}
+    for man in json_data:
+        for tag in man["tags"]:
+            if tag in tags_output:
+                tags_output[tag] += 1
+                continue
+            tags_output[tag] = 1
+    return corsify(tags_output)
 
 
 def check_type_safety(object: dict, type_definition: dict):
