@@ -125,14 +125,15 @@ def get_images():
 def get_tags():
     """Returns the list of tags throughout every image object present in images.json"""
     json_data = json_from_file('staerkemaend/images.json')
-    tags_output = {}
+    tags_output = [{"name": "dummy", "count": 0}]
     for man in json_data:
         for tag in man["tags"]:
-            if tag in tags_output:
-                tags_output[tag] += 1
+            index = get_index(tags_output, "name", tag)
+            if index >= 0:
+                tags_output[index]["count"] += 1
                 continue
-            tags_output[tag] = 1
-    return corsify(tags_output)
+            tags_output.append({"name": tag, "count": 1})
+    return corsify(tags_output[1:])
 
 
 def check_type_safety(object: dict, type_definition: dict):
