@@ -86,7 +86,7 @@ def upload_image():
         # if user does not select file, browser also
         # submit an empty part without filename
         if file.filename == '':
-            return corsify({"error": "No selected file"})
+            return corsify({"error": "No selected file"}), status.HTTP_400_BAD_REQUEST
             return redirect(request.url)
         if file:
             if not allowed_file(file.filename):
@@ -95,7 +95,7 @@ def upload_image():
                         "error":
                         "Invalid filtype. Accepted filetypes are " + ", ".join(ALLOWED_EXTENSIONS)
                     }
-                )
+                ), status.HTTP_400_BAD_REQUEST
             filename = secure_filename(file.filename)
             file.save(path.join(app.config['UPLOAD_FOLDER'], filename))
             return redirect(url_for('uploaded_file', filename=filename))
