@@ -51,10 +51,12 @@ def corsify(json_data: json):
     return response
 
 
-def authorize(file_name: string, password: string, func):
+def authorize(file_name: string, password: string, func, return_function: bool = False):
     """Perform a function if the user is authenticated, otherwise return unauthorized 401"""
     if authenticate(file_name, password) and path.exists(file_name):
-        func()
+        function_output = func()
+        if return_function:
+            return function_output, status.HTTP_200_OK
         return "authorized", status.HTTP_200_OK
     return "unauthorized", status.HTTP_401_UNAUTHORIZED
 
@@ -70,13 +72,13 @@ def home():
             "/v2/assassin",
             "/v2/whosapp",
             "/v2/stepienbook",
-            "/v2/image"
+            "/v2/uploads"
         ]
     })
 
 
-@app.route('/v2/image/upload', methods=['GET', 'POST'])
-def upload_image():
+@app.route('/v2/upload', methods=['GET', 'POST'])
+def upload():
     if request.method == 'POST':
         # check if the post request has the file part
         if 'file' not in request.files:
@@ -200,25 +202,30 @@ def add_image():
     type_check_result = check_type_safety(input_data, {
         "src": "<class 'str'>",
         "tags": "<class 'list'>",
-        "id": "<class 'int'>",
         "password": "<class 'str'>"
     })
     if "error" in type_check_result:
         return corsify(type_check_result), status.HTTP_400_BAD_REQUEST
     if not is_image_url(input_data["src"]):
-        return corsify({"error": "src must be a URL that points to a jpg or png file"}), \
-                status.HTTP_400_BAD_REQUEST
+        return corsify({
+            "error": "src must be a URL that points to a jpg or png file"
+        }), status.HTTP_400_BAD_REQUEST
 
     def mutate_list():
         image_list = json_from_file("staerkemaend/images.json")
-        image_list.append({i: input_data[i]
-                          for i in input_data if i != 'password'})
+        next_id = json_from_file("staerkemaend/nextid.json")
+        new_image = {i: input_data[i] for i in input_data if i != 'password'}
+        new_image["id"] = next_id["id"]
+        image_list.append(new_image)
         json_to_file("staerkemaend/images.json", image_list)
+        json_to_file("staerkemaend/nextid.json", {"id": next_id["id"] + 1})
+        return corsify({"id": next_id["id"]})
 
     return authorize(
         "staerkemaend/admin.json",
         input_data["password"],
-        mutate_list
+        mutate_list,
+        True
     )
 
 
