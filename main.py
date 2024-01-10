@@ -17,7 +17,18 @@ import assassin as Assassin
 import re
 
 UPLOAD_FOLDER = 'uploads'
-ALLOWED_EXTENSIONS = {'txt', 'pdf', 'md', 'tex', 'docx', 'png', 'jpg', 'jpeg', 'gif'}
+ALLOWED_EXTENSIONS = {
+    'txt',
+    'pdf',
+    'md',
+    'tex',
+    'docx',
+    'png',
+    'jpg',
+    'jpeg',
+    'webp',
+    'gif'
+}
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
