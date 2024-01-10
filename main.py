@@ -95,7 +95,7 @@ def upload():
                 return corsify(
                     {
                         "error":
-                        "Invalid filtype. Accepted filetypes are " + ", ".join(ALLOWED_EXTENSIONS)
+                        "Invalid file type. Accepted filetypes are " + ", ".join(ALLOWED_EXTENSIONS)
                     }
                 ), status.HTTP_400_BAD_REQUEST
             filename = secure_filename(file.filename)
