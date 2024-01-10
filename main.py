@@ -202,7 +202,7 @@ def find_by_tag(images, tags):
 
 
 def is_image_url(string: str):
-    expression = r"https?://.*\.(?:png|jpg)"
+    expression = r"https?://.*\.(?:png|jpg|jpeg|webp|gif)"
     return len(re.findall(expression, string, re.IGNORECASE)) > 0
 
 
@@ -219,7 +219,7 @@ def add_image():
         return corsify(type_check_result), status.HTTP_400_BAD_REQUEST
     if not is_image_url(input_data["src"]):
         return corsify({
-            "error": "src must be a URL that points to a jpg or png file"
+            "error": "src must be a URL that points to a jpg, jpeg, png, webp or gif file"
         }), status.HTTP_400_BAD_REQUEST
 
     def mutate_list():
