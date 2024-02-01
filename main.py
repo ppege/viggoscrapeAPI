@@ -7,6 +7,7 @@ from os import path, remove
 import contextlib
 from difflib import get_close_matches
 import bcrypt
+import time
 from flask import request, jsonify, Flask, redirect, url_for, send_from_directory
 from werkzeug.utils import secure_filename
 from flask_api import status
@@ -227,6 +228,7 @@ def add_image():
         next_id = json_from_file("staerkemaend/nextid.json")
         new_image = {i: input_data[i] for i in input_data if i != 'password'}
         new_image["id"] = next_id["id"]
+        new_image["time"] = time.time()
         image_list.append(new_image)
         json_to_file("staerkemaend/images.json", image_list)
         json_to_file("staerkemaend/nextid.json", {"id": next_id["id"] + 1})
