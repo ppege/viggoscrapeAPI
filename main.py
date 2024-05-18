@@ -83,7 +83,7 @@ def home():
             "/v2/dvd",
             "/v2/assassin",
             "/v2/whosapp",
-            "/v2/stepienbook",
+            "/v2/gram",
             "/v2/uploads"
         ]
     })
@@ -276,21 +276,22 @@ def remove_image():
     )
 
 
-@app.route('/v2/stepienbook/createAccount', methods=['POST'])
-def stepienbook_create_account():
-    """Creates an account for stepienbook"""
+@app.route('/v2/gram/createAccount', methods=['POST'])
+def gram_create_account():
+    """Creates an account for gram"""
     input_data = request.get_json()
-    json_data = json_from_file("stepienbook/accounts.json")
+    json_data = json_from_file("gram/accounts.json")
     if input_data["username"] not in json_data:
         json_data.append(input_data["username"])
-        json_to_file("stepienbook/accounts.json", json_data)
+        json_to_file("gram/accounts.json", json_data)
         json_to_file(
-            "stepienbook/accounts/" + input_data["username"] + ".json",
+            "gram/accounts/" + input_data["username"] + ".json",
             {
                 "profile": {
                     "displayName": None,
                     "bio": None,
-                    "profilePicture": None
+                    "profilePicture": None,
+                    "pronouns": None
                 },
                 "username": input_data["username"],
                 "password": bcrypt.hashpw(
@@ -302,31 +303,31 @@ def stepienbook_create_account():
     return corsify({"result": "TAKEN"}), status.HTTP_400_BAD_REQUEST
 
 
-@app.route('/v2/stepienbook/verify', methods=['POST'])
-def stepienbook_verify():
+@app.route('/v2/gram/verify', methods=['POST'])
+def gram_verify():
     """Verifies successful authentication, used in the website's pseudo-login screen"""
     input_data = request.get_json()
-    file_name = "stepienbook/accounts/" + input_data["username"] + ".json"
+    file_name = "gram/accounts/" + input_data["username"] + ".json"
     return authorize(file_name, input_data["password"], lambda: None)
 
 
-@app.route('/v2/stepienbook/getProfile', methods=['POST'])
+@app.route('/v2/gram/getProfile', methods=['POST'])
 def get_profile():
     """Fetch public profile info of an account."""
     input_data = request.get_json()
     try:
         json_data = json_from_file(
-            "stepienbook/accounts/" + input_data["user"] + ".json")
+            "gram/accounts/" + input_data["user"] + ".json")
         return corsify(json_data["profile"])
     except FileNotFoundError:
         return corsify("not found"), status.HTTP_404_NOT_FOUND
 
 
-@app.route('/v2/stepienbook/setProfile', methods=['POST'])
+@app.route('/v2/gram/setProfile', methods=['POST'])
 def set_profile():
     """Set the profile info of an account, requires authentication"""
     input_data = request.get_json()
-    file_name = "stepienbook/accounts/" + input_data["user"] + ".json"
+    file_name = "gram/accounts/" + input_data["user"] + ".json"
 
     def overwrite():
         json_data = json_from_file(file_name)
@@ -335,11 +336,11 @@ def set_profile():
         json_to_file(file_name, json_data)
     return authorize(file_name, input_data["password"], overwrite)
 
-# @app.route('/v2/stepienbook/createPost', methods=['POST'])
+# @app.route('/v2/gram/createPost', methods=['POST'])
 # def create_post():
 #    """Create a post"""
 #    input_data = request.get_json()
-#    file_name = "stepienbook/accounts/" + input_data["user"] + ".json"
+#    file_name = "gram/accounts/" + input_data["user"] + ".json"
 #    def post():
 #        pass
 
